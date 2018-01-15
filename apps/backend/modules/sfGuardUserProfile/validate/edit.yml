@@ -1,0 +1,31 @@
+fillin:
+  enabled: true
+
+fields:
+  sf_guard_user{username}:
+    sfPropelUniqueValidator:
+      class: sfGuardUser
+      column: username
+      unique_error: 'Aquest usuari ja existeix a la base de dades.'
+
+  sf_guard_user_profile{name}:
+    required:
+      msg:       'Camp obligatori'
+    sfStringValidator:
+      min:       2
+      min_error: El nom es molt curt (2 caràcters mínim)
+      max:       255
+      max_error: El nom es molt llarg. (255 caràcters màxim)
+      
+  sf_guard_user_profile{email}:
+    required:
+      msg:       'Camp obligatori'
+    sfPropelUniqueValidator:
+      class: sfGuardUserProfile
+      column: email
+      unique_error: "La direcció de correu electrònic ja s'ha registrat per un altre usuari."
+      
+  sf_guard_user{password}:
+    sfCompareValidator:
+      check: "sf_guard_user[password_bis]"
+      compare_error: 'Les contrasenyes no coincideixen.'

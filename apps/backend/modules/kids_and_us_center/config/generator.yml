@@ -1,0 +1,16 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      KidsAndUsCenter
+    theme:            default
+
+    list:
+      title:        'Centros Kids&Us'
+      display:      [id, name]
+      filters:      [name]
+      object_actions:
+        _edit:       ~
+        _delete:     ~
+
+    edit:
+      title: 'Centro %%name%%'

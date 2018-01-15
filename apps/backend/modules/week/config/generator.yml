@@ -1,0 +1,47 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Week
+    theme:            default
+
+    list:
+      title: 'Llistar setmanes'
+      display: [=created_at, starts_at, ends_at, title, _centro_id_list]
+      filters: [centro_id]
+      object_actions:
+        _edit:       ~
+        _delete:       ~
+      sort:   [starts_at, desc]
+
+    edit:
+      title: 'Setmana %%title%%'
+      display:
+          "General": [starts_at, ends_at, title, _centro_id, is_morning_shelter, is_afternoon_shelter]
+          "Català": [morning_shelter_schedule_ca, afternoon_shelter_schedule_ca, shelter_description_ca]
+          "Castellano": [morning_shelter_schedule_es, afternoon_shelter_schedule_es, shelter_description_es]
+          "Italiano": [morning_shelter_schedule_it, afternoon_shelter_schedule_it, shelter_description_it]
+          "Francès": [morning_shelter_schedule_fr, afternoon_shelter_schedule_fr, shelter_description_fr]
+
+    fields:
+      created_at:     { name: "Data creació", type: "plain", params: date_format='dd-MM-yyyy, HH:mm' }
+      starts_at:     { name: 'Inici setmana', params: date_format='dd-MMMM-yyyy' }
+      ends_at:     { name: 'Fi setmana', params: date_format='dd-MMMM-yyyy' }
+      title: { name: "Títol", help: "Camp opcional" }
+      nombre:     { name: 'Nom' }
+      centro_id:  { name: 'Centre' }
+      centro_id_list:  { name: 'Centre' }
+      is_morning_shelter:    {  name: 'Servei d'acollida matí?' }
+      is_afternoon_shelter:    {  name: 'Servei d'acollida tarda?' }
+      morning_shelter_schedule_ca:       { name: "Horari d'acollida matí", type: input_tag, params: size=120 }
+      morning_shelter_schedule_es:       { name: "Horari d'acollida matí", type: input_tag, params: size=120 }
+      morning_shelter_schedule_it:       { name: "Horari d'acollida matí", type: input_tag, params: size=120 }
+      morning_shelter_schedule_fr:       { name: "Horari d'acollida matí", type: input_tag, params: size=120 }
+      afternoon_shelter_schedule_ca:       { name: "Horari d'acollida tarda", type: input_tag, params: size=120 }
+      afternoon_shelter_schedule_es:       { name: "Horari d'acollida tarda", type: input_tag, params: size=120 }
+      afternoon_shelter_schedule_it:       { name: "Horari d'acollida tarda", type: input_tag, params: size=120 }
+      afternoon_shelter_schedule_fr:       { name: "Horari d'acollida tarda", type: input_tag, params: size=120 }
+      text_shelter_ca: { type: textarea_tag, params: size=120x6 class=rich }
+      shelter_description_es: { name: 'Text servei d\'acollida', type: textarea_tag, params: size=120x6 class=rich }
+      shelter_description_ca: { name: 'Text servei d\'acollida', type: textarea_tag, params: size=120x6 class=rich }
+      shelter_description_it: { name: 'Text servei d\'acollida', type: textarea_tag, params: size=120x6 class=rich }
+      shelter_description_fr: { name: 'Text servei d\'acollida', type: textarea_tag, params: size=120x6 class=rich }

@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file orginal="global" source-language="es_ES" datatype="plaintext">
+    <body>
+    
+      <!-- ##### SF_ADMIN_ DASH ########## -->
+      <trans-unit id="19">
+        <source>Login</source>
+        <target>Autenticación</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Welcome to </source>
+        <target>Bienvenido a </target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Welcome </source>
+        <target>Bienvenido </target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Use a valid username and password to gain access to the administration console.</source>
+        <target>Utilice un nombre de usuario y contraseña válidos para acceder al panel de administración.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>All rights reserved</source>
+        <target>Todos los derechos reservados</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Logout</source>
+        <target>Salir</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Your browser's Javascript engine is disabled! Please enable it and reload this page before continuing.</source>
+        <target>El motor Javascript de su navegador está desactivado! Por favor, actívelo y recargue esta página antes de continuar.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Did you know that your Internet Explorer is out of date?</source>
+        <target>¿Sabía que su Internet Explorer está desactualizado?</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>To get the best possible experience using our website we recommend that you upgrade to a newer version or other web browser. A list of the most popular web browsers can be found below.</source>
+        <target>Para lograr la mejor experiencia posible usando nuestro sitio web le recomendamos que actualice a una nueva versión de Internet Explorer o use otro navegador web. A continuación le mostramos una lista de los navegadores web más populares.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Just click on the icons to get to the download page</source>
+        <target>Haga click en los iconos para ir a la página de descarga correspondiente</target>
+      </trans-unit>
+      
+                
+      <!-- ##### APP MENU ########## -->
+      <trans-unit id="19">
+        <source>Products</source>
+        <target>Productos</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Product list</source>
+        <target>Listar productos</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Gallery</source>
+        <target>Galeria</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>List Galleries</source>
+        <target>Listar galerias</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Gallery Categories</source>
+        <target>Categorias de galeria</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>User Management</source>
+        <target>Gestión Usuarios</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Edit profile</source>
+        <target>Editar perfil</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Users list</source>
+        <target>Listar usuarios</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Groups list</source>
+        <target>Listar grupos</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Permissions list</source>
+        <target>Listar permisos</target>
+      </trans-unit>
+                  
+            
+      <!-- ##### SF ADMIN GENERATOR ########## -->
+      <trans-unit id="19">
+        <source>Administration</source>
+        <target>Administración</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>no result</source>
+        <target>sin resultados</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>[0] no result|[1] 1 result|(1,+Inf] %1% results</source>
+        <target>[0] sin resultados|[1] 1 resultado|(1,+Inf] %1% resultados</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>There are some errors that prevent the form to validate</source>
+        <target>Hay algunos errores que evitan que el formulario se valide</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>secure</source>
+        <target>Acceso restringido</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>edit</source>
+        <target>Editar</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit</source>
+        <target>Editar registro</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>List</source>
+        <target>Listar registros</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Unassociated</source>
+        <target>No Asociada</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Associated</source>
+        <target>Asociada</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>create</source>
+        <target>Crear</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>delete</source>
+        <target>Eliminar</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>list</source>
+        <target>Listar</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>save</source>
+        <target>Guardar</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>save and add</source>
+        <target>Guardar y añadir</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>filters</source>
+        <target>Filtros</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>filter</source>
+        <target>Filtrar</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>reset</source>
+        <target>Resetear</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Your modifications have been saved</source>
+        <target>Las modificaciones han sido guardadas</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>The form is not valid because it contains some errors.</source>
+        <target>El formulario no es válido porque contiene algunos errores.</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Actions</source>
+        <target>Acciones</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Are you sure?</source>
+        <target>Estas seguro?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>yes</source>
+        <target>si</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>no</source>
+        <target>no</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>yes or no</source>
+        <target>si o no</target>
+      </trans-unit>
+      
+      <!-- ##### UNAVAILABLE SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Website Currently Unavailable</source>
+        <target>Web actualmente no disponible</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This website has been temporarily disabled. Please try again later.</source>
+        <target>Esta web ha sido desactivado temporalmente. Por favor inténtelo más tarde.</target>
+      </trans-unit>
+      
+      <!-- ##### DISABLED SCREEN ########## -->
+      <trans-unit id="33">
+        <source>This Module is Unavailable</source>
+        <target>Este módulo no está disponible</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This module has been disabled by a site administrator.</source>
+        <target>Este módulo ha sido desactivado por un administrador de la web.</target>
+      </trans-unit>
+
+      <!-- ##### 404 SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Oops! Page Not Found</source>
+        <target>Oops! Página No Encontrada</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>The server returned a 404 response.</source>
+        <target>El servidor ha retornado una respuesta 404.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you type the URL?</source>
+        <target>Ha escrito bien la URL?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You may have typed the address (URL) incorrectly. Check it to make sure you've got the exact right spelling, capitalization, etc.</source>
+        <target>Puede haber escrito la dirección (URL) incorrectamente. Compruébelo para asegurarse que la ortografia es correcta, las mayúsculas, etc.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you follow a link from somewhere else at this site?</source>
+        <target>Ha seguido un enlace desde esta misma web?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>If you reached this page from another part of this site, please email us at [[1]] so we can correct our mistake.</source>
+        <target>Si ha llegado a esta página desde otra parte de esta web, por favor envíenos un email a [[1]] para así poder corregir el error.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you follow a link from another site?</source>
+        <target>Ha seguido un enlace desde otra web?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Links from other sites can sometimes be outdated or misspelled. Email us at [[1]] where you came from and we can try to contact the other site in order to fix the problem.</source>
+        <target>Los enlaces externos a veces están desactualizados o mal escritos. Envíenos un email a [[1]] indicando la página de procedencia y nos intentaremos poner en contacto con la otra web para arreglar el problema.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Go to Homepage</source>
+        <target>Ir a la página principal</target>
+      </trans-unit>
+      
+      
+      <!-- ##### CREDENTIALS SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Credentials Required</source>
+        <target>Permisos Insuficientes</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This page is in a restricted area.</source>
+        <target>Esta página está en una zona restringida.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You do not have the proper credentials to access this page</source>
+        <target>No tiene los permisos adecuados para acceder a esta página</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Even though you are already logged in, this page requires special credentials that you currently don't have.</source>
+        <target>Aunque ya se ha autenticado, esta página requiere permisos especiales que su usuario no tiene asignados.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>How to access this page</source>
+        <target>Cómo acceder a esta página</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You must ask a site administrator to grant you some special credentials.</source>
+        <target>Debe pedir al administrador de la web que le conceda los correspondientes permisos.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>What's next</source>
+        <target>Posibles acciones</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Back to previous page</source>
+        <target>Volver a la página anterior</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Logout and enter again</source>
+        <target>Salir y entrar de nuevo</target>
+      </trans-unit>
+      
+      
+      <!-- ##### SF_GUARD ########## -->
+      <trans-unit id="33">
+        <source>User list</source>
+        <target>Listado de Usuarios</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Username</source>
+        <target>Nombre usuario</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last login</source>
+        <target>Última entrada</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last login:</source>
+        <target>Última entrada:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Username:</source>
+        <target>Usuario:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password:</source>
+        <target>Contraseña:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Remember me?</source>
+        <target>Recordar credenciales?</target>
+      </trans-unit>
+       <trans-unit id="">
+        <source>Forgot your password?</source>
+        <target>Olvidó su contraseña?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Password (again):</source>
+        <target>Contraseña (de nuevo):</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>sign in</source>
+        <target>entrar</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Groups:</source>
+        <target>Grupos:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%username%%" user</source>
+        <target>Editar usuario "%%username%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permissions and groups</source>
+        <target>Permisos y grupos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Groups/Roles:</source>
+        <target>Grupos/Roles:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>permissions:</source>
+        <target>permisos:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Information</source>
+        <target>Información</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Group list</source>
+        <target>Listado de Grupos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Name</source>
+        <target>Nombre</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%name%%" group</source>
+        <target>Editar grupo "%%name%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Name:</source>
+        <target>Nombre:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Is active:</source>
+        <target>Activado:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permissions:</source>
+        <target>Permisos:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Description</source>
+        <target>Descripción</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permission list</source>
+        <target>Listado de Permisos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%name%%" permission</source>
+        <target>Editar permiso "%%name%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Your username is required</source>
+        <target>El nombre de usuario es obligatorio</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Your password is required</source>
+        <target>La contraseña es obligatoria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Authentication</source>
+        <target>Autenticación</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Please, enter a username</source>
+        <target>Por favor, escriba un nombre de usuario</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Password is mandatory</source>
+        <target>La contraseña es obligatoria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Username or password is not valid.</source>
+        <target>El usuario o la contraseña no son válidos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Created at</source>
+        <target>Fecha creación</target>
+      </trans-unit>
+
+      <!-- ##### PRODUCTS ########## -->
+      <trans-unit id="33">
+        <source>Edit "%%title%%" product</source>
+        <target>Editar producto "%%title%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Creation date</source>
+        <target>Fecha creación</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Creation date:</source>
+        <target>Fecha creación:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Title</source>
+        <target>Título</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Title:</source>
+        <target>Título:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Description:</source>
+        <target>Descripción:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Attachments</source>
+        <target>Adjuntos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Images:</source>
+        <target>Imágenes:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Documents:</source>
+        <target>Documentos:</target>
+      </trans-unit>
+      
+
+      <!-- ##### GALLERY ########## -->
+      <trans-unit id="33">
+        <source>Gallery list</source>
+        <target>Listar galerias</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Edit "%%title_ca%%" gallery</source>
+        <target>Editar galeria "%%title_ca%%"</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Catalan title</source>
+        <target>Título catalan</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Catalan title:</source>
+        <target>Título catalan:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Castilian title</source>
+        <target>Título castellano</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Castilian title:</source>
+        <target>Título castellano:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Publication date</source>
+        <target>Fecha publicación</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Publication date:</source>
+        <target>Fecha publicación:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Category</source>
+        <target>Categoria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Category:</source>
+        <target>Categoria:</target>
+      </trans-unit>
+      
+      <!-- ##### GALLERY CATEGORIES ########## -->
+      <trans-unit id="33">
+        <source>Gallery category list</source>
+        <target>Listar categorias de galeria</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Edit "%%title_ca%%" gallery category</source>
+        <target>Editar categoria de galeria "%%title_ca%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Rank</source>
+        <target>Posición</target>
+      </trans-unit>      
+     
+      
+      <!-- ##### USER PROFILES ########## -->
+      <trans-unit id="33">
+        <source>User profile list</source>
+        <target>Listar perfiles de usuario</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%user_id%%" user profile</source>
+        <target>Editar perfil de usuario "%%user_id%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>User</source>
+        <target>Usuario</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>User:</source>
+        <target>Usuario:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>First name</source>
+        <target>Nombre</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>First name:</source>
+        <target>Nombre:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last name</source>
+        <target>Apellidos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last name:</source>
+        <target>Apellidos:</target>
+      </trans-unit>  
+      <trans-unit id="33">
+        <source>Language</source>
+        <target>Idioma</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Language:</source>
+        <target>Idioma:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Settings</source>
+        <target>Configuración</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>English</source>
+        <target>Inglés</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Spanish</source>
+        <target>Español</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Catalan</source>
+        <target>Catalán</target>
+      </trans-unit>      
+      
+      
+      
+            
+      
+    </body>
+  </file>
+</xliff>

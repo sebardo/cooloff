@@ -1,0 +1,137 @@
+propel:
+  _attributes: { package: lib.model.inscriptions }
+
+  week:
+    id:
+    created_at:
+    starts_at:        date
+    ends_at:        date
+    title:            varchar(255)
+    centro_id: { type: integer, foreignTable: summer_fun_center, foreignReference: id, required: false, onDelete: cascade }
+    is_morning_shelter:  { type: boolean, required: true, default: false }
+    is_afternoon_shelter:  { type: boolean, required: true, default: false }
+
+  week_i18n:
+    morning_shelter_schedule: varchar(255)
+    afternoon_shelter_schedule: varchar(255)
+    shelter_description: longvarchar
+
+  course:
+    id:
+    created_at:
+    starts_at: date
+    ends_at: date
+    price:  { type: decimal, default: 0, size: 14, scale: 2, required: true }
+    number_of_places: { type: integer, required: true }
+    summer_fun_center_id: { type: integer, foreignTable: summer_fun_center, unique: true, foreignReference: id, required: true, onDelete: cascade }
+    is_registration_open: { type: boolean, required: true, default: false }
+    excursion_id: { type: integer, foreignTable: excursion, foreignReference: id, required: false, onDelete: cascade }
+
+  course_i18n:
+    schedule:          varchar(255)
+
+  course_has_services:
+    course_id: { type: integer, required: true, primaryKey: true, foreignTable: course, foreignReference: id }
+    service_id: { type: integer, required: true, primaryKey: true, foreignTable: service, foreignReference: id }
+
+  inscription:
+    id:
+    created_at:
+    inscription_code: { type: integer, default: 0 }
+    student_name: varchar(255)
+    student_primer_apellido: varchar(255)
+    student_segundo_apellido: varchar(255)
+    student_birth_date: date
+    student_address: varchar(255)
+    student_zip:  varchar(100)
+    student_city: varchar(100)
+    student_school_year: varchar(150)
+    student_friends: varchar(255)
+    is_student_disability: { type: boolean, required: true, default: false }
+    student_disability: varchar(255)
+    student_allergies: { type: boolean, required: true, default: false }
+    student_allergies_description: varchar(255)
+    father_name: varchar(255)
+    father_primer_apellido: varchar(255)
+    father_segundo_apellido: varchar(255)
+    father_phone: varchar(255)
+    father_dni: varchar(255)
+    father_mail: varchar(255)
+    state: { type: integer, default: 0 }
+    is_father_mail_main: { type: boolean, required: true, default: true } #marquen si rebran el pdf de la inscripció a aquest correu
+    mother_name: varchar(255)
+    mother_primer_apellido: varchar(255)
+    mother_segundo_apellido: varchar(255)
+    mother_phone: varchar(255)
+    mother_dni: varchar(255)
+    mother_mail: varchar(255)
+    is_mother_mail_main: { type: boolean, required: true, default: true } #marquen si rebran el pdf de la inscripció a aquest correu
+    split_payment: { type: boolean, default: false }
+    beca: { type: boolean, required: false }
+    student_course_inscription: { type: integer, foreignTable: course, foreignReference: id, required: true, onDelete: cascade }
+    is_paid: { type: integer, default: 0 }
+    method_payment: { type: integer, default: 0 }
+    student_provincia: { type: integer, foreignTable: provincia, foreignReference: id, required: false }
+    student_num_tarjeta_sanitaria: varchar(100)
+    student_tarjeta_sanitaria_companyia: varchar(100)
+    is_student_kid_and_us: boolean
+    student_disability_level: varchar(10)
+    student_comments: longvarchar
+    grupo_id: { type: integer, foreignTable: grupo, foreignReference: id, required: false }
+    student_excursion: boolean
+    price:  { type: decimal, size: 14, scale: 2, required: false }
+    discount: { type: decimal, size: 14, scale: 2, required: false }
+    discountPercent: { type: decimal, size: 5, scale: 2, required: false }
+    student_photo: varchar(100)
+    inscription_num: { type: integer, required: false }
+    custom_question: { type: varchar(255) }
+    custom_question_answer: { type: boolean, required: false }
+    amount_beca:  { type: decimal, size: 14, scale: 2, required: false }
+    amount_first_payment:  { type: decimal, size: 14, scale: 2, required: false }
+    amount_second_payment:  { type: decimal, size: 14, scale: 2, required: false }
+    payment_date: date
+    certificated: { type: boolean, required: false }
+    certificatedName: varchar(255)
+    tpv_suffix: { type: integer, required: false }
+    tpv_first_payment_response: varchar(255)
+    tpv_second_payment_response: varchar(255)
+    culture: { type: varchar(2) }
+    is_payment_reminder_sent: { type: boolean, required: false, default: false }
+    kids_and_us_center_id: { type: integer, foreignTable: kids_and_us_center, foreignReference: id, required: true, onDelete: RESTRICT }
+    last_cooloff_year: { type: varchar(4), required: false }
+    email_confirmation_sent: boolean
+    student_meds: boolean
+    student_meds_description: varchar(255)
+    is_vaccinated: boolean
+
+  inscription_service_schedule:
+    inscription_id: { type: integer, foreignTable: inscription, foreignReference: id, primaryKey: true, required: true, onDelete: CASCADE }
+    service_schedule_id: { type: integer, foreignTable: service_schedule, foreignReference: id, primaryKey: true, required: true, onDelete: RESTRICT }
+
+  provincia:
+    id:
+    nombre: varchar(255)
+    
+  grupo:
+    id:
+    nombre: varchar(255)
+    centro_id: { type: integer, foreignTable: summer_fun_center, foreignReference: id, required: false, onDelete: CASCADE }
+    
+  profesor:
+    id:
+    nombre: varchar(255)
+    centro_id: { type: integer, foreignTable: summer_fun_center, foreignReference: id, required: false, onDelete: CASCADE }
+    
+  grupo_has_profesor:
+    grupo_id:    { type: integer, required: true, primaryKey: true, foreignTable: grupo,   foreignReference: id }
+    profesor_id:  { type: integer, required: true, primaryKey: true, foreignTable: profesor, foreignReference: id }  
+    
+  excursion:
+    id:
+    created_at:
+    updated_at:
+    centro_id: { type: integer, foreignTable: summer_fun_center, foreignReference: id, required: false, onDelete: cascade }
+    
+  excursion_i18n:
+    nombre: varchar(255)
+    descripcion: varchar(255)

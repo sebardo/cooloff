@@ -1,0 +1,36 @@
+export:
+  url: /Inscription/export/:id
+  param: { module: Inscription, action: export, id: all }
+  requirements:
+   sf_method: [post]
+
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+ 
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+
+admin_pass:
+  url:   /admin_pass/edit
+  param: { module: admin_pass, action: edit, id: 1 }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: sfAdminDash, action: dashboard, sf_culture: ca }
+
+default_symfony:
+  url:   /symfony/:action/*
+  param: { module: default }
+
+default_index:
+  url:   /:module
+  param: { action: index }
+
+
+
+
+default:
+  url:   /:module/:action/*

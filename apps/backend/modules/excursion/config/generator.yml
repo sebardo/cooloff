@@ -1,0 +1,35 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Excursion
+    theme:            default
+    
+    list:
+      title:        'Llistar Excursions'
+      display:      [=_nombre, descripcion_ca, _centro_id_list]
+      filters:      [centro_id]
+      max_per_page: 50
+      object_actions:
+        _edit:       ~
+        _delete:       ~
+
+    edit:
+        title: 'Excursió %%nombre%%'
+        display:
+          "General": [_centro_id]
+          "Català": [nombre_ca, descripcion_ca]
+          "Castellano": [nombre_es, descripcion_es]
+          "Italiano": [nombre_it, descripcion_it]
+          "Francès": [nombre_fr, descripcion_fr]
+
+    fields:
+        nombre_ca:     { name: 'Nom', type: input_tag, params: size=60 }
+        descripcion_ca:     { name: 'Descripció', type: input_tag, params: size=80 }
+        nombre_es:     { name: 'Nom', type: input_tag, params: size=60 }
+        descripcion_es:     { name: 'Descripció', type: input_tag, params: size=80 }
+        nombre_it:     { name: 'Nom', type: input_tag, params: size=60 }
+        descripcion_it:     { name: 'Descripció', type: input_tag, params: size=80 }
+        nombre_fr:     { name: 'Nom', type: input_tag, params: size=60 }
+        descripcion_fr:     { name: 'Descripció', type: input_tag, params: size=80 }
+        centro_id:  { name: 'Centre' }
+        centro_id_list:  { name: 'Centre' }

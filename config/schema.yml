@@ -1,0 +1,17 @@
+propel:
+
+  
+  # USERS
+  sf_guard_user_profile: 
+    _attributes:    { phpName: sfGuardUserProfile }
+    id:
+    user_id:        { type: integer, foreignTable: sf_guard_user, foreignReference: id, required: true, onDelete: cascade }
+    pass:           varchar(255)
+    name:           varchar(255)
+    email:          varchar(255)
+    culture:        varchar(10)
+
+
+
+
+  

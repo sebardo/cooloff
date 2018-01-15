@@ -1,0 +1,156 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+	<file orginal="global" source-language="ca_CA" datatype="plaintext">
+		<body>
+			<trans-unit id="incorrect-id">
+				<source>Incorrect ID</source>
+				<target>ID Incorrecte</target>
+			</trans-unit>
+
+			<trans-unit id="incorrect-ids-object">
+				<source>Incorrect IDs (objectId)</source>
+				<target>IDs Incorrectes (objectId)</target>
+			</trans-unit>
+
+			<trans-unit id="incorrect-ids-pending">
+				<source>Incorrect IDs (pendingUid)</source>
+				<target>IDs Incorrectes (pendingUid)</target>
+			</trans-unit>
+
+			<trans-unit id="incorrect-ids-count">
+				<source>Incorrect IDs (count)</source>
+				<target>IDs Incorrectes (count)</target>
+			</trans-unit>
+
+			<trans-unit id="invalid-params">
+				<source>Invalid params</source>
+				<target>Parametres invalids</target>
+			</trans-unit>
+
+
+			<trans-unit id="unexpected-getfields-error">
+				<source>Unexpected getFields error</source>
+				<target>Errors inesperats a 'getFields'</target>
+			</trans-unit>
+
+			<trans-unit id="unexpected-setfields-error">
+				<source>Unexpected setFields error</source>
+				<target>Errors inesperats a 'setFields'</target>
+			</trans-unit>
+
+			<trans-unit id="unexpected-remove-error">
+				<source>Unexpected remove error</source>
+				<target>Errors inesperats a 'remove'</target>
+			</trans-unit>
+
+			<trans-unit id="unexpected-move-error">
+				<source>Unexpected move error</source>
+				<target>Errors inesperats a 'move'</target>
+			</trans-unit>
+
+			<trans-unit id="unexpected-upload-error">
+				<source>Unexpected upload error</source>
+				<target>Errors inesperats a 'upload'</target>
+			</trans-unit>
+
+
+			<trans-unit id="you-must-select-file">
+				<source>You must select a file</source>
+				<target>Ha de seleccionar un arxiu</target>
+			</trans-unit>
+
+			<trans-unit id="failed-when-moving-file">
+				<source>Failed when moving the file</source>
+				<target>Error al moure l'arxiu</target>
+			</trans-unit>
+			
+			<trans-unit id="max-file-size-limit-exceeded">
+				<source>Max file size limit exceeded</source>
+				<target>La mida màxima de l'arxiu ha estat superada</target>
+			</trans-unit>
+			
+			<!-- Editor -->
+			
+			<trans-unit id="language-selector">
+				<source>Language Selector</source>
+				<target>Selector de llenguatge</target>
+			</trans-unit>
+			
+			<trans-unit id="filename">
+				<source>Filename</source>
+				<target>Arxiu</target>
+			</trans-unit>
+			
+			<trans-unit id="title">
+				<source>Title</source>
+				<target>Títol</target>
+			</trans-unit>
+			
+			<trans-unit id="description">
+				<source>Description</source>
+				<target>Descripció</target>
+			</trans-unit>
+			
+			<trans-unit id="tags-coma-separated">
+				<source>Tags (coma separted)</source>
+				<target>Tags (separats per comes)</target>
+			</trans-unit>
+			
+			<trans-unit id="ok">
+				<source>Ok</source>
+				<target>Acceptar</target>
+			</trans-unit>
+			
+			<trans-unit id="cancel">
+				<source>Cancel</source>
+				<target>Cancel·lar</target>
+			</trans-unit>
+			
+			<!-- Upload -->
+			
+			<trans-unit id="move-left">
+				<source>Move left</source>
+				<target>Moure esquerra</target>
+			</trans-unit>
+			
+			<trans-unit id="move-right">
+				<source>Move right</source>
+				<target>Moure dreta</target>
+			</trans-unit>
+			
+			<trans-unit id="remove">
+				<source>Remove</source>
+				<target>Eliminar</target>
+			</trans-unit>
+			
+			<trans-unit id="edit">
+				<source>Edit</source>
+				<target>Editar</target>
+			</trans-unit>
+			
+			<trans-unit id="are-you-sure-remove-this-item">
+				<source>Are you sure you want to remove this item?</source>
+				<target>Estas segur de voler eliminar aquest element?</target>
+			</trans-unit>
+			
+			<!-- Uploader -->
+			
+			<trans-unit id="upload">
+				<source>Upload</source>
+				<target>Pujar</target>
+			</trans-unit>
+			
+			<trans-unit id="uploading-new-file">
+				<source>Uploading the file...</source>
+				<target>Pujant arxiu...</target>
+			</trans-unit>
+			
+			<!-- Selector -->
+			
+			<trans-unit id="add-new-file">
+				<source>Add New File</source>
+				<target>Afegir arxiu</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

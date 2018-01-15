@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file orginal="global" source-language="es_ES" datatype="plaintext" date="2013-04-05T10:49:38Z">
+		<body>
+			<trans-unit id="197">
+				<source>condicions_pdf</source>
+				<target>Declaro haver llegit i acceptat les condicions generals i autoritzacions enviades en un document annex al full d’inscripció. Completar amb nom, data i signatura del tutor legal, mare o pare.</target>
+			</trans-unit>
+			<trans-unit id="198">
+				<source>fullInscripcio</source>
+				<target>Full d'inscripció. Codi de la inscripció:</target>
+			</trans-unit>
+			<trans-unit id="199">
+				<source>fullInscripcio2</source>
+				<target>Full dades de pagament</target>
+			</trans-unit>
+            <trans-unit id="200">
+				<source>pagament</source>
+				<target>*El pagament s'haurà d'efectuar en el transcurs de 5 dies hàbils indicant al concepte el nom del nen/s.</target>
+			</trans-unit>
+            <trans-unit id="201">
+				<source>error_tipo_fichero</source>
+				<target>Format d'imatge no vàlid. Únicament jpg, jpeg, png, gif i estan permesos</target>
+			</trans-unit>
+            <trans-unit id="202">
+				<source>imagen_no_valida</source>
+				<target>La imatge seleccionada no és vàlida</target>
+			</trans-unit>
+            <trans-unit id="203">
+				<source>imagen_ancho_minimo_menor</source>
+				<target>La imatge ha de tenir un ample mínim de %min_width% píxels</target>
+			</trans-unit>
+            <trans-unit id="204">
+				<source>imagen_alto_minimo_menor</source>
+				<target>La imatge ha de tenir un alt mínim de %min_height% píxels</target>
+			</trans-unit>
+			<trans-unit id="205">
+				<source>Alumne KidsUs</source>
+				<target><![CDATA[Alumne Kid&Us]]></target>
+			</trans-unit>
+			<trans-unit id="206">
+	            <source>Pagament amb rebut domiciliat</source>
+	            <target>Rebut domiciliat</target>
+	        </trans-unit>
+			<trans-unit>
+				<source>Per inscriure el vostre fill / la vostra filla a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</source>
+				<target>Per inscriure el vostre fill / la vostra filla a les activitats del Cool Off, seguiu les indicacions i ompliu les dades del formulari.</target>
+			</trans-unit>
+	        <trans-unit>
+		        <source>Seleccione primero un centro por favor</source>
+		        <target>Si us plau, seleccioni un centre</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>Tomar una foto frontal del niño – se puede hacer con cualquier dispositivo móvil.</source>
+		        <target>Feu una foto frontal del nen – es pot fer amb qualsevol dispositiu mòbil.</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>Guardar / descargar la imagen en el escritorio.</source>
+		        <target>Guardeu / descarregueu la imatge a l’escriptori.</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>En el momento de realizar la inscripción, seleccionarla e iniciar el proceso de carga. El archivo deberá estar en formato de imagen: jpg/png.</source>
+		        <target>En el moment de fer la inscripció, seleccioneu-la i inicieu el procés de càrrega. L’arxiu ha d’estar sempre en format d’imatge: jpg/png.</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>privacity_police</source>
+		        <target>En compliment de la Llei Orgànica 15/1999, de 13 de desembre, de Protecció de Dades de caràcter personal, Kids&amp;Us S.L. informa que totes les dades que li siguin facilitades seran tractades amb estricta confidencialitat i que tan sols seran utilitzades amb el propòsit indicat en aquestes bases. L’aportació d’aquestes dades suposa el consentiment del remitent per al seu tractament. Així mateix, informem de la possibilitat d’exercir els drets d’accés, rectificació, oposició i cancel·lació en els termes establerts en la legislació vigent a l’adreça de Kids&amp;Us English S.L., C/ Canonge Muntanyà, 1-5 de Manresa.</target>
+		    </trans-unit>
+            <trans-unit>
+		        <source>TPV</source>
+		        <target>Passarel·la de pagament (TPV)</target>
+		    </trans-unit>
+            <trans-unit>
+                <source><![CDATA[You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.]]></source>
+                <target><![CDATA[El seu navegador web és antic i no és compatible amb aquesta plataforma. Si us plau, actualitza el teu navegador web de forma gratuïta fent clic <a href="http://browsehappy.com/">aquí</a>]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>out_of_service</source>
+                <target>El sistema d'inscripcions es troba temporalment fora de servei per tasques de manteniment, si us plau, torni passats uns minuts. Gràcies.</target>
+            </trans-unit>
+			<trans-unit>
+				<source>registration.select_course</source>
+				<target>- Seleccioni un curs -</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>registration.select_course_error</source>
+				<target>Seleccione el curso cursado, sino aparece en el listado escríbelo en el campo otro</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>registration.previous_completed_cooloff</source>
+				<target>Assistència anteriors Cool Off</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>registration.second_payment_date</source>
+				<target>Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>meds_diet</source>
+				<target>Medicació / Dieta</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Dades del centre on realitzarà l'English Summer Fun</source>
+				<target>Dades del casal on realitzarà el Cool Off</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>*Escola de procedència:</source>
+				<target>*Centre de procedència:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Escola de procedència:</source>
+				<target>Centre de procedència:</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Per fer efectiva la inscripció a l'English Summer Fun, confirmeu si us plau la modalitat de pagament que preferiu.</source>
+				<target>Per fer efectiva la inscripció al Cool Off, confirmeu si us plau la modalitat de pagament que preferiu.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>registration.other</source>
+				<target>Altre</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>registration.subtotal</source>
+				<target>Subtotal</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Gràcies per inscriure-us a les activitats de l'English Summer Fun.</source>
+				<target>Gràcies per inscriure-us a les activitats del Cool Off.</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Inscripció English Summer Fun</source>
+				<target>Inscripció Cool Off</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>pdf.colonias_cooloff</source>
+				<target><![CDATA[COLÒNIES COOL OFF]]></target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Curs cursat:</source>
+				<target><![CDATA[Curs Kids&Us realitzat:]]></target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>registration.is_vaccinated</source>
+				<target><![CDATA[L'infant està vacunat d'acord al calendari de vacunacions establert per l'òrgan competent?]]></target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>registration.is_vaccinated_remark</source>
+				<target><![CDATA[En cas de que l'infant no estigui vacunat, els tutors hauran de passar a signar una declaració responsable pel centre Kids&Us. Sense aquesta declaració l'infant no podrà començar l'activitat.]]></target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Selecciona el centre on vol realitzar la inscripció</source>
+				<target><![CDATA[Seleccioni el casal on vol realitzar la inscripció]]></target>
+			</trans-unit>
+
+			<trans-unit id="54">
+				<source>Selecciona un centre de procedència</source>
+				<target>- Seleccioni un centre de procedència -</target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Selecciona el último año de asistencia</source>
+				<target><![CDATA[- Seleccioni l'últim any d'assistència -]]></target>
+			</trans-unit>
+
+			<trans-unit>
+				<source>Descompte per inscriure a [1] o més infants: [2]%</source>
+				<target>Descompte per inscriure a [1] o més germans: [2]%</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

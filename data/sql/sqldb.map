@@ -1,0 +1,7 @@
+# Sqlfile -> Database map
+lib.model.inscriptions.schema.sql=propel
+plugins.thairaMediaLibraryPlugin.lib.model.schema.sql=propel
+plugins.sfGuardPlugin.lib.model.schema.sql=propel
+lib.model.schema.sql=propel
+lib.model.summerFun.schema.sql=propel
+plugins.thairaUploadsPlugin.lib.model.schema.sql=propel

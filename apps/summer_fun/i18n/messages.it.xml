@@ -1,0 +1,1019 @@
+<?xml version="1.0"?>
+<xliff>
+	<file datatype="plaintext" orginal="global" source-language="es_ES">
+		<body>
+			<trans-unit>
+				<source>registration.trans0</source>
+				<target><![CDATA[Pagamento in contanti presso la scuola]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans1</source>
+				<target><![CDATA[Inizio]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans2</source>
+				<target><![CDATA[Pago en efectivo en el centro (únicamente en Kids&Us Poblenou)]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans3</source>
+				<target><![CDATA[Iscrizioni]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans4</source>
+				<target><![CDATA[Selezionare una scuola]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans5</source>
+				<target><![CDATA[Campo obbligatorio]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans6</source>
+				<target><![CDATA[Selezionare una scuola di provenienza]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans7</source>
+				<target><![CDATA[La data non è corretta]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans8</source>
+				<target><![CDATA[La mail non è corretta]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans9</source>
+				<target><![CDATA[Le mail non sono uguali]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans10</source>
+				<target><![CDATA[Selezionare una delle due mail come principale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans11</source>
+				<target><![CDATA[Selezionare una settimana]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans12</source>
+				<target><![CDATA[E' necessario accettare l'informativa sulla privacy]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans13</source>
+				<target><![CDATA[DATI PERSONALI]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans14</source>
+				<target><![CDATA[Nome alunno/a:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans15</source>
+				<target><![CDATA[Indirizzo:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans16</source>
+				<target><![CDATA[Località:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans17</source>
+				<target><![CDATA[Codice postale:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans18</source>
+				<target><![CDATA[Nome e cognome madre/tutore legale:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans19</source>
+				<target><![CDATA[C.I.:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans20</source>
+				<target><![CDATA[Cellulare:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans21</source>
+				<target><![CDATA[Email:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans22</source>
+				<target><![CDATA[Nome e cognome padre/tutore legale:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans23</source>
+				<target><![CDATA[DATI SCOLASTICI]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans24</source>
+				<target><![CDATA[Scuola di provenienza:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans25</source>
+				<target><![CDATA[Corso Kids&Us:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans26</source>
+				<target><![CDATA[DATI MEDICI]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans27</source>
+				<target><![CDATA[È affetto da qualche tipo di malattia o di allergia?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans28</source>
+				<target><![CDATA[Soffre di qualche invalidità che presupponga una maggiore difficoltà di integrazione?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans29</source>
+				<target><![CDATA[DATI DI ISCRIZIONE]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans30</source>
+				<target><![CDATA[Scuola:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans31</source>
+				<target><![CDATA[Servizio di accoglienza:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans32</source>
+				<target><![CDATA[Servizio di accoglienza:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans33</source>
+				<target><![CDATA[Amici che parteciperanno ai campi estivi]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans34</source>
+				<target><![CDATA[In caso affermativo, indicare nome e cognome:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans35</source>
+				<target><![CDATA[Settimane]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans36</source>
+				<target><![CDATA[Nome e cognome padre/madre/tutore legale:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans37</source>
+				<target><![CDATA[Data:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans38</source>
+				<target><![CDATA[Firma]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans39</source>
+				<target><![CDATA[DATI DELL'ISCRIZIONE]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans40</source>
+				<target><![CDATA[Numero di iscrizioni:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans41</source>
+				<target><![CDATA[Specificare:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans42</source>
+				<target><![CDATA[MODALITÀ DI PAGAMENTO]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans43</source>
+				<target><![CDATA[Bonifico bancario:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans44</source>
+				<target><![CDATA[Desidero effettuare il pagamento per intero.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans45</source>
+				<target><![CDATA[Desidero versare adesso l'acconto del 50% e il restante saldo del 50% entro il 31 maggio.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans46</source>
+				<target><![CDATA[*Il pagamento dovrà essere effettuato entro 5 giorni lavorativi, indicando nella causale il numero di iscrizioni e il nome e cognome del bambino/s.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans47</source>
+				<target><![CDATA[Iscrizione Cool Off]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans48</source>
+				<target><![CDATA[Dati dell'alunno]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans49</source>
+				<target><![CDATA[Settimane disponibili]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans50</source>
+				<target><![CDATA[Servizio di accoglienza]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans51</source>
+				<target><![CDATA[Servizio di accoglienza]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans52</source>
+				<target><![CDATA[Nome completo:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans53</source>
+				<target><![CDATA[Data di nascita:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans54</source>
+				<target><![CDATA[Indirizzo:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans55</source>
+				<target><![CDATA[Codice postale:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans56</source>
+				<target><![CDATA[Corso Kids&amp;Us frequentato:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans57</source>
+				<target><![CDATA[Amici che parteciperanno ai campi estivi:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans58</source>
+				<target><![CDATA[Indicare se il bambino/la bambina sia persona con disabilità: (In caso affermativo, potrà essere richiesta all'Istituto dei Disabili la valutazione di un sostegno all'interno dell'équipe insegnanti.))]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans59</source>
+				<target><![CDATA[Indicare se il bambino è affetto da eventuali allergie, intolleranze o malattie croniche:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans60</source>
+				<target><![CDATA[Non]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans61</source>
+				<target><![CDATA[Sì, indicare quale/quali]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans62</source>
+				<target><![CDATA[Attivare qualora i dati dei genitori o dei tutori siano diversi da quelli del primo figlio/a.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans63</source>
+				<target><![CDATA[Selezioni il campo estivo al quale desidera iscriversi]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans64</source>
+				<target><![CDATA[Passo successivo.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans65</source>
+				<target><![CDATA[Dati del padre / tutore legale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans66</source>
+				<target><![CDATA[Telefono:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans67</source>
+				<target><![CDATA[Email:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans68</source>
+				<target><![CDATA[Dati della madre / tutore legale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans69</source>
+				<target><![CDATA[Para iscrivere un bambino/a ai campi estivi Cool Off, seguire le indicazioni e compilare il seguente form.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans70</source>
+				<target><![CDATA[Sede scelta per le attività Cool Off]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans71</source>
+				<target><![CDATA[Modalità di pagamento]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans72</source>
+				<target><![CDATA[Per rendere effettiva l’iscrizione ai Cool Off, La preghiamo di confermare la modalità di pagamento desiderata.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans73</source>
+				<target><![CDATA[La preghiamo di indicare se desidera rateizzare il pagamento:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans74</source>
+				<target><![CDATA[Sì, desidero pagare adesso il 50%]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans75</source>
+				<target><![CDATA[No, desidero pagare adesso il 100%]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans76</source>
+				<target><![CDATA[Ho letto e accetto le]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans77</source>
+				<target><![CDATA[condizioni generali e l'informativa sulla privacy.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans78</source>
+				<target><![CDATA[PROTEZIONE DATI PERSONALI.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans79</source>
+				<target><![CDATA[In ottemperanza alla Legge Organica 15/1999 del 13 dicembre, sulla Protezione dei Dati di Carattere Personale, Kids&Us S.L. informa che tutti i dati forniti saranno trattati nella massima riservatezza e saranno usati solo per gli scopi indicati nel presente documento. La comunicazione di tali dati presuppone il consenso al trattamento da parte dell'interessato. Informiamo inoltre della possibilità di esercitare i diritti di accesso, rettifica, opposizione e cancellazione in base ai termini previsti dalle leggi vigenti, rivolgendosi all'indirizzo di Kids&Us English S.L., C/ Canonge Montanyà, 1-5 de Manresa.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans80</source>
+				<target><![CDATA[Conferma]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans81</source>
+				<target><![CDATA[Controllare che i dati dell’iscrizione siano corretti]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans82</source>
+				<target><![CDATA[Informazione generale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans83</source>
+				<target><![CDATA[Iscrizioni:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans84</source>
+				<target><![CDATA[Pagamento:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans85</source>
+				<target><![CDATA[Frazionare il pagamento:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans86</source>
+				<target><![CDATA[Iscrizione:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans87</source>
+				<target><![CDATA[Totale da pagare]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans88</source>
+				<target><![CDATA[Scuola di provenienza:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans89</source>
+				<target><![CDATA[Invalidità:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans90</source>
+				<target><![CDATA[Settimana dell'iscrizione]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans91</source>
+				<target><![CDATA[Settimana]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans92</source>
+				<target><![CDATA[Mattina]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans93</source>
+				<target><![CDATA[Pomeriggio]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans94</source>
+				<target><![CDATA[Mattina]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans95</source>
+				<target><![CDATA[Pomeriggio]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans96</source>
+				<target><![CDATA[Dati del padre / tutore legale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans97</source>
+				<target><![CDATA[Mail di contatto principale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans98</source>
+				<target><![CDATA[Dati della madre / tutore legale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans99</source>
+				<target><![CDATA[I dati dei genitori o dei tutori legali sono identici a quelli inseriti per il primo figlio/a]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans100</source>
+				<target><![CDATA[Modifica]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans101</source>
+				<target><![CDATA[Conferma]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans102</source>
+				<target><![CDATA[Iscrizione realizzata correttamente]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans103</source>
+				<target><![CDATA[Grazie per la sua iscrizione ai campi estivi Cool Off.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans104</source>
+				<target><![CDATA[Fra poco riceverà all'indirizzo principale indicato un messaggio di posta elettronica nel quale potrà trovare le informazioni necessarie per formalizzare la prenotazione ed effettuare il pagamento.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans105</source>
+				<target><![CDATA[Il servizio di accoglienza ha un costo addizionale %preu% € a settimana]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans106</source>
+				<target><![CDATA[Il servizio di accoglienza ha un costo addizionale %preu% € a settimana]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans107</source>
+				<target><![CDATA[Buongiorno a tutti,]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans108</source>
+				<target><![CDATA[Grazie per la vostra iscrizione ai campi estivi Cool Off.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans109</source>
+				<target><![CDATA[Per portare a termine la prenotazione è necessario seguire i seguenti passaggi:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans110</source>
+				<target><![CDATA[Scaricare i documenti in PDF.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans111</source>
+				<target><![CDATA[Stamparli.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans112</source>
+				<target><![CDATA[Formalizzare il pagamento secondo le condizioni.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans113</source>
+				<target><![CDATA[Firmare il documento.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans114</source>
+				<target><![CDATA[Nel giorno di inizio dei campi estivi è necessario presentare il documento PDF dell'iscrizione firmato assieme alle condizioni generali, a una fotocopia della tessera sanitaria e al libretto delle vaccinazioni.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans115</source>
+				<target><![CDATA[Il termine per effettuare il pagamento in base alla modalità selezionata (importo totale o rateizzato), è di cinque giorni lavorativi a partire dalla ricezione del presente messaggio. Se si effettua un bonifico, sarà necessario inviare la ricevuta via e-mail e presentare il documento PDF dell'iscrizione firmato assieme alle condizioni generali, a una fotocopia della tessera sanitaria e al libretto delle vaccinazioni il giorno di inizio dei campi estivi.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans116</source>
+				<target><![CDATA[Ricordiamo che la prenotazione dei posti sarà effettiva solo dopo aver effettuato il pagamento.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans117</source>
+				<target><![CDATA[Grazie ancora per la fiducia riposta in Kids&Us!]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans118</source>
+				<target><![CDATA[Cordialmente,]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans119</source>
+				<target><![CDATA[T. (+34) 902 93 40 23]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans120</source>
+				<target><![CDATA[Prezzo:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans121</source>
+				<target><![CDATA[Lista d'attesa]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans122</source>
+				<target><![CDATA[Non ci sono posti disponibili]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans123</source>
+				<target><![CDATA[Bonifico bancario]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans124</source>
+				<target><![CDATA[Scaricare i documenti in PDF.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans125</source>
+				<target><![CDATA[Selezionare una scuola]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans126</source>
+				<target><![CDATA[Selezionare una scuola]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans127</source>
+				<target><![CDATA[Selezionare una scuola di provenienza. Se non è presente nell'elenco, inserirla nel campo 'Altro'.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans128</source>
+				<target><![CDATA[E' necessario selezionare la mail come principale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans129</source>
+				<target><![CDATA[lasciare in bianco se non si sceglie il servizio di accoglienza]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans130</source>
+				<target><![CDATA[Sì, indicare quale/i:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans131</source>
+				<target><![CDATA[Padre/madre/tutore legale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans132</source>
+				<target><![CDATA[Email:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans133</source>
+				<target><![CDATA[Per iscrivere suo figlio/a ai campi estivi Cool Off, segua le indicazioni e compili il seguente form.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans134</source>
+				<target><![CDATA[Sì, desidero pagare adesso il 50%]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans135</source>
+				<target><![CDATA[Allergie, intolleranze o malattie croniche:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans136</source>
+				<target><![CDATA[Ricordiamo che la prenotazione del posto non risulterà effettiva fino a quando non sarà stato effettuato il pagamento.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans137</source>
+				<target><![CDATA[Desidero che questa sia la mail di contatto principale su cui ricevere notifiche della scuola Kids&Us]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans138</source>
+				<target><![CDATA[Nome alunno/a:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans139</source>
+				<target><![CDATA[Malattie o allergie:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans140</source>
+				<target><![CDATA[È affetto da qualche invalidità che causa particolari difficoltà di integrazione:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans141</source>
+				<target><![CDATA[Nome e cognomi:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans142</source>
+				<target><![CDATA[Desidero effettuare il pagamento per intero]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans143</source>
+				<target><![CDATA[Dati del padre/madre/tutore legale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans144</source>
+				<target><![CDATA[Dati dei genitori/tutori legali dell'alunno]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans145</source>
+				<target><![CDATA[Dati dei genitori/tutori legali]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans146</source>
+				<target><![CDATA[Dichiaro di aver letto e accettato le condizioni generali e le autorizzazioni inviate nel documento allegato al foglio di iscrizione. Completare con il nome, la data e la firma del tutore legale, madre o padre.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans147</source>
+				<target><![CDATA[Foglio di iscrizione. Codice di iscrizione:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans148</source>
+				<target><![CDATA[Foglio dati di pagamento]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans149</source>
+				<target><![CDATA[Nome e cognome padre/madre/tutore legale:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans150</source>
+				<target><![CDATA[Grazie]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans151</source>
+				<target><![CDATA[*Scuola di provenienza:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans152</source>
+				<target><![CDATA[Altro:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans153</source>
+				<target><![CDATA[Ripetere mail:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans154</source>
+				<target><![CDATA[Documento da consegnare firmato alla scuola.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans155</source>
+				<target><![CDATA[Scuola Kids&Us di provenienza:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans156</source>
+				<target><![CDATA[MODALITÀ DI PAGAMENTO]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans157</source>
+				<target><![CDATA[*Il pagamento dovrà essere effettuato entro 5 giorni lavorativi, indicando in modo dettagliato il numero di iscrizione, il nome e il cognome del/dei bambino/i.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans158</source>
+				<target><![CDATA[Il servizio di accoglienza ha un costo aggiuntivo pari a %preu% € settimanali]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans159</source>
+				<target><![CDATA[Il servizio di accoglienza ha un costo aggiuntivo pari a %preu% € settimanali]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans160</source>
+				<target><![CDATA[NomeFelipe]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans161</source>
+				<target><![CDATA[Cognome 1]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans162</source>
+				<target><![CDATA[Cognome 2]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans163</source>
+				<target><![CDATA[(Strada, Numero, Piano, Porta)]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans164</source>
+				<target><![CDATA[Provincia]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans165</source>
+				<target><![CDATA[Provincia:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans166</source>
+				<target><![CDATA[Numero di tessera sanitaria internazionale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans167</source>
+				<target><![CDATA[Società]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans168</source>
+				<target><![CDATA[Corso Kids&Us frequentato:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans169</source>
+				<target><![CDATA[Alunno Kid&Us]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans170</source>
+				<target><![CDATA[Sì]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans171</source>
+				<target><![CDATA[Non]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans172</source>
+				<target><![CDATA[È affetto da qualche invalidità?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans173</source>
+				<target><![CDATA[Grado]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans174</source>
+				<target><![CDATA[Quale?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans175</source>
+				<target><![CDATA[Altri aspetti di cui tenere conto]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans176</source>
+				<target><![CDATA[Ricordare che è possibile richiedere sostegno per 10 giorni di attività, 2 settimane. Se il bambino si iscrive per più settimane, il pagamento dovrà essere effettuato nel periodo ordinario]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans177</source>
+				<target><![CDATA[Sì, autorizzo il bambino a partecipare ad escursioni]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans178</source>
+				<target><![CDATA[Sconto per l'iscrizione di [1] o più bambini: [2]%]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans179</source>
+				<target><![CDATA[DSconto iscrizione per un bambino a [1] o più settimane: [2]%]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans180</source>
+				<target><![CDATA[Sconti]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans181</source>
+				<target><![CDATA[Sconto iscrizione per un bambino a [1] o più settimane: [2]%]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans182</source>
+				<target><![CDATA[Formato dell'immagine non valido. Si accettano solo jpg, jpeg, png e gif]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans183</source>
+				<target><![CDATA[L'immagine selezionata non è valida]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans184</source>
+				<target><![CDATA[L'immagine deve avere una larghezza minima di %min_width% pixel]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans185</source>
+				<target><![CDATA[L'immagine deve avere una altezza minima di %min_height% pixel]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans186</source>
+				<target><![CDATA[Selezionare provincia]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans187</source>
+				<target><![CDATA[La preghiamo di attendere]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans188</source>
+				<target><![CDATA[I possibili sconti saranno applicati ad avvenuta conferma del posto]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans189</source>
+				<target><![CDATA[Altri commenti che ritenete possano essere rilevanti per migliorare il soggiorno del bambino o della bambina durante i campi estivi]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans190</source>
+				<target><![CDATA[Sta assumendo qualche farmaco o si sottopone a qualche tipo di cura o dieta?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans191</source>
+				<target><![CDATA[Si, specificare]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans192</source>
+				<target><![CDATA[No, non autorizzo il bambino a partecipare alle escursioni]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans193</source>
+				<target><![CDATA[Escursione]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans194</source>
+				<target><![CDATA[Caricare fotografie]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans195</source>
+				<target><![CDATA[Società]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans196</source>
+				<target><![CDATA[Numero di tessera sanitaria internazionale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans197</source>
+				<target><![CDATA[Sconto]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans198</source>
+				<target><![CDATA[Pagamento con ricevuta domiciliata]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans199</source>
+				<target><![CDATA[Ho letto e accetto le]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans200</source>
+				<target><![CDATA[condizioni generali]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans201</source>
+				<target><![CDATA[e la]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans202</source>
+				<target><![CDATA[e la]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans203</source>
+				<target><![CDATA[La preghiamo di selezionare prima una scuola]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans204</source>
+				<target><![CDATA[Come si fa?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans205</source>
+				<target><![CDATA[Pagamento con carta di credito]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans206</source>
+				<target><![CDATA[Pagare]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans207</source>
+				<target><![CDATA[Fra pochi istanti riceverà all'indirizzo principale di contatto indicato un messaggio di posta elettronica nel quale potrà trovare tutte le informazioni necessarie per formalizzare la prenotazione.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans208</source>
+				<target><![CDATA[Errore elaborazione pagamento]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans209</source>
+				<target><![CDATA[Si è verificato un errore durante la procedura di pagamento; per questo motivo l'iscrizione non è stata registrata. La preghiamo di cliccare sul pulsante sottostante per ripetere la procedura.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans210</source>
+				<target><![CDATA[Pagare adesso]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans211</source>
+				<target><![CDATA[Pagamento effettuato con successo]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans212</source>
+				<target><![CDATA[Il pagamento è stato effettuato correttamente e la sua iscrizione risulta confermata.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans213</source>
+				<target><![CDATA[Sarà subito reindirizzato alla pagina di pagamento.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans214</source>
+				<target><![CDATA[Attenda, per favor...]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans215</source>
+				<target><![CDATA[Codice iscrizione]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans216</source>
+				<target><![CDATA[Importo pagato]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans217</source>
+				<target><![CDATA[Importo non ancora pagato]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans218</source>
+				<target><![CDATA[Controlli i dati indicati di seguito e clicchi sul pulsante per procedere al pagamento degli importi non ancora versati.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans219</source>
+				<target><![CDATA[Importo totale da pagare]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans220</source>
+				<target><![CDATA[Alunno]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans221</source>
+				<target><![CDATA[Centro estivo]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans222</source>
+				<target><![CDATA[Pagina di pagamento (TPV)]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans223</source>
+				<target><![CDATA[Modalità di pagamento non accettata per le iscrizioni in lista d’attesa]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans224</source>
+				<target><![CDATA[Il browser rilevato è obsoleto e non compatibile con questa piattaforma. Si prega di aggiornare il browser gratuitamente, cliccando su <a href=&quot;http://browsehappy.com/&quot;> aquí</a>]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans225</source>
+				<target><![CDATA[Il sistema di iscrizioni è temporaneamente fuori servizio per lavori di manutenzione. La preghiamo di riprovare fra qualche minuto. Grazie.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans226</source>
+				<target><![CDATA[¿Qualche amico/a del bambino desidera assistere ai campi stivi?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans227</source>
+				<target><![CDATA[Selezionare un corso]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans228</source>
+				<target><![CDATA[Selezionare il corso completato; se non appare nell'elenco, specificarlo nel campo &quot;Altro&quot;]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans229</source>
+				<target><![CDATA[Partecipazione a precedenti Cool Off]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans230</source>
+				<target><![CDATA[Desidero versare il 50% del pagamento adesso, e il saldo entro il %date%.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans231</source>
+				<target><![CDATA[Sta prendendo qualche tipo di medicina o seguendo qualche tipo di cura o dieta?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans232</source>
+				<target><![CDATA[Sì, specificare:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans233</source>
+				<target><![CDATA[Farmaco / Dieta]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans234</source>
+				<target><![CDATA[Altro]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans235</source>
+				<target><![CDATA[Totale parziale]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans236</source>
+				<target><![CDATA[CAMPI ESTIVI COOL OFF]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans237</source>
+				<target><![CDATA[Il bambino/a è vaccinato/a in base al calendario dei vaccini stabilito dall'organo competente?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans238</source>
+				<target><![CDATA[Qualora il bambino non fosse vaccinato, i tutori dovranno firmare una dichiarazione di responsabilità per la scuola Kids&Us. In mancanza di tale dichiarazione il bambino/a non potrà partecipare ai centri estivi.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans239</source>
+				<target><![CDATA[Selezionare l'ultimo anno in cui ha partecipato]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans240</source>
+				<target><![CDATA[NomeFelipe:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans241</source>
+				<target><![CDATA[Cognome 1:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans242</source>
+				<target><![CDATA[Cognome 2:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans243</source>
+				<target><![CDATA[La procedura di iscrizione è attualmente chiusa.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans244</source>
+				<target><![CDATA[Scattare al bambino una foto frontale. Si può usare un qualunque dispositivo mobile.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans245</source>
+				<target><![CDATA[Salvare / scaricare l'immagine sul desktop.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans246</source>
+				<target><![CDATA[Durante l’iscrizione selezionare l’immagine e iniziare il caricamento. Il file dovrà essere in formato immagine:jpg/png.]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans247</source>
+				<target><![CDATA[Non Pagato]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans248</source>
+				<target><![CDATA[50% Pagato]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans249</source>
+				<target><![CDATA[100% Pagato]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans250</source>
+				<target><![CDATA[In attesa del pagamento con TPV]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans251</source>
+				<target><![CDATA[Iscritto]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans252</source>
+				<target><![CDATA[In lista d’attesa]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

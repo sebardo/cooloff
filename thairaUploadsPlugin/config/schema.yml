@@ -1,0 +1,32 @@
+propel:
+  _attributes: { package: plugins.thairaUploadsPlugin.lib.model }
+
+  thaira_uploads_file:
+    id:
+    object_class:
+      type:     varchar(100)
+      index:    true
+    object_id:
+      type:     integer
+      index:    true
+    group_name:
+      type:  varchar(100)
+      index: true
+    is_pending:  boolean
+    pending_uid: varchar(150)
+    pending_file_path: varchar(255)
+    rank:        integer
+    filename:    varchar(150)
+    extension:   varchar(20)
+    path:        varchar(255)
+    created_at:
+    _indexes:
+      thaira_uploads_file_i1: [ object_class, object_id, group_name, rank ]
+      thaira_uploads_file_i2: [ object_class, object_id, group_name ]
+      thaira_uploads_file_i3: [ object_class, object_id ]
+      thaira_uploads_file_i4: [ is_pending, pending_uid ]
+      thaira_uploads_file_i5: [ is_pending, created_at ]
+
+  thaira_uploads_file_i18n:
+    title: varchar(255)
+    description: longvarchar

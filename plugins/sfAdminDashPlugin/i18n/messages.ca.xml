@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file orginal="global" source-language="es_ES" datatype="plaintext">
+    <body>
+      <!-- ##### SF_ADMIN_DASH ########## -->
+      <trans-unit id="19">
+        <source>Login</source>
+        <target>Autenticació</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Welcome to </source>
+        <target>Benvingut a </target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Welcome </source>
+        <target>Benvingut </target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Use a valid username and password to gain access to the administration console.</source>
+        <target>Utilitzi un nom d'usuari i contrasenya vàlids per accedir al panell d'administració.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>All rights reserved</source>
+        <target>Tots els drets reservats</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Logout</source>
+        <target>Sortir</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Your browser's Javascript engine is disabled! Please enable it and reload this page before continuing.</source>
+        <target>El motor Javascript del seu navegador està desactivat! Si us plau, activi'l i recarregui aquesta pàgina abans de continuar.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Did you know that your Internet Explorer is out of date?</source>
+        <target>¿Sabía que el seu Internet Explorer està desactualitzat?</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>To get the best possible experience using our website we recommend that you upgrade to a newer version or other web browser. A list of the most popular web browsers can be found below.</source>
+        <target>Per aconseguir la millor experiència possible utilitzant la nostra web li recomanem que actualitzi a una nova versió de Internet Explorer o utilitzi un altre navegador web. A continuació li mostrem una llista dels navegadors web més populars.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Just click on the icons to get to the download page</source>
+        <target>Faci click a les icones per anar a la pàgina de descàrrega corresponent</target>
+      </trans-unit>
+      
+                
+      <!-- ##### APP MENU ########## -->
+      <trans-unit id="19">
+        <source>Products</source>
+        <target>Productes</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Product list</source>
+        <target>Llistar productes</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Gallery</source>
+        <target>Galeria</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>List Galleries</source>
+        <target>Llistar galeries</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Gallery Categories</source>
+        <target>Categories de galeria</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>User Management</source>
+        <target>Gestió Usuaris</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Edit profile</source>
+        <target>Editar perfil</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Users list</source>
+        <target>Llistar usuaris</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Groups list</source>
+        <target>Llistar grups</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Permissions list</source>
+        <target>Llistar permisos</target>
+      </trans-unit>
+                  
+            
+      <!-- ##### SF ADMIN GENERATOR ########## -->
+      <trans-unit id="19">
+        <source>Administration</source>
+        <target>Administració</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>no result</source>
+        <target>sense resultats</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>[0] no result|[1] 1 result|(1,+Inf] %1% results</source>
+        <target>[0] sense resultats|[1] 1 resultat|(1,+Inf] %1% resultats</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>There are some errors that prevent the form to validate</source>
+        <target>Hi ha alguns errors que eviten que el formulari es validi</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>secure</source>
+        <target>Accés restringit</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>edit</source>
+        <target>Editar</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit</source>
+        <target>Editar registres</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>List</source>
+        <target>Llistar registres</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Unassociated</source>
+        <target>No associada</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Associated</source>
+        <target>Associada</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>create</source>
+        <target>Crear</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>delete</source>
+        <target>Eliminar</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>list</source>
+        <target>Llistar</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>save</source>
+        <target>Desar</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>save and add</source>
+        <target>Desar i afegir</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>filters</source>
+        <target>Filtres</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>filter</source>
+        <target>Filtrar</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>reset</source>
+        <target>Netejar</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Your modifications have been saved</source>
+        <target>Les modificacions han estat desades</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>The form is not valid because it contains some errors.</source>
+        <target>El formulari no és vàlid perquè conté alguns errors.</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Actions</source>
+        <target>Accions</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Are you sure?</source>
+        <target>Estàs segur?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>yes</source>
+        <target>si</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>no</source>
+        <target>no</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>yes or no</source>
+        <target>si o no</target>
+      </trans-unit>
+
+      <!-- ##### UNAVAILABLE SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Website Currently Unavailable</source>
+        <target>Web actualment no disponible</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This website has been temporarily disabled. Please try again later.</source>
+        <target>Aquesta web ha estat desactivada temporalment. Per favor torni-ho a provar més tard.</target>
+      </trans-unit>
+
+      <!-- ##### DISABLED SCREEN ########## -->
+      <trans-unit id="33">
+        <source>This Module is Unavailable</source>
+        <target>Aquest mòdul no està disponible</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This module has been disabled by a site administrator.</source>
+        <target>Aquest mòdul ha estat desactivat per un administrador de la web.</target>
+      </trans-unit>
+
+      <!-- ##### 404 SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Oops! Page Not Found</source>
+        <target>Oops! Pàgina No Trobada</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>The server returned a 404 response.</source>
+        <target>El servidor ha retornat una resposta 404.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you type the URL?</source>
+        <target>Ha escrit bé la URL?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You may have typed the address (URL) incorrectly. Check it to make sure you've got the exact right spelling, capitalization, etc.</source>
+        <target>Pot haver escrit l'adreça (URL) incorrectament. Comprovi-ho per assegurar-se que la ortografia és correcta, les majúscules, etc.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you follow a link from somewhere else at this site?</source>
+        <target>Ha seguit un enllaç des d'aquesta mateixa web?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>If you reached this page from another part of this site, please email us at [[1]] so we can correct our mistake.</source>
+        <target>Si ha arribat a aquesta pàgina des d'una altra part d'aquesta web, per favor envieu-nos un email a [[1]] per tal de poder corregir l'error.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you follow a link from another site?</source>
+        <target>Ha seguit un enllaç des d'una altra web?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Links from other sites can sometimes be outdated or misspelled. Email us at [[1]] where you came from and we can try to contact the other site in order to fix the problem.</source>
+        <target>Els enllaços externs a vegades estan desactualitzats o mal escrits. Envieu-nos un email a [[1]] indicant la pàgina de procedència i ens intentarem posar en contacte amb l'altra web per tal d'arreglar el problema.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Go to Homepage</source>
+        <target>Anar a la pàgina principal</target>
+      </trans-unit>
+      
+      
+      <!-- ##### CREDENTIALS SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Credentials Required</source>
+        <target>Permisos Insuficients</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This page is in a restricted area.</source>
+        <target>Aquesta pàgina està en una zona restringida.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You do not have the proper credentials to access this page</source>
+        <target>No té els permisos adequats per accedir a aquesta pàgina</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Even though you are already logged in, this page requires special credentials that you currently don't have.</source>
+        <target>Encara que ja s'ha autenticat, aquesta pàgina requereix permisos especials que el seu usuari no té assignats.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>How to access this page</source>
+        <target>Com accedir a aquesta pàgina</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You must ask a site administrator to grant you some special credentials.</source>
+        <target>Haurà de demanar a l'administrador de la web que li concedeixi els corresponents permisos.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>What's next</source>
+        <target>Possibles accions</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Back to previous page</source>
+        <target>Tornar a la pàgina anterior</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Logout and enter again</source>
+        <target>Sortir i tornar a entrar</target>
+      </trans-unit>
+      
+      
+      <!-- ##### SF_GUARD ########## -->
+      <trans-unit id="33">
+        <source>User list</source>
+        <target>Llistar usuaris</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Username</source>
+        <target>Nom usuari</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last login</source>
+        <target>Última entrada</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last login:</source>
+        <target>Última entrada:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Username:</source>
+        <target>Usuari:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password:</source>
+        <target>Contrasenya:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Remember me?</source>
+        <target>Recordar credencials?</target>
+      </trans-unit>
+       <trans-unit id="">
+        <source>Forgot your password?</source>
+        <target>Ha oblidat la seva contrasenya?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Password (again):</source>
+        <target>Contrasenya (altre vegada):</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>sign in</source>
+        <target>entrar</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Groups:</source>
+        <target>Grups:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%username%%" user</source>
+        <target>Editar usuari "%%username%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permissions and groups</source>
+        <target>Permisos i grups</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Groups/Roles:</source>
+        <target>Grups/Rols:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>permissions:</source>
+        <target>permisos:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Information</source>
+        <target>Informació</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Group list</source>
+        <target>Llistar grups</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%name%%" group</source>
+        <target>Editar grup "%%name%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Name:</source>
+        <target>Nom:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Is active:</source>
+        <target>Activat:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permissions:</source>
+        <target>Permisos:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Description</source>
+        <target>Descripció</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permission list</source>
+        <target>Llistar permisos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%name%%" permission</source>
+        <target>Editar permís "%%name%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Your username is required</source>
+        <target>El nom d'usuari és obligatori</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Your password is required</source>
+        <target>La contrasenya és obligatòria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Authentication</source>
+        <target>Autenticació</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Please, enter a username</source>
+        <target>Per favor, escrigui un nom d'usuari</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Password is mandatory</source>
+        <target>La contrasenya és obligatòria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Username or password is not valid.</source>
+        <target>L'usuari o la contrasenya no són vàlids</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Created at</source>
+        <target>Data creació</target>
+      </trans-unit>
+
+      <!-- ##### PRODUCTS ########## -->
+      <trans-unit id="33">
+        <source>Edit "%%title%%" product</source>
+        <target>Editar producte "%%title%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Creation date</source>
+        <target>Data creació</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Creation date:</source>
+        <target>Data creació:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Title</source>
+        <target>Títol</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Title:</source>
+        <target>Títol:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Description:</source>
+        <target>Descripció:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Attachments</source>
+        <target>Adjunts</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Images:</source>
+        <target>Imatges:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Documents:</source>
+        <target>Documents:</target>
+      </trans-unit>
+      
+
+      <!-- ##### GALLERY ########## -->
+      <trans-unit id="33">
+        <source>Gallery list</source>
+        <target>Llistar galeries</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Edit "%%title_ca%%" gallery</source>
+        <target>Editar galeria "%%title_ca%%"</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Catalan title</source>
+        <target>Títol català</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Catalan title:</source>
+        <target>Títol català:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Castilian title</source>
+        <target>Títol castellà</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Castilian title:</source>
+        <target>Títol castellà:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Publication date</source>
+        <target>Data publicació</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Publication date:</source>
+        <target>Data publicació:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Category</source>
+        <target>Categoria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Category:</source>
+        <target>Categoria:</target>
+      </trans-unit>
+      
+      <!-- ##### GALLERY CATEGORIES ########## -->
+      <trans-unit id="33">
+        <source>Gallery category list</source>
+        <target>Llistar categories de galeria</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Edit "%%title_ca%%" gallery category</source>
+        <target>Editar categoria de galeria "%%title_ca%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Rank</source>
+        <target>Posició</target>
+      </trans-unit>      
+     
+      
+      <!-- ##### USER PROFILES ########## -->
+      <trans-unit id="33">
+        <source>User profile list</source>
+        <target>Llistar perfils d'usuari</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%user_id%%" user profile</source>
+        <target>Editar perfil d'usuari "%%user_id%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>User</source>
+        <target>Usuari</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>User:</source>
+        <target>Usuari:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>First name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>First name:</source>
+        <target>Nom:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last name</source>
+        <target>Cognoms</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last name:</source>
+        <target>Cognoms:</target>
+      </trans-unit>  
+      <trans-unit id="33">
+        <source>Language</source>
+        <target>Idioma</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Language:</source>
+        <target>Idioma:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Settings</source>
+        <target>Configuració</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>English</source>
+        <target>Anglès</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Spanish</source>
+        <target>Espanyol</target>
+      </trans-unit>      
+      <trans-unit id="33">
+        <source>Catalan</source>
+        <target>Català</target>
+      </trans-unit>
+      
+
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,47 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      SummerFunCenterNewsItem
+    theme:            default
+
+    list:
+      title:        'Llistar Notícies dels Centres'
+      display:      [ =title_ca, published_at, is_published, _summer_fun_center_id ]
+      max_per_page: 50
+      filters:      [ _summer_fun_center_id, published_at, is_published ]
+      object_actions:
+        _edit:       ~
+        _delete:       ~
+      fields:
+        summer_fun_zone_id: { credentials: [administrador] }
+
+    edit:
+      title:    'Editar Notícia del Centre'
+      display:  
+        "General":     [ _summerfun_centers_select, published_at, is_published, _images ]
+        "Català":      [ title_ca, description_ca ]
+        "Castellano":  [ title_es, description_es ]
+        "Italiano":    [ title_it, description_it ]
+      fields:
+        title_ca:           { type: input_tag, params: size=80 }
+        title_es:           { type: input_tag, params: size=80 }
+        title_it:           { type: input_tag, params: size=80 }
+        description_ca:     { type: textarea_tag, params: size=80x10 class=rich }
+        description_es:     { type: textarea_tag, params: size=80x10 class=rich }
+        description_it:     { type: textarea_tag, params: size=80x10 class=rich }
+        summer_fun_zone_id: { credentials: [administrador] }
+        summerfun_centers_select: { name: "Centre" }
+        published_at:       { params: required=false }
+        images:             { help: 'Màxim 10 imatges. Format JPG o PNG. Pes màxim 512 kB.' }
+
+    fields:
+      summer_fun_center_id:   { name: 'Centre' }
+      published_at:         { name: 'Data publicació' }
+      is_published:         { name: 'Està publicada' }
+      title_ca:             { name: 'Títol' }
+      title_es:             { name: 'Títol' }
+      title_it:             { name: 'Títol' }
+      description_ca:       { name: 'Text' }
+      description_es:       { name: 'Text' }
+      description_it:       { name: 'Text' }
+      images:               { name: 'Imatges' }

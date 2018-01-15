@@ -1,0 +1,151 @@
+ALTER TABLE `summer_fun_center` ADD `tpv_payment` INTEGER default 0 NOT NULL;
+ALTER TABLE `inscription` ADD `tpv_suffix` INTEGER;
+ALTER TABLE `inscription` ADD `tpv_first_payment_response` VARCHAR(255);
+ALTER TABLE `inscription` ADD `tpv_second_payment_response` VARCHAR(255);
+
+# Subido a producción 13/03/15
+
+ALTER TABLE `summer_fun_center` ADD `merchant_code` VARCHAR(255);
+ALTER TABLE `summer_fun_center` ADD `merchant_key` VARCHAR(255);
+ALTER TABLE `summer_fun_center` ADD `url_tpv` VARCHAR(255);
+ALTER TABLE `inscription` ADD `culture` VARCHAR(2);
+ALTER TABLE `inscription` ADD `is_payment_reminder_sent` INTEGER default 0;
+
+# Subido a producción 17/03/15
+
+ALTER TABLE `summer_fun_center` ADD `second_payment_mailing_date` DATE;
+ALTER TABLE `summer_fun_center_i18n` ADD `second_payment_mailing_body` TEXT;
+
+# Subido a producción 20/03/15
+
+ALTER TABLE `course` ADD `starts_at` DATE;
+ALTER TABLE `course` ADD `ends_at` DATE;
+
+CREATE TABLE `service`
+(
+	`center_id` INTEGER  NOT NULL,
+	`price` DECIMAL(14,2) default 0 NOT NULL,
+	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`id`),
+	INDEX `service_FI_1` (`center_id`),
+	CONSTRAINT `service_FK_1`
+		FOREIGN KEY (`center_id`)
+		REFERENCES `summer_fun_center` (`id`)
+		ON DELETE CASCADE
+)ENGINE=MyISAM;
+
+CREATE TABLE `service_i18n`
+(
+	`name` VARCHAR(255),
+	`description` TEXT,
+	`id` INTEGER  NOT NULL,
+	`culture` VARCHAR(7)  NOT NULL,
+	PRIMARY KEY (`id`,`culture`),
+	CONSTRAINT `service_i18n_FK_1`
+		FOREIGN KEY (`id`)
+		REFERENCES `service` (`id`)
+		ON DELETE CASCADE
+)ENGINE=MyISAM;
+
+CREATE TABLE `service_schedule`
+(
+	`service_id` INTEGER  NOT NULL,
+	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	PRIMARY KEY (`id`),
+	INDEX `service_schedule_FI_1` (`service_id`),
+	CONSTRAINT `service_schedule_FK_1`
+		FOREIGN KEY (`service_id`)
+		REFERENCES `service` (`id`)
+		ON DELETE CASCADE
+)ENGINE=MyISAM;
+
+CREATE TABLE `service_schedule_i18n`
+(
+	`name` VARCHAR(255),
+	`id` INTEGER  NOT NULL,
+	`culture` VARCHAR(7)  NOT NULL,
+	PRIMARY KEY (`id`,`culture`),
+	CONSTRAINT `service_schedule_i18n_FK_1`
+		FOREIGN KEY (`id`)
+		REFERENCES `service_schedule` (`id`)
+		ON DELETE CASCADE
+)ENGINE=MyISAM;
+
+CREATE TABLE `course_has_services`
+(
+	`course_id` INTEGER  NOT NULL,
+	`service_id` INTEGER  NOT NULL,
+	PRIMARY KEY (`course_id`,`service_id`),
+	CONSTRAINT `course_has_services_FK_1`
+		FOREIGN KEY (`course_id`)
+		REFERENCES `course` (`id`),
+	INDEX `course_has_services_FI_2` (`service_id`),
+	CONSTRAINT `course_has_services_FK_2`
+		FOREIGN KEY (`service_id`)
+		REFERENCES `service` (`id`)
+)ENGINE=MyISAM;
+
+CREATE TABLE `inscription_service_schedule`
+(
+	`inscription_id` INTEGER  NOT NULL,
+	`service_schedule_id` INTEGER  NOT NULL,
+	PRIMARY KEY (`inscription_id`,`service_schedule_id`),
+	CONSTRAINT `inscription_service_schedule_FK_1`
+		FOREIGN KEY (`inscription_id`)
+		REFERENCES `inscription` (`id`)
+		ON DELETE CASCADE,
+	INDEX `inscription_service_schedule_FI_2` (`service_schedule_id`),
+	CONSTRAINT `inscription_service_schedule_FK_2`
+		FOREIGN KEY (`service_schedule_id`)
+		REFERENCES `service_schedule` (`id`)
+		ON DELETE RESTRICT
+)ENGINE=MyISAM;
+
+
+ALTER TABLE `service_schedule` ADD `orden` INTEGER;
+
+// Ejecutar trás la migración
+
+ALTER TABLE `summer_fun_center` DROP `profile_id`;
+/* 20:15:59 Localhost */ ALTER TABLE `summer_fun_center` DROP `shelter_price`;
+/* 20:16:18 Localhost */ ALTER TABLE `summer_fun_center` DROP `has_shelter_charged`;
+/* 8:40:45 Localhost */ ALTER TABLE `inscription` DROP `shelter`;
+/* 8:50:05 Localhost */ ALTER TABLE `course` DROP `week_id`;
+
+// TODO OK
+
+CREATE TABLE `kids_and_us_center`
+(
+	`id` INTEGER  NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(255),
+	PRIMARY KEY (`id`)
+)ENGINE=InnoDB;
+
+ALTER TABLE `inscription` ADD `kids_and_us_center_id` INTEGER  NOT NULL;
+ALTER TABLE `inscription` DROP INDEX inscription_FI_1,        ADD  INDEX `inscription_FI_1` (`student_course_inscription`);
+ALTER TABLE `inscription` DROP INDEX inscription_FI_2,        ADD  INDEX `inscription_FI_2` (`student_provincia`);
+ALTER TABLE `inscription` DROP INDEX inscription_FI_3,        ADD  INDEX `inscription_FI_3` (`grupo_id`);
+ALTER TABLE `inscription` DROP INDEX inscription_FI_4,        ADD  INDEX `inscription_FI_4` (`kids_and_us_center_id`);
+ALTER TABLE `inscription` DROP `student_origin_summer_fun_center`;
+ALTER TABLE `inscription` ADD `last_cooloff_year` VARCHAR(4);
+ALTER TABLE `inscription` DROP `student_origin_summer_fun_center_altre`;
+ALTER TABLE `summer_fun_center` ADD `second_payment_date` DATE;
+
+// TODO SUBIDO
+
+ALTER TABLE `summer_fun_center` CHANGE `show_excursion_widget` `show_excursion_widget` integer default 0 not null;
+ALTER TABLE `summer_fun_center` CHANGE `show_beca_widget` `show_beca_widget` integer default 0 not null;
+ALTER TABLE `inscription` ADD `email_confirmation_sent` INTEGER;
+
+// TODO SUBIDO
+
+ALTER TABLE `summer_fun_center_i18n` ADD `second_payment_mailing_body_no_tpv` TEXT;
+ALTER TABLE `inscription` ADD `student_meds` INTEGER;
+ALTER TABLE `inscription` ADD `student_meds_description` VARCHAR(255);
+
+// TODO SUBIDO
+
+ALTER TABLE `inscription` ADD `is_vaccinated` INTEGER;
+
+
+

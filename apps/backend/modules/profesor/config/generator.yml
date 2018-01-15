@@ -1,0 +1,25 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Profesor
+    theme:            default
+
+    list:
+      title:        'Llistar Professors'
+      display:      [id, nombre, _centro_id_list]
+      filters:      [nombre, centro_id]
+      object_actions:
+        _edit:       ~
+        _delete:       ~   
+    
+    edit:
+        title: 'Professor %%nombre%%'
+        display:
+          "General": [nombre, _centro_id, grupo_has_profesors]
+
+    fields:
+          nombre:     { name: 'Nom' }
+          centro_id:  { name: 'Centre' }
+          id:  { credentials: [administrador] }
+          centro_id_list:  { name: 'Centre' }
+          grupo_has_profesors: { name: 'Grups', type: admin_double_list, params: through_class=GrupoHasProfesor }

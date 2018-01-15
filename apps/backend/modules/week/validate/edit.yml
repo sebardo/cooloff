@@ -1,0 +1,16 @@
+fillin:
+  enabled: true
+
+fields:
+  week{starts_at}:
+    required:
+      msg: Camp obligatori
+    sfDateValidator
+
+  week{ends_at}:
+    required:
+      msg: Camp obligatori
+    sfDateValidator
+
+
+

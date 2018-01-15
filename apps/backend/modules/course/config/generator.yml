@@ -1,0 +1,47 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Course
+    theme:            default
+
+    list:
+      title:        'Llistar Setmanes'
+      display:      [created_at, starts_at, ends_at, =_summer_fun_center_id_list, excursion, _shelter_list , _price, number_of_places, _alumnes_inscrits, _alumnes_llista_espera, is_registration_open]
+      filters:      [ _summer_fun_center_id, _excursion_id, price, is_registration_open]
+      object_actions:
+        _edit:       ~
+        _delete:       ~
+
+    edit:
+        title: 'Setmana %%_summer_fun_center_id_list%%'
+        display:
+          "General": [is_registration_open, _summer_fun_center_id, starts_at, ends_at, price, number_of_places, _course_has_services]
+          "Català": [schedule_ca]
+          "Castellano": [schedule_es]
+          "Anglès": [schedule_en]
+        fields:
+          price: { name: Preu, help: 'Els decimals han d\'anar separats per un punt (Ex: 00.00)' }
+
+
+    fields:
+        course_has_services:
+          name: 'Serveis'
+          type: admin_double_list
+          params: through_class=CourseHasServices
+        created_at:     { name: 'Data creació', type: 'plain', params: date_format='dd-MM-yyyy, HH:mm' }
+        summer_fun_center_id: { name: Centre }
+        summer_fun_center_id_list: { name: Centre }
+        shelter_list: { name: Horari }
+        excursion_id: { name: Excursió }
+        excursion: { name: Excursió }
+        week: { name: Setmana }
+        price: { name: Preu }
+        starts_at: { name: 'Inici setmana', params: date_format='dd-MMMM-yyyy' }
+        ends_at: { name: 'Fi setmana', params: date_format='dd-MMMM-yyyy' }
+        number_of_places: { name: nº de places}
+        is_registration_open: { name: Registre obert ?}
+        schedule_ca:       { name: 'Horari', type: input_tag, params: size=120 }
+        schedule_es:       { name: 'Horari', type: input_tag, params: size=120 }
+        schedule_en:       { name: 'Horari', type: input_tag, params: size=120 }
+
+

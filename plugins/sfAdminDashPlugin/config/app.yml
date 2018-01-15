@@ -1,0 +1,58 @@
+all:
+  .global:
+    exceptionCatcherFilter: on
+    
+  security:
+    user: admin
+    pass: admin
+  
+  sf_guard_plugin:
+    success_signin_url:   @homepage # the plugin use the referer as default
+    success_signout_url:  @homepage # the plugin use the referer as default 
+    
+  default_templates:
+    email_enabled:        true
+    404_email_1:          internal-test@my_site.net
+    404_email_2:          external-test@my_site.net
+
+  sf_admin_dash:
+    web_dir:              /sfAdminDashPlugin
+    image_dir:            /sfAdminDashPlugin/images/icon_dash/
+    theme:                default        # accepts: default, thaira, blue, green
+    default_image:        config.png
+    resize_mode:          thumbnail
+    logout:               yes
+    logout_url:           sfGuardAuth/signout
+    site:                 My Site
+    site_url:             http://my_site.net
+    has_ie6_warning:      yes
+    include_jquery:       yes
+
+#    categories:
+#      Products:
+#        credentials:      [[admin, permiso_1]]
+#        items:
+#          Product list:
+#            url:          /products/list
+#            image:        product.png
+#            credentials:  [[admin, permiso_1]]
+#            
+#      User Management:
+#        credentials:      []
+#        items:
+#          Edit profile:
+#            url:          /sfGuardUserProfile/list
+#            image:        user.png
+#            credentials:  []
+#          Users list:
+#            url:          /sfGuardUser/list
+#            image:        user.png
+#            credentials:  [admin]
+#          Groups list:
+#            url:          /sfGuardGroup/list
+#            image:        user_group.png
+#            credentials:  [admin]
+#          Permissions list:
+#            url:          /sfGuardPermission/list
+#            image:        user_permission.png
+#            credentials:  [admin]

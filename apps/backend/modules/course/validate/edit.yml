@@ -1,0 +1,39 @@
+fillin:
+  enabled: on
+  param:
+    name: sf_admin_edit_form
+
+methods:
+  post:
+    - "course{price}"
+    - "course{number_of_places}"
+    - "course{starts_at}"
+    - "course{ends_at}"
+
+names:
+  course{price}:
+    required:   yes
+    required_msg:   Camp obligatori
+
+  course{number_of_places}:
+    required:   yes
+    required_msg:   Camp obligatori
+    validators:     myPlacesValidator
+
+  course{starts_at}:
+    required:   yes
+    required_msg:   Camp obligatori
+
+  course{ends_at}:
+    required:   yes
+    required_msg:   Camp obligatori
+
+
+
+
+myPlacesValidator:
+  class:          sfNumberValidator
+  param:
+    nan_error:    'El valor ha de ser un número'
+    min:          1
+    min_error:    "Un curs amb 0 plaçes ?"

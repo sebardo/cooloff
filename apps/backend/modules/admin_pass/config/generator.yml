@@ -1,0 +1,19 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      sfGuardUser
+    theme:            default
+
+    fields:
+      password_bis: { name: "Password (again)" }
+      #username:     { name: "Username", type: plain }
+
+    edit:
+      title: 'Canviar contrasenya "admin"'
+      fields:
+        password:
+        password_bis:
+      display:
+        "General":      [ _password, _password_bis ]
+      actions:
+        _save:          ~

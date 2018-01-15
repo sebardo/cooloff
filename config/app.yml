@@ -1,0 +1,70 @@
+# default values
+all:
+  thaira_uploads:
+    default_culture:  ca
+    cultures:
+      - ca
+      - es
+      - en
+    types_extensions:
+      image:          [ jpg, png, gif, svg, tiff, bmp ]  # Don't delete this
+      archive:        [ zip, rar, tar, gz, bz2, 7z, ace, arj ]
+      audio:          [ mp3, ogg, wma, wav ]
+      video:          [ mpeg, mpg, mp4, divx, wmv, mov, mkv, flv ]
+      word2003:       [ doc, dot, docm, dotm, rtf ]
+      word2007:       [ docx, dotx ]
+      excel2003:      [ xls, xlt, xla, xlsm, xltm, xlam, xlsb, csv ]
+      excel2007:      [ xlsx, xltx ]
+      powerpoint2003: [ ppt, pot, pps, ppa, pptm, potm, ppsm, ppam ]
+      powerpoint2007: [ pptx, potx, ppsx ]
+      oo_writer:      [ odt ]
+      oo_calc:        [ ods ]
+      oo_math:        [ odf ]
+      oo_base:        [ odb ]
+      oo_impress:     [ odp ]
+      oo_draw:        [ odg ]
+      photoshop:      [ psd ]
+      flash:          [ swf, fla ]
+      acrobat:        [ pdf, ps ]
+      text:           [ txt ]
+    types_thumbnails:
+      archive:        /thairaUploadsPlugin/images/thumbnails/archive.png
+      audio:          /thairaUploadsPlugin/images/thumbnails/audio.png
+      video:          /thairaUploadsPlugin/images/thumbnails/video.png
+      acrobat:        /thairaUploadsPlugin/images/thumbnails/acrobat.png
+      flash:          /thairaUploadsPlugin/images/thumbnails/flash.png
+      photoshop:      /thairaUploadsPlugin/images/thumbnails/photoshop.png
+      text:           /thairaUploadsPlugin/images/thumbnails/notepad.png
+      word2003:       /thairaUploadsPlugin/images/thumbnails/word_2003.png
+      word2007:       /thairaUploadsPlugin/images/thumbnails/word_2007.png
+      excel2003:      /thairaUploadsPlugin/images/thumbnails/excel_2003.png
+      excel2007:      /thairaUploadsPlugin/images/thumbnails/excel_2007.png
+      powerpoint2003: /thairaUploadsPlugin/images/thumbnails/powerpoint_2003.png
+      powerpoint2007: /thairaUploadsPlugin/images/thumbnails/powerpoint_2007.png
+      oo_writer:      /thairaUploadsPlugin/images/thumbnails/oo_writer.png
+      oo_calc:        /thairaUploadsPlugin/images/thumbnails/oo_calc.png
+      oo_math:        /thairaUploadsPlugin/images/thumbnails/oo_math.png
+      oo_base:        /thairaUploadsPlugin/images/thumbnails/oo_base.png
+      oo_impress:     /thairaUploadsPlugin/images/thumbnails/oo_impress.png
+      oo_draw:        /thairaUploadsPlugin/images/thumbnails/oo_draw.png
+      other:          /thairaUploadsPlugin/images/thumbnails/document.png # Don't delete this
+      
+  inscripcion:
+    imagen_min_width: 200
+    imagen_min_height: 200
+    imagen_directorio_temporal: %sf_upload_dir%/summer-fun/student/tmp/
+    imagen_directorio_temporal_template: /uploads/summer-fun/student/tmp/
+    imagen_directorio: %sf_upload_dir%/summer-fun/student/
+    imagen_directorio_template: /uploads/summer-fun/student/
+    
+  email:
+    user: support@kidsandus.net
+    password: KidsSuporte2015!
+    host: smtp.gmail.com
+    port: 465
+    test_address: null
+  cron:
+    key: '9$03sPsD21zSdesP'
+  vip:
+    token: null
+#   token: '200117-vipcooloff'

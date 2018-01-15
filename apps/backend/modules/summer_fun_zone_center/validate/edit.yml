@@ -1,0 +1,5 @@
+fields:
+  summer_fun_center{second_payment_date}:
+    required:
+      msg: Camp obligatori
+    sfDateValidator

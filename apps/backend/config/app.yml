@@ -1,0 +1,98 @@
+# default values
+all:
+  .global:
+    exceptionCatcherFilter: on
+    
+  .arrays:
+    available_cultures:
+      ca: Catalan
+      es: Spanish
+
+  default_templates:
+    email_enabled:        false
+
+  sf_admin_dash:
+    site:                 'CoolOff - Kids&Us'
+    site_url:             http://inscriptions.kidscooloff.com
+    has_ie6_warning:      yes
+    include_jquery:       yes
+
+    categories: 
+      Gestió central Kids&Us:
+        credentials:      [administrador]
+        items:
+          'Usuaris':
+            url:          /sfGuardUserProfile/list
+            image:        user.png
+          'Zones':
+            url:          /summer_fun_zone/list
+            image:        zone.png
+          'Centres':
+            url:          /summer_fun_zone_center/list
+            image:        company.png
+          'Setmanes':
+            url:  /course/list
+            image: cursos.png
+          'Inscripcions':
+            url: /Inscription/list
+            image: inscripcions.png
+          'Serveis':
+            url:  /service/list
+            image: world.png
+          'Horaris de serveis':
+            url:  /service_schedule/list
+            image: date.png
+          'Grups':
+            url: /grupo/list
+            image: categories.png
+          'Professors':
+            url: /profesor/list
+            image: group.png
+          'Contabilitat':
+            url: /accounting/list
+            image: euro.png
+          'Centros Kids&Us':
+            url: /kids_and_us_center/list
+            image: company.png
+
+      Configuració general:
+        credentials:      [summer-fun]
+        items:
+          'Configuració centre':
+            url:          /summer_fun_zone_center/list
+            image:        company.png
+          'Gestió notícies':
+            url:          /summer_fun_zone_news_item/list
+            image:        news.png
+          'Gestió setmanes':
+            url:  /course/list
+            image: cursos.png
+          'Gestió serveis':
+            url:  /service/list
+            image: world.png
+          'Horaris de serveis':
+            url:  /service_schedule/list
+            image: date.png
+
+      Gestió inscripcions:
+        credentials:      [summer-fun]
+        items:
+          'Gestió grups':
+            url: /grupo/list
+            image: categories.png
+          'Gestió professors':
+            url: /profesor/list
+            image: group.png
+          'Inscripcions':
+            url: /Inscription/list
+            image: inscripcions.png
+          'Comptabilitat':
+            url: /accounting/list
+            image: euro.png
+
+      Config:
+        credentials:      [administrador]
+        items:
+          'Change password':
+            url:          /admin_pass/edit
+            image:        user_permission.png

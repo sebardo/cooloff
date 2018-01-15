@@ -1,0 +1,31 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      sfGuardUserProfile
+    theme:            default
+    
+    list:
+      title:         'Llistat Usuaris'
+      max_per_page:  50
+      display:       [ =name, email, pass, _edit_permissions, _culture ]
+      filters:       [ email ]
+      object_actions:
+        _edit:    ~
+        _delete:  ~
+
+    edit:
+      title:         'Editar Usuari'
+      display:
+        "Informació":     [ username, pass ]
+        "Perfil":        [ name, email, _culture, _edit_permissions ]
+        "Modificar credencials":   [ _password, _password_bis ]
+
+    fields:
+      username:           { name: "Usuari", type: 'plain' }
+      password:           { name: "Contrasenya" }
+      pass:               { name: "Contrasenya", type: 'plain' }
+      password_bis:       { name: "Contrasenya (repetir)" }
+      name:               { name: "Nom i Cognoms" }
+      email:              { name: "E-mail" }
+      edit_permissions:   { name: "Permissos" }
+      culture:            { name: "Idioma", help: "Idioma en que l'usuari visualitzarà l'administrador de continguts." }

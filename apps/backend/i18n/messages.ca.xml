@@ -1,0 +1,2355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file orginal="global" source-language="ca_CA" datatype="plaintext" date="2010-11-16T10:04:16Z">
+    <body>
+      <!-- ##### SF_ADMIN_DASH ########## -->
+      <trans-unit id="19">
+        <source>Login</source>
+        <target>Autenticació</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Welcome to </source>
+        <target>Benvingut a </target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Welcome </source>
+        <target>Benvingut </target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Use a valid username and password to gain access to the administration console.</source>
+        <target>Utilitzi un nom d'usuari i contrasenya vàlids per accedir al panell d'administració.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>All rights reserved</source>
+        <target>Tots els drets reservats</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Logout</source>
+        <target>Sortir</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Your browser's Javascript engine is disabled! Please enable it and reload this page before continuing.</source>
+        <target>El motor Javascript del seu navegador està desactivat! Si us plau, activi'l i recarregui aquesta pàgina abans de continuar.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Did you know that your Internet Explorer is out of date?</source>
+        <target>¿Sabía que el seu Internet Explorer està desactualitzat?</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>To get the best possible experience using our website we recommend that you upgrade to a newer version or other web browser. A list of the most popular web browsers can be found below.</source>
+        <target>Per aconseguir la millor experiència possible utilitzant la nostra web li recomanem que actualitzi a una nova versió de Internet Explorer o utilitzi un altre navegador web. A continuació li mostrem una llista dels navegadors web més populars.</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Just click on the icons to get to the download page</source>
+        <target>Faci click a les icones per anar a la pàgina de descàrrega corresponent</target>
+      </trans-unit>
+      
+                
+      <!-- ##### APP MENU ########## -->
+      <trans-unit id="19">
+        <source>Publications</source>
+        <target>Publicacions</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>News list</source>
+        <target>Notícies</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Franchise list</source>
+        <target>Centres</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Banner list</source>
+        <target>Banners petits</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Press notes</source>
+        <target>Notes de premsa</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Media list</source>
+        <target>Mitjans de comunicació</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Qui som</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Cursos</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Notícies</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Calendari</source>
+        <target/>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>Contacta</source>
+        <target/>
+      </trans-unit>
+                  
+            
+      <!-- ##### SF ADMIN GENERATOR ########## -->
+      <trans-unit id="19">
+        <source>Administration</source>
+        <target>Administració</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>no result</source>
+        <target>sense resultats</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>[0] no result|[1] 1 result|(1,+Inf] %1% results</source>
+        <target>[0] sense resultats|[1] 1 resultat|(1,+Inf] %1% resultats</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>There are some errors that prevent the form to validate</source>
+        <target>Hi ha alguns errors que eviten que el formulari es validi</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>secure</source>
+        <target>Accés restringit</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>edit</source>
+        <target>Editar</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Edit</source>
+        <target>Editar registres</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>List</source>
+        <target>Llistar registres</target>
+      </trans-unit>
+      <trans-unit id="20">
+        <source>Unassociated</source>
+        <target>No associada</target>
+      </trans-unit>
+      <trans-unit id="21">
+        <source>Associated</source>
+        <target>Associada</target>
+      </trans-unit>
+      <trans-unit id="22">
+        <source>create</source>
+        <target>Crear</target>
+      </trans-unit>
+      <trans-unit id="23">
+        <source>delete</source>
+        <target>Eliminar</target>
+      </trans-unit>
+      <trans-unit id="24">
+        <source>list</source>
+        <target>Llistar</target>
+      </trans-unit>
+      <trans-unit id="25">
+        <source>save</source>
+        <target>Desar</target>
+      </trans-unit>
+      <trans-unit id="26">
+        <source>save and add</source>
+        <target>Desar i afegir</target>
+      </trans-unit>
+      <trans-unit id="27">
+        <source>filters</source>
+        <target>Filtres</target>
+      </trans-unit>
+      <trans-unit id="28">
+        <source>filter</source>
+        <target>Filtrar</target>
+      </trans-unit>
+      <trans-unit id="29">
+        <source>reset</source>
+        <target>Netejar</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>Your modifications have been saved</source>
+        <target>Les modificacions han estat desades</target>
+      </trans-unit>
+      <trans-unit id="31">
+        <source>The form is not valid because it contains some errors.</source>
+        <target>El formulari no és vàlid perquè conté alguns errors.</target>
+      </trans-unit>
+      <trans-unit id="32">
+        <source>Actions</source>
+        <target>Accions</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Are you sure?</source>
+        <target>Estàs segur?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>yes</source>
+        <target>si</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>no</source>
+        <target>no</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>yes or no</source>
+        <target>si o no</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>remove file</source>
+        <target>eliminar fitxer</target>
+      </trans-unit>
+
+      <!-- ##### UNAVAILABLE SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Website Currently Unavailable</source>
+        <target>Web actualment no disponible</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This website has been temporarily disabled. Please try again later.</source>
+        <target>Aquesta web ha estat desactivada temporalment. Per favor torni-ho a provar més tard.</target>
+      </trans-unit>
+
+      <!-- ##### DISABLED SCREEN ########## -->
+      <trans-unit id="33">
+        <source>This Module is Unavailable</source>
+        <target>Aquest mòdul no està disponible</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This module has been disabled by a site administrator.</source>
+        <target>Aquest mòdul ha estat desactivat per un administrador de la web.</target>
+      </trans-unit>
+
+      <!-- ##### 404 SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Oops! Page Not Found</source>
+        <target>Oops! Pàgina No Trobada</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>The server returned a 404 response.</source>
+        <target>El servidor ha retornat una resposta 404.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you type the URL?</source>
+        <target>Ha escrit bé la URL?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You may have typed the address (URL) incorrectly. Check it to make sure you've got the exact right spelling, capitalization, etc.</source>
+        <target>Pot haver escrit l'adreça (URL) incorrectament. Comprovi-ho per assegurar-se que la ortografia és correcta, les majúscules, etc.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you follow a link from somewhere else at this site?</source>
+        <target>Ha seguit un enllaç des d'aquesta mateixa web?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>If you reached this page from another part of this site, please email us at [[1]] so we can correct our mistake.</source>
+        <target>Si ha arribat a aquesta pàgina des d'una altra part d'aquesta web, per favor envieu-nos un email a [[1]] per tal de poder corregir l'error.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Did you follow a link from another site?</source>
+        <target>Ha seguit un enllaç des d'una altra web?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Links from other sites can sometimes be outdated or misspelled. Email us at [[1]] where you came from and we can try to contact the other site in order to fix the problem.</source>
+        <target>Els enllaços externs a vegades estan desactualitzats o mal escrits. Envieu-nos un email a [[1]] indicant la pàgina de procedència i ens intentarem posar en contacte amb l'altra web per tal d'arreglar el problema.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Go to Homepage</source>
+        <target>Anar a la pàgina principal</target>
+      </trans-unit>
+      
+      
+      <!-- ##### CREDENTIALS SCREEN ########## -->
+      <trans-unit id="33">
+        <source>Credentials Required</source>
+        <target>Permisos Insuficients</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>This page is in a restricted area.</source>
+        <target>Aquesta pàgina està en una zona restringida.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You do not have the proper credentials to access this page</source>
+        <target>No té els permisos adequats per accedir a aquesta pàgina</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Even though you are already logged in, this page requires special credentials that you currently don't have.</source>
+        <target>Encara que ja s'ha autenticat, aquesta pàgina requereix permisos especials que el seu usuari no té assignats.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>How to access this page</source>
+        <target>Com accedir a aquesta pàgina</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>You must ask a site administrator to grant you some special credentials.</source>
+        <target>Haurà de demanar a l'administrador de la web que li concedeixi els corresponents permisos.</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>What's next</source>
+        <target>Possibles accions</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Back to previous page</source>
+        <target>Tornar a la pàgina anterior</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Logout and enter again</source>
+        <target>Sortir i tornar a entrar</target>
+      </trans-unit>
+      
+      
+      <!-- ##### SF_GUARD ########## -->
+      <trans-unit id="33">
+        <source>User list</source>
+        <target>Llistar usuaris</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Username</source>
+        <target>Nom usuari</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last login</source>
+        <target>Última entrada</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Last login:</source>
+        <target>Última entrada:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Username:</source>
+        <target>Usuari:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Password:</source>
+        <target>Contrasenya:</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>Remember me?</source>
+        <target>Recordar?</target>
+      </trans-unit>
+       <trans-unit id="">
+        <source>Forgot your password?</source>
+        <target>Ha oblidat la seva contrasenya?</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Password (again):</source>
+        <target>Contrasenya (altre vegada):</target>
+      </trans-unit>
+      <trans-unit id="">
+        <source>sign in</source>
+        <target>entrar</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Groups:</source>
+        <target>Grups:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%username%%" user</source>
+        <target>Editar usuari "%%username%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permissions and groups</source>
+        <target>Permisos i grups</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Groups/Roles:</source>
+        <target>Grups/Rols:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>permissions:</source>
+        <target>permisos:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Information</source>
+        <target>Informació</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Group list</source>
+        <target>Llistar grups</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%name%%" group</source>
+        <target>Editar grup "%%name%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Name:</source>
+        <target>Nom:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Is active:</source>
+        <target>Activat:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permissions:</source>
+        <target>Permisos:</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Description</source>
+        <target>Descripció</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Permission list</source>
+        <target>Llistar permisos</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Edit "%%name%%" permission</source>
+        <target>Editar permís "%%name%%"</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Your username is required</source>
+        <target>El nom d'usuari és obligatori</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Your password is required</source>
+        <target>La contrasenya és obligatòria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Authentication</source>
+        <target>Autenticació</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Please, enter a username</source>
+        <target>Per favor, escrigui un nom d'usuari</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Password is mandatory</source>
+        <target>La contrasenya és obligatòria</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Username or password is not valid.</source>
+        <target>L'usuari o la contrasenya no són vàlids</target>
+      </trans-unit>
+      <trans-unit id="33">
+        <source>Created at</source>
+        <target>Data creació</target>
+      </trans-unit>
+
+<trans-unit id="1">
+<source>Canviar contrasenya "admin"</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="2">
+<source>Password (again)</source>
+<target>Contrasenya (repetir)</target>
+</trans-unit>
+
+<trans-unit id="3">
+<source>General</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="4">
+<source>The minimum length for the password is 4</source>
+<target>La contrasenya ha de tenir com a mínim 4 caràcters</target>
+</trans-unit>
+
+<trans-unit id="5">
+<source>Passwords do not match</source>
+<target>Les contrasenyes no coincideixen</target>
+</trans-unit>
+
+<trans-unit id="6">
+<source>Llistar fitxers Animal Planet (Estudiants)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="7">
+<source>Editar fitxer "%%name_ca%%"</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="8">
+<source>Creat</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="9">
+<source>Publicat</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="10">
+<source>Títol</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="11">
+<source>Descripció</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="12">
+<source>Arxiu adjunt</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="13">
+<source>Fitxers de so</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="14">
+<source>Català</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="15">
+<source>-Castellà</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="16">
+<source>-Anglès</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="17">
+<source>Detalls</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="18">
+<source>Per favor, escrigui el títol del fitxer</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="19">
+<source>La longitud mínima pel títol és 4</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="20">
+<source>Llistar fitxers Animal Planet (Estudiants 2)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="21">
+<source>Llistar fitxers Animal Planet (Professors)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="22">
+<source>El banner "[1]" ha estat mogut a la posició #[2]</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="23">
+<source>Could not delete the selected %name%</source>
+<target>No s'ha pogut eliminar %name%</target>
+</trans-unit>
+
+<trans-unit id="24">
+<source>Llistar banners</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="25">
+<source>Editar banner "%%name%%"</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="26">
+<source>Data creació</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="27">
+<source>Nom</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="28">
+<source>URL enllaç</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="29">
+<source>Posició</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="30">
+<source>Imatge (català)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="31">
+<source>El banner serà visible si té una imatge assignada</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="32">
+<source>Imatge (castellà)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="33">
+<source>Imatge (anglès)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="34">
+<source>Document (català)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="35">
+<source>El Banner enllaçarà a la URL en cas que hi hagi URL i Document</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="36">
+<source>Document (castellà)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="37">
+<source>Document (anglès)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="38">
+<source>URL (català)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="39">
+<source>URL (castellà)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="40">
+<source>URL (anglès)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="41">
+<source>Castellà</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="42">
+<source>Anglès</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="43">
+<source>Per favor, escrigui el nom del banner</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="44">
+<source>La longitud mínima pel nom és 4</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="45">
+<source>Nom:</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="46">
+<source>Població:</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="47">
+<source>Provincia:</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="48">
+<source>Continent:</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="49">
+<source>Llistar centres</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="50">
+<source>Editar centre "%%name%%"</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="51">
+<source>Adreça</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="52">
+<source>Població</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="53">
+<source>Codi postal</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="54">
+<source>Província</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="55">
+<source>Pais</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="56">
+<source>Continent</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="57">
+<source>Telèfon</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="58">
+<source>Web</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="59">
+<source>Email</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="60">
+<source>URL GoogleMaps</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="61">
+<source>Imatges</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="62">
+<source>Documents</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="63">
+<source>Text introducció</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="64">
+<source>Informació cursos</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="65">
+<source>Logotip</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="66">
+<source>URL en format: http://www.google.es</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="67">
+<source>Exemple: http://maps.google.es/maps?f=q&amp;source=s_q&amp;hl=es&amp;geocode=&amp;q=manresa&amp;ie=UTF8&amp;z=13&amp;iwloc=A</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="68">
+<source>Informació contacte</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="69">
+<source>Per favor, escrigui el nom de la franquicia</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="70">
+<source>El format de l'email és incorrecte</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="71">
+<source>El format de la URL és incorrecte</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="72">
+<source>Llistar mitjans</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="73">
+<source>Editar mitjà "%%name%%"</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="74">
+<source>Has de seleccionar mínim un idioma</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="75">
+<source>Llistar Microsites</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="76">
+<source>Editar Microsite</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="77">
+<source>Centre</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="78">
+<source>Usuari</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="79">
+<source>Activat</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="80">
+<source>Idiomes</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="81">
+<source>Una imatge PNG transparent. Pés: 500 kB màxim. Dimensións: Mínim -&gt; 175px/83px (amplada/alçada). Màxim -&gt; 250px/83px (amplada/alçada).</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="82">
+<source>Camp obligatori</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="83">
+<source>Error al accedir a la informació (microsite inexistent), posat en contacte amb la central.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="84">
+<source>Tornar</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="85">
+<source>Màxim 10 imatges. Format JPG o PNG. Tamany 648x352 pixels amplada/alçada. Pés màxim 512 kB.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="86">
+<source>Editar apartat 'Qui Som'</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="87">
+<source>Text</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="88">
+<source>Castellano</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="89">
+<source>Província / Regió / Estat</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="90">
+<source>Editar informació de contacte</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="91">
+<source>Fax</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="92">
+<source>Mapa</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="93">
+<source>Com arribar</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="94">
+<source>Màxim 1 imatge. Format JPG o PNG. Tamany 648x352 pixels amplada/alçada. Pés màxim 512 kB.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="95">
+<source>Màxim 1 arxiu. Format PDF o DOC. Pés màxim 2 MB.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="96">
+<source>Cursos -&gt; Llistat Tallers</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="97">
+<source>Cursos -&gt; Edició Taller</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="98">
+<source>Imatge</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="99">
+<source>Arxiu</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="100">
+<source>Màxim 1 arxiu. Format PDF o DOC. Pes màxim 2 MB.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="101">
+<source>Màxim 1 imatge. Format JPG o PNG. Tamany mínim 250x150 pixels amplada/alçada. Pés màxim 512 kB.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="102">
+<source>Editar notícia</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="103">
+<source>Publicar</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="104">
+<source>Editar calendari</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="105">
+<source>Llistar notícies</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="106">
+<source>Editar noticia "%%title_ca%%"</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="107">
+<source>Introducció</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="108">
+<source>Franquícia</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="109">
+<source>Enllaç video</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="110">
+<source>Identificador de video: http://www.youtube.com/watch?v=&lt;u&gt;e50LpKpkE9Q&lt;/u&gt;</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="111">
+<source>Per favor, escrigui el títol de la notícia</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="112">
+<source>Llistar aparicions a la premsa</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="113">
+<source>Editar aparició "%%name_ca%%"</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="114">
+<source>Mitjà</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="115">
+<source>Es permeten tot tipus d'imatges i documents en format PDF</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="116">
+<source>Per favor, escrigui el títol de l'aparició</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="117">
+<source>Llistat Usuaris</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="118">
+<source>Editar Usuari</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="119">
+<source>Contrasenya</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="120">
+<source>Contrasenya (repetir)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="121">
+<source>Nom i Cognoms</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="122">
+<source>E-mail</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="123">
+<source>Permissos</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="124">
+<source>Idioma</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="125">
+<source>Idioma en que l'usuari visualitzarà l'administrador de continguts.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="126">
+<source>Informació</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="127">
+<source>Perfil</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="128">
+<source>Modificar credencials</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="129">
+<source>Aquest usuari ja existeix a la base de dades.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="130">
+<source>El nom es molt curt (2 caràcters mínim)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="131">
+<source>El nom es molt llarg. (255 caràcters màxim)</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="132">
+<source>La direcció de correu electrònic ja s'ha registrat per un altre usuari.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="133">
+<source>Les contrasenyes no coincideixen.</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="1">
+<source>English</source>
+<target/>
+</trans-unit>
+
+<trans-unit id="1">
+<source>Màxim 10 imatges. Format JPG o PNG.</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="2">
+<source>Màxim 1 imatge. Format JPG o PNG.</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="3">
+<source>Editar Curs</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="4">
+<source>Curs</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="5">
+<source>ATENCIÓ! Sols les 8 notícies més recents seran publicades.</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="6">
+<source>Festes</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="7">
+<source>Categoria</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="8">
+<source>Destacat</source>
+<target></target>
+</trans-unit>
+
+<trans-unit id="9">
+<source>Banner Home list</source>
+<target>Banner Gran</target>
+</trans-unit>
+
+<trans-unit id="9">
+<source>Config</source>
+<target>Configuració</target>
+</trans-unit>
+
+<trans-unit id="9">
+<source>Change password</source>
+<target>Clau d'accés</target>
+</trans-unit>
+
+        <trans-unit id="10">
+            <source>Student name</source>
+            <target>Nom de l'estudiant</target>
+        </trans-unit>
+
+
+        <trans-unit id="197">
+            <source>condicions_pdf</source>
+            <target>Declaro haver llegit i acceptat les condicions generals i autoritzacions enviades en un document annex al full d’inscripció. Completar amb nom, data i signatura del tutor legal, mare o pare.</target>
+        </trans-unit>
+        <trans-unit id="198">
+            <source>fullInscripcio</source>
+            <target>Full d'inscripció. Codi de la inscripció:</target>
+        </trans-unit>
+
+        <trans-unit id="199">
+            <source>fullInscripcio2</source>
+            <target>Full dades de pagament</target>
+        </trans-unit>
+
+        <trans-unit id="200">
+            <source>pagament</source>
+            <target>*El pagament s'haurà d'efectuar en el transcurs de 5 dies hàbils indicant al concepte el nombre d'inscripció i el nom i cognoms del nen/s.</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Seleccione columnas a exportar</source>
+            <target>Seleccioni columnes a exportar</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Todas</source>
+            <target>Totes</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Ninguna</source>
+            <target>Cap</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Debe introducir un nombre para el fichero</source>
+            <target>Ha d'introduir un nom per al fitxer</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Debe seleccionar al menos una columna</source>
+            <target>Ha de seleccionar almenys una columna</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Nombre fichero</source>
+            <target>Nom fitxer</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Ficha alumno</source>
+            <target>Fitxa alumne</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Alergias:</source>
+            <target>Al·lèrgies:</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Ficha alumno</source>
+            <target>Fitxa alumne</target>
+        </trans-unit>
+        <trans-unit>
+            <source>Generar fichas</source>
+            <target>Generar fitxes</target>
+        </trans-unit>
+        <trans-unit>
+            <source>no_group</source>
+            <target>Sense grup</target>
+        </trans-unit>
+        <trans-unit>
+            <source>payment_date</source>
+            <target>Data de pagament (dd/mm/yyyy)</target>
+        </trans-unit>
+        <trans-unit>
+            <source>date_from</source>
+            <target>Des de:</target>
+        </trans-unit>
+        <trans-unit>
+            <source>date_to</source>
+            <target>Fins a:</target>
+        </trans-unit>
+        <trans-unit>
+            <source>mark_as_paid</source>
+            <target>Marcar pagat</target>
+        </trans-unit>
+        <trans-unit>
+            <source>mark_as_paid_question</source>
+            <target>Segur que vol marcar la inscripció com pagada?</target>
+        </trans-unit>
+        <trans-unit>
+            <source>number_of_becas</source>
+            <target>Número de beques</target>
+        </trans-unit>
+        <trans-unit>
+            <source>amount_becas</source>
+            <target>Import beques</target>
+        </trans-unit>
+        <trans-unit>
+            <source>amount_first_payment</source>
+            <target>Import primer pagament</target>
+        </trans-unit>
+		<trans-unit>
+            <source>amount_second_payment</source>
+            <target>Import segon pagament</target>
+        </trans-unit>
+        <trans-unit>
+            <source>TPV</source>
+            <target>Passarel·la de pagament (TPV)</target>
+        </trans-unit>
+        <trans-unit>
+          <source>registration.second_payment_date</source>
+          <target>Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.</target>
+        </trans-unit>
+        <trans-unit>
+          <source>registration.previous_completed_cooloff:</source>
+          <target>Assistència anteriors Cool Off:</target>
+        </trans-unit>
+        <trans-unit>
+          <source>loading_wait</source>
+          <target><![CDATA[Carregant, esperi si us plau...]]></target>
+        </trans-unit>
+        <trans-unit>
+          <source>sending_wait</source>
+          <target><![CDATA[Enviant, esperi si us plau...]]></target>
+        </trans-unit>
+        <trans-unit>
+          <source>Envío resguardos</source>
+          <target>Enviament resguards</target>
+        </trans-unit>
+        <trans-unit>
+          <source>envíos realizados correctamente</source>
+          <target>enviaments realitzats correctament</target>
+        </trans-unit>
+        <trans-unit>
+          <source>Med</source>
+          <target>Medicació / Tractament / Dieta</target>
+        </trans-unit>
+        <trans-unit>
+          <source>registration.previous_completed_cooloff</source>
+          <target>Assistència anteriors Cool Off</target>
+        </trans-unit>
+        <trans-unit>
+          <source>registration.is_vaccinated:</source>
+          <target><![CDATA[L'infant està vacunat d'acord al calendari de vacunacions establert per l'òrgan competent?:]]></target>
+        </trans-unit>
+      <trans-unit>
+        <source>registration.meds_question:</source>
+        <target><![CDATA[Està prenent algun tipus de medicació o fent algun tipus de tractament o dieta?:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.meds:</source>
+        <target><![CDATA[Medicació / Tractament / Dieta:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>Kids and us center:</source>
+        <target><![CDATA[Centre Kids&Us]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>Resposta pregunta personalitzada:</source>
+        <target><![CDATA[Respuesta pregunta personalizada]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.vaccinated</source>
+        <target><![CDATA[Vacunat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>Curs escolar cursat:</source>
+        <target><![CDATA[Curs Kids&Us realitzat:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>pdf.colonias_cooloff</source>
+        <target><![CDATA[COLÒNIES COOL OFF]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.is_vaccinated</source>
+        <target><![CDATA[L'infant està vacunat d'acord al calendari de vacunacions establert per l'òrgan competent?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>Curs escolar cursat</source>
+        <target><![CDATA[Curs Kids&Us realitzat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>Amics</source>
+        <target><![CDATA[Amigos]]></target>
+      </trans-unit>
+
+      <trans-unit>
+        <source>registration.trans0</source>
+        <target><![CDATA[Pagament en efectiu al centre]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans1</source>
+        <target><![CDATA[Inici]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans2</source>
+        <target><![CDATA[Pagament en efectiu al centre (únicament a Kids&Us Poblenou)]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans3</source>
+        <target><![CDATA[Inscripcions]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans4</source>
+        <target><![CDATA[Seleccioneu un centre]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans5</source>
+        <target><![CDATA[Camp obligatori]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans6</source>
+        <target><![CDATA[Seleccioneu un centre de procedència]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans7</source>
+        <target><![CDATA[La data no és correcta]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans8</source>
+        <target><![CDATA[L'email no és correcte]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans9</source>
+        <target><![CDATA[Els emails no són iguals]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans10</source>
+        <target><![CDATA[Heu de seleccionar un dels dos emails com a principal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans11</source>
+        <target><![CDATA[Seleccioneu una setmana]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans12</source>
+        <target><![CDATA[Heu d'acceptar la política de privacitat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans13</source>
+        <target><![CDATA[DADES PERSONALS]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans14</source>
+        <target><![CDATA[Nom alumne/a:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans15</source>
+        <target><![CDATA[Domicili:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans16</source>
+        <target><![CDATA[Població:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans17</source>
+        <target><![CDATA[Codi postal:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans18</source>
+        <target><![CDATA[Nom i cognoms mare/tutor legal:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans19</source>
+        <target><![CDATA[DNI:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans20</source>
+        <target><![CDATA[Mòbil:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans21</source>
+        <target><![CDATA[Email:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans22</source>
+        <target><![CDATA[Nom i cognoms pare/tutor legal:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans23</source>
+        <target><![CDATA[DADES ACADÈMIQUES]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans24</source>
+        <target><![CDATA[Centre de procedència:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans25</source>
+        <target><![CDATA[Curs Kids&Us:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans26</source>
+        <target><![CDATA[DADES MÈDIQUES]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans27</source>
+        <target><![CDATA[Té algun tipus de malaltia o al·lèrgia?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans28</source>
+        <target><![CDATA[Té alguna discapacitat que suposi una dificultat d'integració especial?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans29</source>
+        <target><![CDATA[DADES D'INSCRIPCIÓ]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans30</source>
+        <target><![CDATA[Centre:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans31</source>
+        <target><![CDATA[Servei d'acollida:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans32</source>
+        <target><![CDATA[Servei d'acollida:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans33</source>
+        <target><![CDATA[Hi ha amics de l'infant que assistiran a les colònies?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans34</source>
+        <target><![CDATA[En cas afirmatiu, indiqueu nom i cognoms:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans35</source>
+        <target><![CDATA[Setmanes]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans36</source>
+        <target><![CDATA[Nom i cognoms del pare, mare o tutor legal:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans37</source>
+        <target><![CDATA[Data:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans38</source>
+        <target><![CDATA[Signatura]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans39</source>
+        <target><![CDATA[DADES DE LA INSCRIPCIÓ]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans40</source>
+        <target><![CDATA[Número d'inscripcions:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans41</source>
+        <target><![CDATA[Especificar:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans42</source>
+        <target><![CDATA[MODALITAT DE PAGAMENT]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans43</source>
+        <target><![CDATA[Transferència bancària:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans44</source>
+        <target><![CDATA[Desitjo fer el 100% del pagament.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans45</source>
+        <target><![CDATA[Desitjo fer el 50% del pagament ara i el següent pagament abans del 31 de maig.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans46</source>
+        <target><![CDATA[*El pagament s'haurà d'efectuar en el transcurs de 5 dies hàbils indicant al concepte el nombre d'inscripció i el nom i cognoms del nen/s.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans47</source>
+        <target><![CDATA[Inscripció Cool Off]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans48</source>
+        <target><![CDATA[Dades de l'alumne]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans49</source>
+        <target><![CDATA[Setmanas disponibles]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans50</source>
+        <target><![CDATA[Servei d'acollida]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans51</source>
+        <target><![CDATA[Servei d'acollida]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans52</source>
+        <target><![CDATA[Nom complet:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans53</source>
+        <target><![CDATA[Data de naixement:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans54</source>
+        <target><![CDATA[Adreça:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans55</source>
+        <target><![CDATA[Codi postal:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans56</source>
+        <target><![CDATA[Curs Kids&Us cursat:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans57</source>
+        <target><![CDATA[Amics que vindran a les colònies:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans58</source>
+        <target><![CDATA[Indiqueu si l'infant té alguna discapacitat: (En cas afirmatiu es podrà sol·licitar a l'Institut de Persones amb Discapacitat la valoració de reforç en l'equip de monitors.)]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans59</source>
+        <target><![CDATA[Indiqueu si l'infant té al·lèrgies, intoleràncies o malalties cròniques:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans60</source>
+        <target><![CDATA[No]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans61</source>
+        <target><![CDATA[Sí, indiqueu quines:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans62</source>
+        <target><![CDATA[Activeu en cas que les dades dels pares o tutors siguin diferents de les del primer fill/a.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans63</source>
+        <target><![CDATA[Seleccioneu el campament on voleu realitzar la inscripció]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans64</source>
+        <target><![CDATA[Pas següent ]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans65</source>
+        <target><![CDATA[Dades del pare / tutor legar]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans66</source>
+        <target><![CDATA[Telèfon:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans67</source>
+        <target><![CDATA[Email:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans68</source>
+        <target><![CDATA[Dades de la mare / tutora legal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans69</source>
+        <target><![CDATA[Per inscriure el vostre fill/a les colònies Cool Off, seguiu les indicacions i ompliu les dades del formulari.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans70</source>
+        <target><![CDATA[Casa de colònies escollida per a les Cool Off]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans71</source>
+        <target><![CDATA[Modalitat de pagament]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans72</source>
+        <target><![CDATA[Per fer efectiva la inscripció a les Cool Off, confirmeu si us plau, la modalitat de pagament que preferiu.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans73</source>
+        <target><![CDATA[Indiqueu si voleu fraccionar el pagament:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans74</source>
+        <target><![CDATA[Sí, pagar ara el 50%]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans75</source>
+        <target><![CDATA[No, pagar ara el 100%]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans76</source>
+        <target><![CDATA[He llegit i accepto la]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans77</source>
+        <target><![CDATA[política de privacitat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans78</source>
+        <target><![CDATA[PROTECCIÓ DE DADES DE CARÀCTER PERSONAL.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans79</source>
+        <target><![CDATA[En compliment de la Llei Orgànica 15/1999, de 13 de desembre, de Protecció de Dades de caràcter personal, Kids&Us S.L. informa que totes les dades que li siguin facilitades seran tractades amb estricta confidencialitat, i només seran utilitzades amb el propòsit indicat en aquestes bases. L’aportació d’aquestes dades suposa el consentiment del remitent per al seu tractament. Així mateix, informem de la possibilitat d’exercir els drets d’accés, rectificació, oposició i cancel·lació en els termes establerts en la legislació vigent a l’adreça de Kids&Us English S.L., C/ Canonge Muntanyà, 1-5 de Manresa.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans80</source>
+        <target><![CDATA[Confirmació]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans81</source>
+        <target><![CDATA[Reviseu que les dades de la inscripció siguin correctes]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans82</source>
+        <target><![CDATA[Informació general]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans83</source>
+        <target><![CDATA[Inscripcions:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans84</source>
+        <target><![CDATA[Pagament:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans85</source>
+        <target><![CDATA[Fraccionar pagament:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans86</source>
+        <target><![CDATA[Inscripció]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans87</source>
+        <target><![CDATA[Total a pagar]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans88</source>
+        <target><![CDATA[Escola de procedència:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans89</source>
+        <target><![CDATA[Discapacitats:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans90</source>
+        <target><![CDATA[Setmanes de la inscripció]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans91</source>
+        <target><![CDATA[Setmana]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans92</source>
+        <target><![CDATA[Matí]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans93</source>
+        <target><![CDATA[Tarda]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans94</source>
+        <target><![CDATA[Matí]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans95</source>
+        <target><![CDATA[Tarda]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans96</source>
+        <target><![CDATA[Dades del pare o tutor legal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans97</source>
+        <target><![CDATA[Email principal de contacte]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans98</source>
+        <target><![CDATA[Dades de la mare o tutora legal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans99</source>
+        <target><![CDATA[Les dades dels pares o tutors legals son les mateixes que les del primer fill/a]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans100</source>
+        <target><![CDATA[Modificar]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans101</source>
+        <target><![CDATA[Confirmar]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans102</source>
+        <target><![CDATA[Inscripció realitzada correctament]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans103</source>
+        <target><![CDATA[Gràcies per haver-vos inscrit a les colònies Cool Off.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans104</source>
+        <target><![CDATA[En breus instants rebreu un correu electrònic a l'adreça principal indicada on trobareu la informació necessària per a formalitzar la reserva i realitzar el pagament.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans105</source>
+        <target><![CDATA[El servei d\'acollida té un cost adicional de %preu% € per setmana]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans106</source>
+        <target><![CDATA[El servei d\'acollida té un cost adicional de %preu% € per setmana]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans107</source>
+        <target><![CDATA[Benvolguts pares,]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans108</source>
+        <target><![CDATA[Gràcies per la vostra inscripció a les colònies Cool Off.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans109</source>
+        <target><![CDATA[Per formalitzar la reserva, cal que seguiu els passos següents:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans110</source>
+        <target><![CDATA[Descarregueu els documents PDF.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans111</source>
+        <target><![CDATA[Imprimiu-los.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans112</source>
+        <target><![CDATA[Feu el pagament segons condicions.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans113</source>
+        <target><![CDATA[Signeu el document.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans114</source>
+        <target><![CDATA[Presentar el document PDF de la inscripció firmat amb les condicions generals, una fotocòpia de la tarjeta sanitària i el carnet de vacunes el dia de l'inici de les colònies.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans115</source>
+        <target><![CDATA[El termini per fer el pagament, en la modalitat seleccionada (import total o fraccionat), és de 5 dies hàbils a partir de la recepció d'aquest missatge. Si es fa per transferència bancària, s'haurà d'enviar el comprovant via mail i presentar el document PDF de la inscripció firmat amb les condicions generals, una fotocòpia de la targeta sanitària i el carnet de vacunes el dia de l'inici de les colònies. ]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans116</source>
+        <target><![CDATA[Recordeu que la reserva de plaça només serà efectiva un cop s’hagi efectuat aquest pagament.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans117</source>
+        <target><![CDATA[Moltes gràcies un cop més per confiar en Kids&Us!]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans118</source>
+        <target><![CDATA[Atentament,]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans119</source>
+        <target><![CDATA[T. (+34) 902 93 40 23]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans120</source>
+        <target><![CDATA[Preu:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans121</source>
+        <target><![CDATA[Llista d'espera]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans122</source>
+        <target><![CDATA[No queden places]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans123</source>
+        <target><![CDATA[Transferència bancària]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans124</source>
+        <target><![CDATA[Descarrega]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans125</source>
+        <target><![CDATA[Seleccioneu un centre]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans126</source>
+        <target><![CDATA[Seleccioneu un centre]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans127</source>
+        <target><![CDATA[Seleccioneu un centre de procedència. Si no apareix al llistat, escriviu-lo al camp 'Altre'.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans128</source>
+        <target><![CDATA[S'ha de seleccionar l'email com a principal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans129</source>
+        <target><![CDATA[en cas de no contractar servei d’acollida, deixar en blanc]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans130</source>
+        <target><![CDATA[Sí, indiqueu quin/s:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans131</source>
+        <target><![CDATA[Pare / mare / tutor legal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans132</source>
+        <target><![CDATA[Email:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans133</source>
+        <target><![CDATA[Per inscriure el vostre fill/a a les colònies Cool Off, seguiu les indicacions i ompliu les dades del formulari.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans134</source>
+        <target><![CDATA[Sí, pagar ara el 50%]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans135</source>
+        <target><![CDATA[Al·lèrgies, intoleràncies o malalties cròniques:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans136</source>
+        <target><![CDATA[Recordeu que  no es formalitzarà la reserva de la plaça fins no s'hagi fet efectiu el pagament.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans137</source>
+        <target><![CDATA[Vull que aquest sigui l'email de contacte principal per rebre les notificacions del centre Kids&Us]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans138</source>
+        <target><![CDATA[Nom alumne:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans139</source>
+        <target><![CDATA[Té algun tipus de malaltia o al·lèrgia:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans140</source>
+        <target><![CDATA[Té alguna discapacitat que presenti especial dificultat d'integració:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans141</source>
+        <target><![CDATA[Nom i cognoms:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans142</source>
+        <target><![CDATA[Desitjo fer el 100% del pagament]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans143</source>
+        <target><![CDATA[Dades del pare/mare/tutor legal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans144</source>
+        <target><![CDATA[Dades dels pares/tutors legals de l'alumne]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans145</source>
+        <target><![CDATA[Dades dels pares/tutors legals]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans146</source>
+        <target><![CDATA[Declaro haver llegit i acceptat les condicions generals i autoritzacions enviades en un document annex al full d’inscripció. Completeu amb nom, data i signatura del tutor legal, mare o pare.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans147</source>
+        <target><![CDATA[Full d'inscripció. Codi d'inscripció:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans148</source>
+        <target><![CDATA[Full dades de pagament]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans149</source>
+        <target><![CDATA[Nom i cognoms pare/mare/tutor:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans150</source>
+        <target><![CDATA[Moltes gràcies]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans151</source>
+        <target><![CDATA[*Centre de procedència:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans152</source>
+        <target><![CDATA[Altre:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans153</source>
+        <target><![CDATA[Repetir email:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans154</source>
+        <target><![CDATA[Document per entregar al centre un cop signat.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans155</source>
+        <target><![CDATA[Centre Kids&Us de procedència:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans156</source>
+        <target><![CDATA[FORMA DE PAGAMENT]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans157</source>
+        <target><![CDATA[*El pagament s'haurà d'efectuar en el transcurs de 5 dies hàbils, indicant al concepte el número d'inscripció i el nom i cognoms del nen/s.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans158</source>
+        <target><![CDATA[El servei d'acollida té un cost adicional de %preu% € per setmana]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans159</source>
+        <target><![CDATA[El servei d'acollida té un cost adicional de %preu% € per setmana]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans160</source>
+        <target><![CDATA[Nom]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans161</source>
+        <target><![CDATA[Cognom 1]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans162</source>
+        <target><![CDATA[Cognom 2]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans163</source>
+        <target><![CDATA[Carrer, Número, Pis, Porta]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans164</source>
+        <target><![CDATA[Província]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans165</source>
+        <target><![CDATA[Província:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans166</source>
+        <target><![CDATA[Núm. targeta sanitària]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans167</source>
+        <target><![CDATA[Companyia]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans168</source>
+        <target><![CDATA[Curs Kids&Us realitzat:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans169</source>
+        <target><![CDATA[Alumne Kids&Us]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans170</source>
+        <target><![CDATA[Sí]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans171</source>
+        <target><![CDATA[No]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans172</source>
+        <target><![CDATA[Té alguna discapacitat?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans173</source>
+        <target><![CDATA[Grau]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans174</source>
+        <target><![CDATA[Quina?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans175</source>
+        <target><![CDATA[Altres aspectes que cal tenir en compte]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans176</source>
+        <target><![CDATA[Recordeu que es poden demanar ajuts per 10 dies de casal, 2 setmanes. Si s'inscriu l'infant més setmanes, el pagament s'haurà de fer en el període ordinari]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans177</source>
+        <target><![CDATA[Sí, dono permís per a que l'infant realitzi les excursions]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans178</source>
+        <target><![CDATA[Descompte per inscriure a [1] o més infants: [2]%]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans179</source>
+        <target><![CDATA[Descompte per inscriure a un infant a [1] o més setmanes: [2]%]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans180</source>
+        <target><![CDATA[Descomptes]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans181</source>
+        <target><![CDATA[Descompte per inscriure a un infant a [1] o més setmanes: [2]%]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans182</source>
+        <target><![CDATA[Format d'imatge no vàlid. Únicament jpg, jpeg, png, gif i estan permesos]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans183</source>
+        <target><![CDATA[La imatge seleccionada no és vàlida]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans184</source>
+        <target><![CDATA[La imatge ha de tenir una amplada mínima de %min_width% píxels]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans185</source>
+        <target><![CDATA[La imatge ha de tenir una alçada mínima de %min_height% píxels]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans186</source>
+        <target><![CDATA[Seleccioneu la província]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans187</source>
+        <target><![CDATA[Espereu, si us plau]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans188</source>
+        <target><![CDATA[Els possibles descomptes seran aplicats un cop confirmada la plaça]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans189</source>
+        <target><![CDATA[Altres comentaris que considereu que poden ser d'interès per facilitar l'estada del nen o nena a les colònies]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans190</source>
+        <target><![CDATA[Pren algun tipus de medicació o fa algun tipus de tractament o dieta?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans191</source>
+        <target><![CDATA[Sí, especifiqueu-lo.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans192</source>
+        <target><![CDATA[No, no dono permís perquè el nen/a faci excursions]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans193</source>
+        <target><![CDATA[Excursió]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans194</source>
+        <target><![CDATA[Pujar foto]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans195</source>
+        <target><![CDATA[Companyia]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans196</source>
+        <target><![CDATA[Núm. targeta sanitària]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans197</source>
+        <target><![CDATA[Descompte]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans198</source>
+        <target><![CDATA[Pagament amb rebut domiciliat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans199</source>
+        <target><![CDATA[He llegit i accepto les]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans200</source>
+        <target><![CDATA[condicions generals.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans201</source>
+        <target><![CDATA[i la]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans202</source>
+        <target><![CDATA[i la]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans203</source>
+        <target><![CDATA[Si us plau, seleccioneu primer un centre]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans204</source>
+        <target><![CDATA[Com es pot fer?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans205</source>
+        <target><![CDATA[Pagament amb targeta bancària]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans206</source>
+        <target><![CDATA[Pagar]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans207</source>
+        <target><![CDATA[En breus instants rebrà un correu electrònic a l'adreça principal de contacte indicada, on trobareu la informació necessària per formalitzar la reserva.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans208</source>
+        <target><![CDATA[Error en processar el pagament]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans209</source>
+        <target><![CDATA[S'ha produït un error en processar el pagament, per aquest motiu la inscripció no ha quedat enregistrada. Si us plau, feu clic al següent botó per tornar a intentar-ho.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans210</source>
+        <target><![CDATA[Pagar ara]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans211</source>
+        <target><![CDATA[Pagament fet correctament]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans212</source>
+        <target><![CDATA[El pagament s'ha processat correctament i la vostra inscripció ha quedat confirmada.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans213</source>
+        <target><![CDATA[Tot seguit us redirigiran a la passarel·la de pagament.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans214</source>
+        <target><![CDATA[Esperu, si us plau.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans215</source>
+        <target><![CDATA[Codi inscripció]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans216</source>
+        <target><![CDATA[Import pagat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans217</source>
+        <target><![CDATA[Import pendent]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans218</source>
+        <target><![CDATA[Reviseu les dades que es mostren a continuació i feu clic al botó per procedir al pagament dels imports pendents.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans219</source>
+        <target><![CDATA[Import total a pagar]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans220</source>
+        <target><![CDATA[Alumne]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans221</source>
+        <target><![CDATA[Campament]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans222</source>
+        <target><![CDATA[Passarel·la de pagament (TPV)]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans223</source>
+        <target><![CDATA[Forma de pagament no acceptada per a inscripcions en llista espera]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans224</source>
+        <target><![CDATA[El seu navegador web és antic i no és compatible amb aquesta plataforma. Si us plau, actualitza el teu navegador web de forma gratuïta fent clic <a href=&quot;http://browsehappy.com/&quot;>aquí</a>]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans225</source>
+        <target><![CDATA[El sistema d'inscripcions es troba temporalment fora de servei per tasques de manteniment. Torneu a provar-ho d'aquí uns minuts, si us plau. Gràcies.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans226</source>
+        <target><![CDATA[Hi ha amics del nen/a que assistiran a les colònies?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans227</source>
+        <target><![CDATA[Seleccioneu un curs]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans228</source>
+        <target><![CDATA[Seleccioneu el curs que ha fet. Si no apareix al llistat, escriviu-lo al camp &quot;Altre&quot;]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans229</source>
+        <target><![CDATA[Assistència anteriors Cool Off]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans230</source>
+        <target><![CDATA[Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans231</source>
+        <target><![CDATA[Està prenent algun tipus de medicació o fent algun tipus de tractament o dieta?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans232</source>
+        <target><![CDATA[Sí, especifiqueu-lo.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans233</source>
+        <target><![CDATA[Medicació / Dieta]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans234</source>
+        <target><![CDATA[Altre]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans235</source>
+        <target><![CDATA[Subtotal]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans236</source>
+        <target><![CDATA[COLÒNIES COOL OFF]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans237</source>
+        <target><![CDATA[L'infant està vacunat d'acord al calendari de vacunacions establert per l'òrgan competent?]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans238</source>
+        <target><![CDATA[En cas de que l'infant no estigui vacunat, els tutors hauran de passar a signar una declaració de responsabilitat pel centre Kids&Us. Sense aquesta declaració, l'infant no podrà començar les colònies.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans239</source>
+        <target><![CDATA[Selecciona el último año de asistencia]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans240</source>
+        <target><![CDATA[Nom:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans241</source>
+        <target><![CDATA[Cognom 1:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans242</source>
+        <target><![CDATA[Cognom 2:]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans243</source>
+        <target><![CDATA[El procés d'inscripció esta tancat actualment. OBRIM INSCRIPCIONS EL DIA 1 DE MARÇ.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans244</source>
+        <target><![CDATA[Feu una foto frontal del nen – es pot fer amb qualsevol dispositiu mòbil.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans245</source>
+        <target><![CDATA[Guardeu / descarregueu la imatge a l’escriptori.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans246</source>
+        <target><![CDATA[En el moment de fer la inscripció, seleccioneu-la i inicieu el procés de càrrega. L’arxiu ha d’estar sempre en format d’imatge: jpg/png.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans247</source>
+        <target><![CDATA[No Pagat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans248</source>
+        <target><![CDATA[50% Pagat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans249</source>
+        <target><![CDATA[100% Pagat]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans250</source>
+        <target><![CDATA[En espera de pagament amb TPV]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans251</source>
+        <target><![CDATA[Inscrit]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans252</source>
+        <target><![CDATA[En llista d'espera]]></target>
+      </trans-unit>
+
+
+    </body>
+  </file>
+</xliff>

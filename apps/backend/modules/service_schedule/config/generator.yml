@@ -1,0 +1,28 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      ServiceSchedule
+    theme:            default
+
+    list:
+      title: 'Llistar Horaris'
+      display: [_name, _service_id, orden]
+      filters: [_service_id]
+      object_actions:
+        _edit: ~
+        _delete: ~
+        
+    edit:
+      title: 'Edició horari'
+      display:
+        "General": [service_id, _orden]
+        "Català": [name_ca]
+        "Castellano": [name_es]
+        "English": [name_en]
+
+    fields:
+        name_ca: { name: 'Nom', type: input_tag, params: size=120 }
+        name_es: { name: 'Nom', type: input_tag, params: size=120 }
+        name_en: { name: 'Nom', type: input_tag, params: size=120 }
+        service_id: { name: Servei, required: true }
+        orden: { name: Ordre, required: true }

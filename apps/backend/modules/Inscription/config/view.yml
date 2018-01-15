@@ -1,0 +1,5 @@
+editSuccess:
+  javascripts: [-/sfAdminDashPlugin/js/jquery-1.3.1.min.js, jq/jquery.js, jq/jquery.form.min.js, edit-incription.js]
+listSuccess:
+  javascripts: [list-incription.js, jquery-ui/jquery-1.10.2.js, jquery-ui/jquery-ui-1.10.4.custom.min.js, -/sfAdminDashPlugin/js/jquery-1.3.1.min.js, jq/jquery.form.min.js]
+  stylesheets: [ui-lightness/jquery-ui-1.10.4.custom.min.css]

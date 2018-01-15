@@ -1,0 +1,221 @@
+@CHARSET "UTF-8";
+
+/* Uploads */
+
+div.thaira-uploads-selector
+	div.uploads {
+		border: 1px solid #DDDDDD;
+		overflow: auto;
+		margin-bottom: 10px;
+		padding: 4px;
+}
+
+/* Upload */
+
+div.thaira-uploads-selector
+	div.upload {
+		width: 92px;
+		margin: 4px;
+		float: left;
+		border: 1px solid silver;
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.image-cont {
+			text-align: center;
+			width: 80px;
+			height: 70px;
+			margin-top: 5px;
+			margin-left: 5px;
+		 	border: 1px solid gray;
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.image-cont
+			a {
+				display: block;
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.title {
+			margin: 2px 5px;
+		 	height: 22px;
+		 	overflow: hidden;
+		 	font-size: 7pt;
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.buttons {
+			margin: 5px;
+			margin-top: 0px;
+		 	text-align: center;
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.buttons
+			input {
+				margin: 0px !important;
+				padding: 0px !important;
+				font-size: 0pt !important;
+				line-height: 0px;
+				border: 0px !important;
+				width: 16px;
+				height: 16px;
+				background-color: white;
+				cursor: pointer;
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.buttons
+			input.move-left {
+				background-image: url(../images/icons/arrow_left.png);
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.buttons
+			input.edit {
+				background-image: url(../images/icons/image_edit.png);
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.buttons
+			input.remove {
+				background-image: url(../images/icons/image_delete.png);
+}
+
+div.thaira-uploads-selector
+	div.upload
+		div.buttons
+			input.move-right {
+				background-image: url(../images/icons/arrow_right.png);
+}
+
+/* Controls */
+
+div.thaira-uploads-selector
+	div.controls {
+		text-align: center;
+}
+
+div.thaira-uploads-selector
+	div.controls
+		div {
+			margin-bottom: 10px;
+}
+
+/* Editor */
+
+div.thaira-uploads-selector
+	div.editor {
+		position: absolute;
+		width: 500px;
+		top: 0px;
+		left: 0px;
+		padding: 30px 50px;
+		text-align: center;
+		border: 2px solid #DDDDDD;
+		background-color: white;
+}
+
+div.thaira-uploads-selector
+	div.editor
+		label {
+			float: none !important;
+			width: auto !important;
+			clear: both;
+			padding-top: 5px !important;
+			display: block;
+}
+
+div.thaira-uploads-selector
+	div.editor
+		div.operations {
+			clear: both;
+			padding-top: 10px;
+}
+
+div.thaira-uploads-selector
+	div.editor
+		label
+			input,
+div.thaira-uploads-selector
+	div.editor
+		label
+			textarea {
+				float: left !important;
+				width: 70% !important;
+}
+
+div.thaira-uploads-selector
+	div.editor
+		label
+			b {
+				float: left !important;
+				width: 25%;
+				padding-right: 10px;
+				text-align: right;
+}
+
+div.thaira-uploads-selector
+	div.editor
+		.disabled {
+			border: 0px !important;
+			background: white;
+}
+
+div.thaira-uploads-selector
+	div.editor
+		hr {
+			border: 0px;
+			border-top: 1px solid silver;
+			clear: both;
+			margin: 15px;
+			position: relative;
+			top: 7px;
+			width: 100%;
+}
+
+/* Uploaders */
+
+div.thaira-uploads-selector
+	div.controls
+		div.uploaders {
+
+}
+
+/* Upload */
+
+div.thaira-uploads-selector
+	div.controls
+		div.uploaders
+			div.msg
+				input {
+					height: 16px;
+					width: 16px;
+					border: none !important;
+					padding: 0 0 0 15px !important;
+					margin: 0 !important;
+					background:url(../images/icons/loader.gif) no-repeat left;
+}
+
+/* Upload Form */
+
+div.thaira-uploads-uploader {
+	background: white;
+	position: absolute;
+	border: 2px solid #DDDDDD;
+	top: 10px;
+	left: 10px;
+	width: 400px;
+	padding: 40px 0px;
+	text-align: center;
+	line-height: 45px; 
+}

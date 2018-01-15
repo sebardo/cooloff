@@ -1,0 +1,84 @@
+propel:
+  _attributes: { package: lib.model.summerFun }
+  
+  summer_fun_zone:
+    id:
+    created_at:
+    updated_at:    
+  
+  summer_fun_zone_i18n:
+    title:          varchar(255)
+
+  summer_fun_center:
+    id:
+    created_at:
+    updated_at:
+    summer_fun_zone_id: { type: integer, foreignTable: summer_fun_zone, foreignReference: id, required: true, onDelete: cascade }
+    morning_shelter:  { type: boolean, required: true, default: false }
+    afternoon_shelter:  { type: boolean, required: true, default: false }
+    transfer_payment: { type: boolean, required: true, default: false }
+    cash_payment: { type: boolean, required: true, default: false }
+    tpv_payment: { type: boolean, required: true, default: false }
+    is_registration_open: { type: boolean, required: true, default: false }
+    account_number: { type: varchar(255) }
+    mail: { type: varchar(255) }
+    weeks_discount: { type: integer, size: 4 }
+    weeks_percent_discount: { type: decimal, default: 0, size: 5, scale: 2 }
+    brothers_discount: { type: integer, size: 4 }
+    brothers_percent_discount: { type: decimal, default: 0, size: 5, scale: 2 }
+    show_excursion_widget: { type: boolean, required: true, default: false }
+    recibo_domiciliado_payment: { type: boolean, required: true, default: false }
+    show_beca_widget: { type: boolean, required: true, default: false }
+    merchant_code: varchar(255)
+    merchant_key:  varchar(255)
+    url_tpv: varchar(255)
+    second_payment_mailing_date: date
+    second_payment_date: date
+  
+  summer_fun_center_i18n:
+    title:          varchar(255)
+    description:    longvarchar
+    text_shelter: longvarchar
+    inscription_confirmation_mail: longvarchar
+    inscription_conditions_terms_pdf:     varchar(255)
+    custom_question: { type: varchar(255) }
+    recibo_domiciliado_txt: { type: varchar(255) }
+    second_payment_mailing_body: longvarchar
+    second_payment_mailing_body_no_tpv: longvarchar
+
+  summer_fun_center_has_profile:
+      summer_fun_center_id:  { type: integer, required: true, primaryKey: true, foreignTable: summer_fun_center, foreignReference: id, onDelete: cascade }
+      profile_id:  { type: integer, required: true, primaryKey: true, foreignTable: sf_guard_user_profile, foreignReference: id, onDelete: cascade }
+  
+  summer_fun_center_news_item:
+    id:
+    created_at:
+    updated_at:
+    summer_fun_center_id: { type: integer, foreignTable: summer_fun_center, foreignReference: id, required: true, onDelete: cascade }
+    published_at: date
+    is_published: { type: boolean, required: true, default: false }
+  
+  summer_fun_center_news_item_i18n:
+    title:          varchar(255)
+    description:    longvarchar
+
+  service:
+    id:
+    center_id: { type: integer, foreignTable: summer_fun_center, foreignReference: id, required: true, onDelete: cascade }
+    price: { type: decimal, default: 0, size: 14, scale: 2, required: true }
+
+  service_i18n:
+    name: varchar(255)
+    description: longvarchar
+
+  service_schedule:
+    id:
+    orden: { type: integer, required: false }
+    service_id: { type: integer, foreignTable: service, foreignReference: id, required: true, onDelete: cascade }
+
+  service_schedule_i18n:
+    name: varchar(255)
+
+  kids_and_us_center:
+    id:
+    name: varchar(255)

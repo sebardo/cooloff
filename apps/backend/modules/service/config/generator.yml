@@ -1,0 +1,37 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Service
+    theme:            default
+
+
+    list:
+      title: 'Llistar Serveis'
+      display: [_name, _center_id, price]
+      filters: [_center_id]
+      object_actions:
+        _edit: ~
+        _delete: ~
+        addSchedule: { name: 'Afegir horari', action: addSchedule, icon: /sfAdminDashPlugin/images/icon_dash/small/date.png }
+
+    edit:
+      title: 'Servei %%name%%'
+      display:
+        "General": [_center_id, price]
+        "Català": [name_ca, description_ca]
+        "Castellano": [name_es, description_es]
+        "English": [name_en, description_en]
+      fields:
+        price: { name: Preu, help: 'Els decimals han d\'anar separats per un punt (Ex: 00.00)' }
+
+    fields:
+        name_ca: { name: 'Nom', type: input_tag, params: size=120 }
+        description_ca: { name: 'Descripció', type: textarea_tag, params: size=120x6 class=rich }
+        name_es: { name: 'Nom', type: input_tag, params: size=120 }
+        description_es: { name: 'Descripció', type: textarea_tag, params: size=120x6 class=rich }
+        name_en: { name: 'Nom', type: input_tag, params: size=120 }
+        description_en: { name: 'Descripció', type: textarea_tag, params: size=120x6 class=rich }
+        centro_id: { name: 'Centre' }
+        centro_id_list: { name: 'Centre' }
+        price: { name: Preu }
+        center_id: { name: Centre }

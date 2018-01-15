@@ -1,0 +1,27 @@
+#sf_admin_path a, #logout a { color: #6694E3; }
+#sf_admin_path a:hover, #logout a:hover, #NotificationContainer a:hover { color : #6694E3; }
+#sf_admin_path a:active, #logout a:active, #NotificationContainer a { color : #6694E3; }
+
+#sf_admin_container h1 { color: #6694E3; }
+#sf_admin_container h2 { background: url(../images/background-blue.jpg) repeat-x; }
+#sf_admin_container thead tr, #sf_admin_content tfoot tr { background: url(../images/background-blue.jpg); }
+#sf_admin_theme_header { border-bottom: #6694E3 4px solid; }
+#sf_admin_footer a:hover { color: #6694E3; text-decoration: underline; }
+
+.cpanel div.icon a:hover { background-color:#E0ECFF; border: 1px solid #6694E3; }
+.login h1#title { color:#6694E3; }
+.login-form a:hover { color: #6694E3; }
+.login-form input:focus, .login-form input:hover { background-color:#E0ECFF !important; border-color:#6694E3 !important; }
+.login-text p span { color: #6694E3; }
+li.node a:hover { color: #6694E3; }
+.form_error { color: #6694E3; }
+.sf_admin_list th { background-image: url(../images/background-blue.jpg); }
+form.button_to input:hover,
+ul.sf_admin_actions input:hover,
+.thaira-uploads-selector .operations input:hover { background-color:#E0ECFF !important; border-color:#6694E3 !important; }
+.sf_admin_filters ul.sf_admin_actions input:hover {	background-color:#E0ECFF !important; border-color:#6694E3 !important; }
+input:focus, textarea:focus, select:focus { background-color:#E0ECFF !important; border-color:#6694E3 !important; }
+.sf_admin_list a:hover { color:#6694E3 !important; }
+#sf_admin_container fieldset.collapse h2 a.collapse-toggle { color: #6694E3 !important; }
+#sf_admin_container h1 { color: #6694E3 !important; }
+#NotificationContainer a:hover { color: #6694E3; }

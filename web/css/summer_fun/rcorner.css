@@ -1,0 +1,51 @@
+/* **************************************************************
+	TITLE: Rounded Corners Plugin 
+	AUTHOR: Aaron Vanderzwan
+	COMPANY: People Design
+	DATE: February 19, 2008
+	Rebuild #1 DATE: February 03, 2009
+************************************************************** */
+
+
+
+/* *********************************************************** */
+/* EDIT THESE ATTRIBUTES FOR YOUR BACKGROUND IMAGE INFORMATION */
+/* *********************************************************** */
+
+.rcorner { width:880px; background-color:#ffffff; }	
+.top_left, .top_right, .bottom_left, .bottom_right{
+	
+	/* Where the background image is located */
+	background-image:url("../../images/summer_fun/transparent.gif");
+	
+	/* The width of the background image */
+	width:41px;
+	
+	/* The height of the background image */
+	height:41px;
+}
+
+
+
+
+/* *********************************************************** */
+/* ****	DON'T CHANGE ANYTHING BEYOND THIS POINT ************** */
+/* *********************************************************** */
+
+	.rcorner_wrapper{
+	  float:left;
+		position:relative;
+		height:auto;
+		width:auto;
+		margin-bottom:10px;
+	}
+
+	.top_left, .top_right, .bottom_left, .bottom_right{
+		position:absolute;
+	}
+
+	/* this sets the position of the corners */
+	.top_left{top:0;left:0;background-position:left top;}
+	.top_right{top:0;right:0;background-position:right top;}
+	.bottom_left{bottom:0; _bottom:-1px;left:0;background-position:left bottom;}
+	.bottom_right{bottom:0; _bottom:-1px;right:0;background-position:right bottom;}

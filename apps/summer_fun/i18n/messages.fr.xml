@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+    <file datatype="plaintext" date="2013-04-05T10:49:38Z" orginal="global" source-language="es_ES">
+        <body>
+            <trans-unit>
+                <source>On?</source>
+                <target>Où?</target>
+            </trans-unit>
+            <trans-unit>
+                <source>On som</source>
+                <target>Où nous sommes</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Tornar</source>
+                <target>Reviens</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom complet:</source>
+                <target>Nom et prénom:</target>
+            </trans-unit>
+            <trans-unit id="51">
+                <source>Inscripcions</source>
+                <target>Inscriptions</target>
+            </trans-unit>
+            <trans-unit id="52">
+                <source>Selecciona un centre</source>
+                <target>Sélectionnez un centre</target>
+            </trans-unit>
+            <trans-unit id="53">
+                <source>Camp Obligatori</source>
+                <target>Champ obligatoire</target>
+            </trans-unit>
+            <trans-unit id="54">
+                <source>Selecciona un centre de procedència</source>
+                <target>Sélectionnez un centre de provenance</target>
+            </trans-unit>
+            <trans-unit id="55">
+                <source>La data no és correcta</source>
+                <target>La date n'est pas correcte</target>
+            </trans-unit>
+            <trans-unit id="56">
+                <source>L'Email no és correcte</source>
+                <target>L'adresse e-mail n'est pas correcte</target>
+            </trans-unit>
+            <trans-unit id="57">
+                <source>Els Emails no són iguals</source>
+                <target>Les adresses e-mail ne correspondent pas</target>
+            </trans-unit>
+            <trans-unit id="58">
+                <source>S'ha de seleccionar un dels dos Emails com a principal</source>
+                <target>Il faut sélectionner une des deux adresses e-mail comme étant la principale</target>
+            </trans-unit>
+            <trans-unit id="59">
+                <source>Selecciona una setmana</source>
+                <target>Sélectionnez une semaine</target>
+            </trans-unit>
+            <trans-unit id="60">
+                <source>Ha d'acceptar la política de privacitat</source>
+                <target>Vous devez accepter la politique de confidentialité</target>
+            </trans-unit>
+            <trans-unit id="61">
+                <source>DADES PERSONALS</source>
+                <target>DONNÉES PERSONNELLES</target>
+            </trans-unit>
+            <trans-unit id="62">
+                <source>Nom alumne/a:</source>
+                <target>Nom de l'élève:</target>
+            </trans-unit>
+            <trans-unit id="63">
+                <source>Domicili:</source>
+                <target>Domicile:</target>
+            </trans-unit>
+            <trans-unit id="64">
+                <source>Població:</source>
+                <target>Ville :</target>
+            </trans-unit>
+            <trans-unit id="65">
+                <source>Codi Postal:</source>
+                <target>Code postal :</target>
+            </trans-unit>
+            <trans-unit id="66">
+                <source>Nom i cognoms mare/tutor:</source>
+                <target>Noms et prénoms du père/de la mère/du tuteur légal</target>
+            </trans-unit>
+            <trans-unit id="67">
+                <source>DNI:</source>
+                <target>Numéro de la pièce d'identité :</target>
+            </trans-unit>
+            <trans-unit id="68">
+                <source>Mòbil:</source>
+                <target>Téléphone mobile :</target>
+            </trans-unit>
+            <trans-unit id="69">
+                <source>e-mail:</source>
+                <target>Adresse e-mail :</target>
+            </trans-unit>
+            <trans-unit id="70">
+                <source>Nom i cognoms pare/tutor:</source>
+                <target>Noms et prénoms du père/du tuteur :</target>
+            </trans-unit>
+            <trans-unit id="71">
+                <source>DADES ACADÈMIQUES</source>
+                <target>DONNÉES ACADÉMIQUES</target>
+            </trans-unit>
+            <trans-unit id="72">
+                <source>Escola de procedència:</source>
+                <target>Centre de provenance :</target>
+            </trans-unit>
+            <trans-unit id="73">
+                <source>Curs Kids&amp;Us:</source>
+                <target>Cours Kids&amp;Us :</target>
+            </trans-unit>
+            <trans-unit id="74">
+                <source>DADES MÈDIQUES</source>
+                <target>INFORMATIONS MÉDICALES</target>
+            </trans-unit>
+            <trans-unit id="75">
+                <source>Té algun tipus de malaltia o al·lèrgia?</source>
+                <target>Souffrez-vous d'une quelconque maladie ou allergie ?</target>
+            </trans-unit>
+            <trans-unit id="76">
+                <source>Té alguna discapacitat que presenti especial dificultat d'integració?</source>
+                <target>Souffrez-vous d'un quelconque handicap présentant des difficultés particulières d'intégration ?</target>
+            </trans-unit>
+            <trans-unit id="77">
+                <source>DADES INSCRIPCIÓ</source>
+                <target>DONNÉES D'INSCRIPTION</target>
+            </trans-unit>
+            <trans-unit id="78">
+                <source>Centre:</source>
+                <target>Centre :</target>
+            </trans-unit>
+            <trans-unit id="79">
+                <source>Servei d'acollida:</source>
+                <target>Service d'accueil :</target>
+            </trans-unit>
+            <trans-unit id="80">
+                <source>Hi ha amics de l'infant que assistiran al casal?</source>
+                <target>Y a-t-il des amis de l'enfant qui assistent aux camps ?</target>
+            </trans-unit>
+            <trans-unit id="81">
+                <source>En cas afirmatiu, indiqueu nom i cognoms:</source>
+                <target>Si c'est le cas, veuillez indiquer leurs noms et prénoms :</target>
+            </trans-unit>
+            <trans-unit id="82">
+                <source>Setmanes</source>
+                <target>Semaines</target>
+            </trans-unit>
+            <trans-unit id="83">
+                <source>Nom i cognoms del pare, mare o tutor legal:</source>
+                <target>Noms et prénoms du père, de la mère ou du tuteur légal :</target>
+            </trans-unit>
+            <trans-unit id="84">
+                <source>Data:</source>
+                <target>Date :</target>
+            </trans-unit>
+            <trans-unit id="85">
+                <source>Signatura</source>
+                <target>Signature</target>
+            </trans-unit>
+            <trans-unit id="86">
+                <source>DADES DE LA INSCRIPCIÓ</source>
+                <target>DONNÉES DE L'INSCRIPTION</target>
+            </trans-unit>
+            <trans-unit id="87">
+                <source>Número d'inscripcions:</source>
+                <target>Nombre d'inscriptions :</target>
+            </trans-unit>
+            <trans-unit id="88">
+                <source>S'acull a alguna beca?</source>
+                <target>Bénéficiez-vous d'une bourse ?</target>
+            </trans-unit>
+            <trans-unit id="89">
+                <source>Especificar:</source>
+                <target>Préciser :</target>
+            </trans-unit>
+            <trans-unit id="90">
+                <source>MODALITAT DE PAGAMENT</source>
+                <target>MODALITÉS DE PAIEMENT</target>
+            </trans-unit>
+            <trans-unit id="91">
+                <source>Transferència bancària:</source>
+                <target>Transfert bancaire :</target>
+            </trans-unit>
+            <trans-unit id="92">
+                <source>Desitjo fer el 100% del pagament.</source>
+                <target>Je souhaite effectuer la totalité du paiement.</target>
+            </trans-unit>
+            <trans-unit id="93">
+                <source>Desitjo fer el 50% del pagament ara i el següent pagament abans del 31 de maig.</source>
+                <target>Je souhaite effectuer la moitié du paiement maintenant et le reste avant le 31 mai.</target>
+            </trans-unit>
+            <trans-unit id="94">
+                <source>pagament</source>
+                <target>*Le paiement doit s'effectuer dans les trois jours ouvrables, en indiquant le prénom de(s) enfant(s).</target>
+            </trans-unit>
+            <trans-unit id="95">
+                <source>Inscripció English Summer Fun</source>
+                <target>Inscription à l'English Summer Fun</target>
+            </trans-unit>
+            <trans-unit id="96">
+                <source>Dades de l'alumne </source>
+                <target>Données concernant l'enfant </target>
+            </trans-unit>
+            <trans-unit id="97">
+                <source>Setmanes disponibles</source>
+                <target>Semaines disponibles</target>
+            </trans-unit>
+            <trans-unit id="98">
+                <source>Servei d'acollida</source>
+                <target>Service d'accueil</target>
+            </trans-unit>
+            <trans-unit id="99">
+                <source>Nom complet:</source>
+                <target>Nom complet :</target>
+            </trans-unit>
+            <trans-unit id="100">
+                <source>Data de naixement:</source>
+                <target>Date de naissance :</target>
+            </trans-unit>
+            <trans-unit id="101">
+                <source>Adreça:</source>
+                <target>Adresse :</target>
+            </trans-unit>
+            <trans-unit id="102">
+                <source>Codi postal:</source>
+                <target>Code postal :</target>
+            </trans-unit>
+            <trans-unit id="103">
+                <source>Curs Kids&amp;Us cursat:</source>
+                <target>Cours Kids&amp;Us achevé :</target>
+            </trans-unit>
+            <trans-unit id="104">
+                <source>default</source>
+                <target>par défaut</target>
+            </trans-unit>
+            <trans-unit id="105">
+                <source>Amics que vindran al casal:</source>
+                <target>Amis qui assisteront aux camps :</target>
+            </trans-unit>
+            <trans-unit id="106">
+                <source>Indiqueu si l'infant té alguna discapacitat: (En cas afirmatiu es podrà sol•licitar a l'Institut de Persones amb Discapacitat la valoració de reforç en l'equip de monitors.)</source>
+                <target>Veuillez indiquer si l'enfant souffre d'un handicap : (si c'est le cas,  une demande de renfort de l'équipe des moniteurs pourra être demandée à l’Instituto de Personas con Discapacidad.)</target>
+            </trans-unit>
+            <trans-unit id="107">
+                <source>Indiqueu si l'infant té al·lèrgies, intoleràncies o malalties cròniques:</source>
+                <target>Veuillez indiquer si l'enfant souffre d'allergies, d'intolérances ou de maladies chroniques :</target>
+            </trans-unit>
+            <trans-unit id="108">
+                <source>No</source>
+                <target>Non</target>
+            </trans-unit>
+            <trans-unit id="109">
+                <source>Si, indiqueu quines:</source>
+                <target>Oui, veuillez indiquer laquelle/lesquelles :</target>
+            </trans-unit>
+            <trans-unit id="110">
+                <source>S'acull a una beca? Indiqueu si us plau quina:</source>
+                <target>Bénéficiez-vous d'une bourse ? Veuillez indiquer laquelle :</target>
+            </trans-unit>
+            <trans-unit id="111">
+                <source>Activeu en cas que les dades dels pares o tutors siguin diferents que el primer fill/a.</source>
+                <target>Activer si les données des parents ou des tuteurs sont différentes de celles du premier enfant.</target>
+            </trans-unit>
+            <trans-unit id="112">
+                <source>Selecciona el centre on vol realitzar la inscripció</source>
+                <target>Sélectionnez le centre dans lequel vous souhaitez réaliser l'inscription</target>
+            </trans-unit>
+            <trans-unit id="113">
+                <source>Següent Pas</source>
+                <target>Étape suivante</target>
+            </trans-unit>
+            <trans-unit id="114">
+                <source>Dades del pare / tutor legar</source>
+                <target>Données du père / du tuteur légal</target>
+            </trans-unit>
+            <trans-unit id="116">
+                <source>Telèfon:</source>
+                <target>Téléphone :</target>
+            </trans-unit>
+            <trans-unit id="117">
+                <source>Email:</source>
+                <target>E-mail :</target>
+            </trans-unit>
+            <trans-unit id="118">
+                <source>Dades de la mare / tutora legal</source>
+                <target>Données de la mère / de la tutrice légale</target>
+            </trans-unit>
+            <trans-unit id="119">
+                <source>Per a inscriure el vostre fill/a a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</source>
+                <target>Pour inscrire votre enfant aux activités de l'English Summer Fun, veuillez suivre les indications et remplir le formulaire suivant.</target>
+            </trans-unit>
+            <trans-unit id="120">
+                <source>Dades del centre on realitzarà l'English Summer Fun</source>
+                <target>Coordonnées du centre dans lequel vous effectuerez l'English Summer Fun</target>
+            </trans-unit>
+            <trans-unit id="121">
+                <source>Modalitat de pagament</source>
+                <target>Modalités de paiement</target>
+            </trans-unit>
+            <trans-unit id="122">
+                <source>Per fer efectiva la inscripció a l'English Summer Fun, confirmeu si us plau la modalitat de pagament que preferiu.</source>
+                <target>Pour que l'inscription à l'English Summer Fun soit effective, veuillez confirmer les modalités de paiement souhaitées.</target>
+            </trans-unit>
+            <trans-unit id="123">
+                <source>Indiqueu si voleu fraccionar el pagament:</source>
+                <target>Veuillez indiquer si vous souhaitez fractionner le paiement :</target>
+            </trans-unit>
+            <trans-unit id="124">
+                <source>Si, pagar ara el 50%</source>
+                <target>Oui, payer maintenant la moitié</target>
+            </trans-unit>
+            <trans-unit id="125">
+                <source>No, pagar ara el 100%</source>
+                <target>Non, payer maintenant la totalité</target>
+            </trans-unit>
+            <trans-unit id="126">
+                <source>He llegit i accepto la</source>
+                <target>J'ai lu et accepté la</target>
+            </trans-unit>
+            <trans-unit id="127">
+                <source>política de privacitat</source>
+                <target>politique de confidentialité</target>
+            </trans-unit>
+            <trans-unit id="128">
+                <source>PROTECCIÓ DE DADES DE CARÀCTER PERSONAL.</source>
+                <target>Protection des données à caractère personnel.</target>
+            </trans-unit>
+            <trans-unit id="129">
+                <source>privacity_police</source>
+                <target>Conformément à la Loi organique 15/1999 du 13 décembre de Protection des données à caractère personnel, Kids&amp;Us S.L. vous informe que toutes les données fournies seront traitées de manière strictement confidentielle et qu'elles ne seront utilisées qu'aux fins indiquées dans ce document. En fournissant ces données, vous consentez à leur traitement. Nous vous informons également que vous avez la possibilité d'exécuter vos droits d'accès, de rectification, d'opposition et d'annulation selon les termes définis par la législation en vigueur à l'adresse de Kids&amp;Us English S.L., C/ Canonge Muntanyà, 1-5 de Manresa.</target>
+            </trans-unit>
+            <trans-unit id="130">
+                <source>Confirmació</source>
+                <target>Confirmation</target>
+            </trans-unit>
+            <trans-unit id="131">
+                <source>Revisa que les dades de la inscripció siguin correctes.</source>
+                <target>Veuillez vérifier l'exactitude des données d'inscription.</target>
+            </trans-unit>
+            <trans-unit id="132">
+                <source>Informació general</source>
+                <target>Informations générales</target>
+            </trans-unit>
+            <trans-unit id="133">
+                <source>Inscripcions:</source>
+                <target>Inscriptions :</target>
+            </trans-unit>
+            <trans-unit id="134">
+                <source>Pagament:</source>
+                <target>Paiement :</target>
+            </trans-unit>
+            <trans-unit id="135">
+                <source>Fraccionar pagament:</source>
+                <target>Fractionner le paiement :</target>
+            </trans-unit>
+            <trans-unit id="136">
+                <source>Inscripció</source>
+                <target>Inscription :</target>
+            </trans-unit>
+            <trans-unit id="137">
+                <source>Total a pagar</source>
+                <target>Montant total dû</target>
+            </trans-unit>
+            <trans-unit id="138">
+                <source>Escola de procedència:</source>
+                <target>École de provenance :</target>
+            </trans-unit>
+            <trans-unit id="139">
+                <source>Discapacitats:</source>
+                <target>Handicaps :</target>
+            </trans-unit>
+            <trans-unit id="141">
+                <source>Beca:</source>
+                <target>Bourse :</target>
+            </trans-unit>
+            <trans-unit id="142">
+                <source>Setmanes de la inscripció</source>
+                <target>Semaines d'inscription</target>
+            </trans-unit>
+            <trans-unit id="143">
+                <source>Setmana </source>
+                <target>Semaine </target>
+            </trans-unit>
+            <trans-unit id="144">
+                <source>Matí</source>
+                <target>Matin</target>
+            </trans-unit>
+            <trans-unit id="145">
+                <source>Tarda</source>
+                <target>Après-midi</target>
+            </trans-unit>
+            <trans-unit id="146">
+                <source>Dades del pare o tutor legal</source>
+                <target>Données du père ou du tuteur légal</target>
+            </trans-unit>
+            <trans-unit id="147">
+                <source>Principal de contacte</source>
+                <target>Contact principal</target>
+            </trans-unit>
+            <trans-unit id="148">
+                <source>Dades de la mare o tutora legal</source>
+                <target>Données de la mère ou de la tutrice légale</target>
+            </trans-unit>
+            <trans-unit id="149">
+                <source>Les dades dels pares o tutors legals son iguals que el primer fill/a.</source>
+                <target>Les données des parents ou des tuteurs légaux sont les mêmes que celles du premier enfant.</target>
+            </trans-unit>
+            <trans-unit id="150">
+                <source>Modificar</source>
+                <target>Modifier</target>
+            </trans-unit>
+            <trans-unit id="151">
+                <source>Confirmar</source>
+                <target>Confirmer</target>
+            </trans-unit>
+            <trans-unit id="152">
+                <source>Inscripció realitzada correctament</source>
+                <target>Inscription réussie</target>
+            </trans-unit>
+            <trans-unit id="153">
+                <source>Gràcies per inscriure-us a les activitats de l'English Summer Fun.</source>
+                <target>Merci de vous être inscrit(e) aux activités de l'English Summer Fun.</target>
+            </trans-unit>
+            <trans-unit id="154">
+                <source>En breus instants rebreu un correu electrònic a l'adreça principal de contacte indicada on trobareu la informació necessària per a formalitzar la reserva i realitzar el pagament.</source>
+                <target>Dans quelques minutes vous recevrez un courrier électronique à l'adresse principale indiquée dans lequel vous trouverez les informations nécessaires à la réservation et au paiement.</target>
+            </trans-unit>
+            <trans-unit id="156">
+                <source>El servei d'acollida té un cost adicional de %preu% € per setmana</source>
+                <target>Le service d'accueil est disponible à un coût supplémentaire de %preu% € par semaine</target>
+            </trans-unit>
+            <trans-unit id="157">
+                <source>Benvolguts pares,</source>
+                <target>Chers parents,</target>
+            </trans-unit>
+            <trans-unit id="158">
+                <source>Gràcies per la vostra inscripció a les activitats de l'English Summer Fun.</source>
+                <target>Nous vous remercions de votre inscription aux activités de l'English Summer Fun.</target>
+            </trans-unit>
+            <trans-unit id="159">
+                <source>Per formalitzar la reserva, cal que seguiu els passos següents:</source>
+                <target>Pour finaliser la réservation, veuillez suivre les étapes suivantes :</target>
+            </trans-unit>
+            <trans-unit id="160">
+                <source>Descarregueu els PDF.</source>
+                <target>Télécharger les documents PDF.</target>
+            </trans-unit>
+            <trans-unit id="161">
+                <source>Imprimiu-los.</source>
+                <target>Les imprimer.</target>
+            </trans-unit>
+            <trans-unit id="162">
+                <source>Realitzeu el pagament segons condicions.</source>
+                <target>Effectuer le paiement selon les conditions.</target>
+            </trans-unit>
+            <trans-unit id="163">
+                <source>Signeu el document.</source>
+                <target>Signer le document.</target>
+            </trans-unit>
+            <trans-unit id="164">
+                <source>Presenteu-lo al centre juntament amb una fotografia del nen i una fotocopia de la targeta sanitària, abans del 24 d'abril.</source>
+                <target>Le présenter au centre avec une photo de l'enfant et une photocopie de la carte d'assurance maladie avant le 24 avril.</target>
+            </trans-unit>
+            <trans-unit id="165">
+                <source>El termini per fer el pagament, en la modalitat seleccionada (import total o fragmentat), és de 5 dies hàbils a partir de la recepció d’aquest missatge. En cas que el feu per transferència bancària, haureu de presentar el comprovant de pagament al centre, juntament amb el document PDF de la inscripció signat, una fotografia del nen i una fotocopia de la targeta sanitària abans del 24 d'abril.</source>
+                <target>La date limite de paiement, selon les modalités sélectionnées (montant total ou fragmenté), est de 5 jours ouvrables à compter de la réception de ce message. S'il est effectué par transfert bancaire, il vous sera demandé de présenter la preuve de paiement au centre, avec le document PDF de l'inscription signée, une photo de l'enfant et une photocopie de la carte d'assurance maladie avant le 24 avril.</target>
+            </trans-unit>
+            <trans-unit id="166">
+                <source>Recordeu que la reserva de plaça només serà efectiva un cop s’hagi efectuat aquest pagament.</source>
+                <target>Nous vous rappelons que la réservation de place sera seulement effective après avoir effectué le paiement.</target>
+            </trans-unit>
+            <trans-unit id="167">
+                <source>Moltes gràcies un cop més per confiar en Kids&amp;Us!</source>
+                <target>Nous vous remercions à nouveau de votre confiance en Kids&amp;Us !</target>
+            </trans-unit>
+            <trans-unit id="168">
+                <source>Atentament, </source>
+                <target>Cordialement,</target>
+            </trans-unit>
+            <trans-unit id="169">
+                <source>T. (+34) 902 93 40 23, </source>
+                <target>Tél. (+34) 902 93 40 23, </target>
+            </trans-unit>
+            <trans-unit id="170">
+                <source>Preu:</source>
+                <target>Prix :</target>
+            </trans-unit>
+            <trans-unit id="171">
+                <source>Llista d'espera</source>
+                <target>Liste d'attente</target>
+            </trans-unit>
+            <trans-unit id="172">
+                <source>No queden places</source>
+                <target>No hay plazas</target>
+                <target>Il n'y a plus de places</target>
+                <target>Non ci sono posti</target>
+            </trans-unit>
+            <trans-unit id="173">
+                <source>Transferència bancària</source>
+                <target>Transfert bancaire</target>
+            </trans-unit>
+            <trans-unit id="174">
+                <source>Vull que aquest sigui l'e-mail principal de contacte per rebre les notificacions del centre Kids&amp;Us</source>
+                <target>Je souhaite que ce soit l'adresse e-mail principale pour recevoir les notifications du centre Kids&amp;Us</target>
+            </trans-unit>
+            <trans-unit id="175">
+                <source>Descarrega</source>
+                <target>Téléchargez</target>
+            </trans-unit>
+            <trans-unit id="176">
+                <source>Seleccioneu un centre</source>
+                <target>Sélectionnez un centre</target>
+            </trans-unit>
+            <trans-unit id="177">
+                <source>Seleccioneu un centre de procedència, sinó apareix al llistat escriu-lo al camp altre </source>
+                <target>Sélectionnez un centre de provenance. S'il n'apparaît pas dans la liste, saisissez-le dans le champ autre</target>
+            </trans-unit>
+            <trans-unit id="178">
+                <source>S'ha de seleccionar l'e-mail com a principal</source>
+                <target>Il faut sélectionner l'adresse e-mail principale</target>
+            </trans-unit>
+            <trans-unit id="179">
+                <source>en cas de no contractar servei d’acollida, deixar en blanc</source>
+                <target>si vous ne souhaitez pas de service d'accueil, laissez la case vide</target>
+            </trans-unit>
+            <trans-unit id="180">
+                <source>Sí, indiqueu quines:</source>
+                <target>Oui, veuillez indiquer lequel/lesquels :</target>
+            </trans-unit>
+            <trans-unit id="181">
+                <source>Pare / mare / tutor legal</source>
+                <target>Père / mère / tuteur légal</target>
+            </trans-unit>
+            <trans-unit id="182">
+                <source>E-mail:</source>
+                <target>Adresse e-mail :</target>
+            </trans-unit>
+            <trans-unit id="183">
+                <source>Per inscriure el vostre fill / la vostra filla a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</source>
+                <target>Pour inscrire votre enfant aux activités de l'English Summer Fun, suivez les indications et remplissez le formulaire suivant.</target>
+            </trans-unit>
+            <trans-unit id="184">
+                <source>Sí, pagar ara el 50%</source>
+                <target>Oui, payer maintenant la moitié</target>
+            </trans-unit>
+            <trans-unit id="185">
+                <source>Al•lèrgies, intoleràncies o malalties cròniques:</source>
+                <target>Allergies, intolérances ou maladies chroniques :</target>
+            </trans-unit>
+            <trans-unit id="186">
+                <source>Recordeu que fins no fer efectiu el pagament no es formalitzarà la reserva de la plaça.</source>
+                <source>Recordeu que fins no fer efectiu el pagament no es formalitzarà la reserva de la plaça.</source>
+            </trans-unit>
+            <trans-unit id="187">
+                <source>Vull que aquest sigui l'e-mail principal de contacte per rebre les notificacions del centre Kids&amp;Us</source>
+                <target>Je souhaite que ce soit l'adresse e-mail principale pour recevoir les notifications du centre Kids&amp;Us</target>
+            </trans-unit>
+            <trans-unit id="189">
+                <source>Nom alumne:</source>
+                <target>Nom de l'élève :</target>
+            </trans-unit>
+            <trans-unit id="190">
+                <source>Té algun tipus de malaltia o al•lèrgia:</source>
+                <target>Souffre-t-il d'une maladie ou d'une allergie ?</target>
+            </trans-unit>
+            <trans-unit id="191">
+                <source>Té alguna discapacitat que presenti especial dificultat d'integració:</source>
+                <target>Souffre-t-il d'un handicap qui présente des difficultés particulières d'intégration ?</target>
+            </trans-unit>
+            <trans-unit id="192">
+                <source>Nom i Cognoms:</source>
+                <target>Noms et prénoms :</target>
+            </trans-unit>
+            <trans-unit id="193">
+                <source>Desitjo ferl el 100% del pagament.</source>
+                <target>Je souhaite payer la totalité maintenant.</target>
+            </trans-unit>
+            <trans-unit id="194">
+                <source>Dades del pare/mare/tutor legal</source>
+                <target>Données du père/de la mère/du tuteur légal</target>
+            </trans-unit>
+            <trans-unit id="195">
+                <source>Dades dels pares/tutors legals de l'alumne</source>
+                <target>Données des parents/des tuteurs légaux de l'élève</target>
+            </trans-unit>
+            <trans-unit id="196">
+                <source>Dades dels pares/tutors legals</source>
+                <target>Données de parents/des tuteurs légaux</target>
+            </trans-unit>
+            <trans-unit id="197">
+                <source>condicions_pdf</source>
+                <target>Je déclare avoir lu et accepté les conditions générales et autorisations reçues dans un document annexe au moment de l'inscription. Compléter avec le nom, la date et la signature du tuteur légal, de la mère ou du père.</target>
+            </trans-unit>
+            <trans-unit id="198">
+                <source>fullInscripcio</source>
+                <target>Document d'inscription. Code d'inscription :</target>
+            </trans-unit>
+            <trans-unit id="199">
+                <source>fullInscripcio2</source>
+                <target>Document des données de paiement</target>
+            </trans-unit>
+            <trans-unit id="200">
+                <source>Nom i cognoms pare/mare/tutor:</source>
+                <target>Noms et prénoms du père/de la mère/du tuteur :</target>
+            </trans-unit>
+            <trans-unit id="201">
+                <source>Moltes gràcies.</source>
+                <target>Merci beaucoup.</target>
+            </trans-unit>
+            <trans-unit id="202">
+                <source>*Escola de procedència:</source>
+                <target>*École de provenance :</target>
+            </trans-unit>
+            <trans-unit id="203">
+                <source>Altra:</source>
+                <target>Autre :</target>
+            </trans-unit>
+            <trans-unit id="204">
+                <source>Repetir e-mail:</source>
+                <target>Saisir à nouveau l'adresse e-mail :</target>
+            </trans-unit>
+            <trans-unit id="205">
+                <source>Document per entregar a l'escola un cop signat.</source>
+                <target>Document à fournir à l'école une fois signé.</target>
+            </trans-unit>
+            <trans-unit id="206">
+                <source>Centre Kids&amp;Us de procedència:</source>
+                <target>Centre Kids&amp;Us de provenance :</target>
+            </trans-unit>
+            <trans-unit id="207">
+                <source>FORMA DE PAGAMENT</source>
+                <target>MOYEN DE PAIEMENT</target>
+            </trans-unit>
+            <trans-unit id="208">
+                <source>*El pagament s'haurà d'efectuar en el transcurs de tres dies hàbils indicant al concepte el nom dels nen/s.</source>
+                <target>*Le paiement devra s'effectuer dans les trois jours ouvrables en indiquant le prénom de(s) enfant(s).</target>
+            </trans-unit>
+            <trans-unit id="210">
+                <source>El servei d'acollida té un cost adicional de %preu% € per setmana</source>
+                <target>Le service d'accueil est disponible à un coût supplémentaire de %preu% € par semaine</target>
+            </trans-unit>
+            <trans-unit id="211">
+                <source>Nom</source>
+                <target>Prénom</target>
+            </trans-unit>
+            <trans-unit id="212">
+                <source>Cognom 1</source>
+                <target>Nom 1</target>
+            </trans-unit>
+            <trans-unit id="213">
+                <source>Cognom 2</source>
+                <target>Nom 2</target>
+            </trans-unit>
+            <trans-unit id="214">
+                <source>Carrer, Número, Pis, Porta</source>
+                <target>Rue, Numéro, Étage, Porte</target>
+            </trans-unit>
+            <trans-unit id="215">
+                <source>Província</source>
+                <target>Province</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Província:</source>
+                <target>Province:</target>
+            </trans-unit>
+            <trans-unit id="216">
+                <source>Núm. targeta sanitària CATSALUT</source>
+                <target>Numéro de la carte d'assurance maladie CATSALUT</target>
+            </trans-unit>
+            <trans-unit id="217">
+                <source>Companyia (si no és CATSALUT)</source>
+                <target>Compagnie (si ce n'est pas CATSALUT)</target>
+            </trans-unit>
+            <trans-unit id="218">
+                <source>Curs cursat:</source>
+                <target>Niveau scolaire atteint :</target>
+            </trans-unit>
+            <trans-unit id="219">
+                <source>Alumne Kids&amp;Us</source>
+                <target>Elève Kid&amp;Us</target>
+            </trans-unit>
+            <trans-unit id="220">
+                <source>Sí</source>
+                <target>Oui</target>
+            </trans-unit>
+            <trans-unit id="221">
+                <source>No</source>
+                <target>Non</target>
+            </trans-unit>
+            <trans-unit id="222">
+                <source>Té alguna discapacitat</source>
+                <target>Souffre d'un handicap</target>
+            </trans-unit>
+            <trans-unit id="223">
+                <source>Grau</source>
+                <target>Niveau</target>
+            </trans-unit>
+            <trans-unit id="224">
+                <source>Quina</source>
+                <target>Lequel</target>
+            </trans-unit>
+            <trans-unit id="225">
+                <source>Altres aspectes a tenir en compte</source>
+                <target>Autres aspects à prendre en compte</target>
+            </trans-unit>
+            <trans-unit id="226">
+                <source>Sol·licita ajut econòmic, beca?</source>
+                <target>Demande d'aide financière. Une bourse?</target>
+            </trans-unit>
+            <trans-unit id="227">
+                <source>Recordeu que es poden demanar ajuts per 10 dies de casal, 2 setmanes. Si s'inscriu l'infant més setmanes, el pagament s'haurà de fer en el període ordinari</source>
+                <target>Souvenez-vous que vous pouvez demander des aides pour les 10 jours d'activités, 2 semaines. Si vous inscrivez un enfant pour plus longtemps, le paiement s'effectuera normalement</target>
+            </trans-unit>
+            <trans-unit id="228">
+                <source>Sí, dono permís per a que l'infant realitzi les excursions</source>
+                <target>Oui, j'accepte que mon enfant participe aux excursions</target>
+            </trans-unit>
+            <trans-unit id="229">
+                <source>Descompte per inscriure a [1] o més infants: [2]%</source>
+                <target>Rabais d'inscription de [1] enfant ou plus : [2] %</target>
+            </trans-unit>
+            <trans-unit id="230">
+                <source>Descompte per inscriure a un infant a [1] o més setmanes: [2]%</source>
+                <target>Rabais d'inscription d'un enfant pour [1] semaine ou plus : [2] %</target>
+            </trans-unit>
+            <trans-unit id="231">
+                <source>Descomptes</source>
+                <target>Rabais</target>
+            </trans-unit>
+            <trans-unit id="232">
+                <source>error_tipo_fichero</source>
+                <target>Format de l'image non valide. Seuls les formats jpg, jpeg, png et gif sont autorisés</target>
+            </trans-unit>
+            <trans-unit id="233">
+                <source>imagen_no_valida</source>
+                <target>L'image sélectionnée n'est pas valide</target>
+            </trans-unit>
+            <trans-unit id="234">
+                <source>imagen_ancho_minimo_menor</source>
+                <target>L'image doit avoir une largeur minimale de %min_width% pixels</target>
+            </trans-unit>
+            <trans-unit id="235">
+                <source>imagen_alto_minimo_menor</source>
+                <target>L'image doit avoir une hauteur minimale de %min_height% pixels</target>
+            </trans-unit>
+            <trans-unit id="236">
+                <source>Seleccioni la província</source>
+                <target>Sélectionnez la province</target>
+            </trans-unit>
+            <trans-unit id="237">
+                <source>Espere, si us plau</source>
+                <target>Veuillez patienter</target>
+            </trans-unit>
+            <trans-unit id="235">
+                <source>Els possibles descomptes seran aplicats un cop confirmada la plaça</source>
+                <target>Les éventuels rabais seront appliqués après confirmation de la place</target>
+            </trans-unit>
+            <trans-unit id="236">
+                <source>Altres comentaris que considereu que poden ser d'interès per a facilitar l'estada del nen o nena a les colònies</source>
+                <target>Autres commentaires que vous considérez utiles pour faciliter le séjour de l'enfant durant les colonies</target>
+            </trans-unit>
+            <trans-unit id="237">
+                <source>Està prenent algun tipus de medicació o fent algun tipus de tractament o dieta?</source>
+                <target>Prenez-vous des médicaments ou suivez-vous un traitement ou un régime particuliers ?</target>
+            </trans-unit>
+            <trans-unit id="238">
+                <source>Sí, especificar</source>
+                <target>Sì, specificare</target>
+            </trans-unit>
+            <trans-unit id="239">
+                <source>No, no dono permís per a que l'infant realitzi les excursions</source>
+                <target>Non, je n'accepte pas que mon enfant participe aux excursions</target>
+            </trans-unit>
+            <trans-unit id="240">
+                <source>Excursió</source>
+                <target>Excursion</target>
+            </trans-unit>
+            <trans-unit id="241">
+                <source>Pujar foto</source>
+                <target>Charger la photo</target>
+            </trans-unit>
+            <trans-unit id="242">
+                <source>Companyia</source>
+                <target>Compagnie</target>
+            </trans-unit>
+            <trans-unit id="243">
+                <source>Núm. targeta sanitària</source>
+                <target>Numéro de la carte d'assurance maladie</target>
+            </trans-unit>
+            <trans-unit id="244">
+                <source>Descompte</source>
+                <target>Rabais</target>
+            </trans-unit>
+            <trans-unit id="245">
+                <source>Pagament amb rebut domiciliat</source>
+                <target>Paiment par facture débitée</target>
+            </trans-unit>
+            <trans-unit>
+                <source>He llegit i accepto les</source>
+                <target>J'ai lu et j'accepte les</target>
+            </trans-unit>
+            <trans-unit>
+                <source>condicions generals</source>
+                <target>conditions générales</target>
+            </trans-unit>
+            <trans-unit>
+                <source>i la</source>
+                <target>et la</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Seleccione primero un centro por favor</source>
+                <target>Veuillez d'abord sélectionner un centre</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Com fer-ho?</source>
+                <target>Comment procéder ?</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descompte per inscriure a un infant a [1] o més setmanes: [2]%</source>
+                <target>Rabais d'inscription d'un enfant pour [1] semaine ou plus : [2] %</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descompte per inscriure a [1] o més infants: [2]%</source>
+                <target>Rabais d'inscription de [1] enfant ou plus : [2] %</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Alumne Kids&amp;Us</source>
+                <target>Élève Kids&amp;Us</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Núm. Targeta Sanitària</source>
+                <target>Numéro de la carte d'assurance maladie</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Alumne</source>
+                <target>Élève</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Tomar una foto frontal del niño – se puede hacer con cualquier dispositivo móvil.</source>
+                <target>Prendre une photo de l'enfant. Vous pouvez utiliser toute sorte de dispositif mobile.</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Guardar / descargar la imagen en el escritorio.</source>
+                <target>Lors de l'inscription, veuillez la sélectionner et démarrer le processus de chargement. Le fichier doit être au format image jpg/png.</target>
+            </trans-unit>
+            <trans-unit>
+                <source>En el momento de realizar la inscripción, seleccionarla e iniciar el proceso de carga. El archivo deberá estar en formato de imagen: jpg/png.</source>
+                <target>Conserver / télécharger l'image sur le bureau.</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Alumne KidsUs</source>
+                <target><![CDATA[Élève Kids&Us]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>dd/mm/aaaa</source>
+                <target>jj/mm/aaaa</target>
+            </trans-unit>
+            <trans-unit>
+                <source>payment_fr</source>
+                <target>L’inscription ne sera définitive qu’après réception de l’entièreté du paiement.</target>
+            </trans-unit>
+            <trans-unit>
+                <source>payment</source>
+                <target>Paiement</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

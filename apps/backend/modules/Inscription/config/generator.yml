@@ -1,0 +1,92 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      Inscription
+    theme:            default
+
+    list:
+      title:        "Llistat d\'inscripcions"
+      display:      [=inscription_code, =created_at, student_name, student_primer_apellido, student_segundo_apellido, student_school_year, _kids_and_us_center, _method_payment, _is_paid, _state]
+      peer_method:   doSelectJoinCourse
+      filters: [student_course_inscription, state, inscription_code, method_payment, state, is_paid, student_name, student_primer_apellido, student_segundo_apellido, grupo_id, profesor_id, is_student_disability, student_allergies, student_birth_date, kids_and_us_center_id, beca, is_vaccinated]
+      sort:   [inscription_code, desc]
+      object_actions:
+        generatePdf:      { name: 'Generar full inscripció', action: generatePdf, icon: /sfAdminDashPlugin/images/icon_pdf.gif, params: target=_blank }
+        generateFicha:      { name: "Generar fitxa de l\\'alumne", action: pdfFichaComplete, icon: /sfAdminDashPlugin/images/icon_pdf.gif, params: target=_blank }
+        #marcarPagat:    { name: 'Marcar com a pagat', action: marcarPagat, icon: /sfAdminDashPlugin/images/Euro.png }
+        _edit:       ~
+        _delete:       ~
+
+    edit:
+      title: 'Editar inscripció'
+      display:
+          "Dades generals":  [created_at, inscription_code, _student_course_inscription, _state, _is_paid, _method_payment, split_payment, _grupo_id, _inscription_service_schedule]
+          "Dades de l\'alumne": [_student_photo, student_name, student_primer_apellido,  student_segundo_apellido, student_birth_date, student_address, student_zip, student_city, student_provincia, kids_and_us_center_id, student_school_year, _last_cooloff_year, student_friends, student_num_tarjeta_sanitaria, student_tarjeta_sanitaria_companyia, student_allergies, student_allergies_description, student_meds, student_meds_description, is_vaccinated, student_comments]
+          "Dades del pare / tutor legal": [father_name, father_primer_apellido, father_segundo_apellido, father_phone, father_dni, father_mail, is_father_mail_main]
+          "Dades de la mare / tutora legal": [mother_name, mother_primer_apellido, mother_segundo_apellido, mother_phone, mother_dni, mother_mail, is_mother_mail_main]
+
+    fields:
+          inscription_service_schedule:
+              name: 'Serveis'
+              type: admin_double_list
+              params: through_class=InscriptionServiceSchedule
+          created_at:     { name: 'Data inscripció', type: 'plain', params: date_format='dd-MM-yyyy, HH:mm' }
+          inscription_code:     { name: 'Codi inscripció', type: 'plain' }
+          state:     { name: 'Estat inscripció' }
+          is_paid:     { name: 'Estat pagament' }
+          student_course_inscription:     { name: 'Curs' }
+          split_payment:     { name: 'Pagament fraccionat (50%)' }
+          method_payment:     { name: 'Modalitat de pagament' }
+          student_name: { name: 'Nom'}
+          student_primer_apellido: { name: 'Cognom 1'}
+          student_segundo_apellido: { name: 'Cognom 2'}
+          student_birth_date: { name: 'Data de naixement' }
+          student_address: { name: 'Adreça'}
+          student_zip: { name: 'Codi postal'}
+          student_city: { name: 'Població'}
+          student_school_year: { name: 'Curs escolar cursat'}
+          student_friends: { name: 'Amics'}
+          is_student_disability: { name: 'Té alguna discapacitat?'}
+          student_disability: { name: 'Descripció discapacitat'}
+          student_allergies: { name: 'Té alguna al·lèrgia?'}
+          student_allergies_description: { name: 'Descripció al·lèrgia'}
+          beca: { name: 'Sol·licita ajut econòmic, beca?'}
+          father_name: { name: 'Nom'}
+          father_primer_apellido: { name: 'Cognom 1'}
+          father_segundo_apellido: { name: 'Cognom 2'}
+          father_phone: { name: 'Telèfon'}
+          father_dni: { name: 'DNI'}
+          father_mail: { name: 'E-mail'}
+          is_father_mail_main: { name: 'E-mail principal?' }
+          mother_name: { name: 'Nom'}
+          mother_primer_apellido: { name: 'Cognom 1' }
+          mother_segundo_apellido: { name: 'Cognom 2' }
+          mother_phone: { name: 'Telèfon'}
+          mother_dni: { name: 'DNI'}
+          mother_mail: { name: 'E-mail'}
+          is_mother_mail_main: { name: 'E-mail principal?'}
+          student_origin_summer_fun_center: { name: 'Centre de procedència' ,}
+          kids_and_us_center: { name: 'Centre de procedència' }
+          student_origin_summer_fun_center_list: { name: 'Centre de procedència' ,}
+          student_origin_summer_fun_center_altre: { name: 'Altre' ,}
+          grupo_id: { name: 'Grup' }
+          profesor_id: { name: 'Professor' }
+          student_provincia: { name: 'Província' }
+          student_num_tarjeta_sanitaria: { name: 'Núm. Targeta Sanitaria' }
+          student_tarjeta_sanitaria_companyia: { name: 'Companyia de Salut' }
+          is_student_kid_and_us: { name: 'Alumne Kids&Us' }
+          student_disability_level: { name: 'Grau de discapacitat' }
+          student_comments: { name: 'Altres aspectes a tenir en compte' }
+          student_photo: { name: 'Foto' }
+          custom_question: { name: 'Pregunta personalitzada' }
+          custom_question_answer: { name: 'Resposta pregunta personalitzada' }
+          student_num_tarjeta_sanitaria: { name: 'Núm. targeta sanitària' }
+          student_tarjeta_sanitaria_companyia: { name: 'Companyia' }
+          last_cooloff_year: { name: 'registration.previous_completed_cooloff' }
+          discountpercent: { name: 'Descompte (%)', help: 'Els decimals han d\'anar separats per un punt (Ex: 00.00)' }
+          student_meds: { name: 'registration.meds_question' }
+          student_meds_description: { name: 'registration.meds' }
+          is_vaccinated: { name: 'registration.is_vaccinated' }
+
+          
+

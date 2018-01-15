@@ -1,0 +1,28 @@
+#sf_admin_path a, #logout a { color: #F90; }
+#sf_admin_path a:hover, #logout a:hover, #NotificationContainer a:hover { color : #F90; }
+#sf_admin_path a:active, #logout a:active, #NotificationContainer a { color : #F90; }
+
+#sf_admin_container h1 { color: #F90; }
+#sf_admin_container h2 { background: url(../images/background-thaira.jpg) repeat-x; }
+#sf_admin_container thead tr, #sf_admin_content tfoot tr { background: url(../images/background-thaira.jpg); }
+#sf_admin_theme_header { border-bottom: #F90 4px solid; }
+#sf_admin_footer a:hover { color: #F90; text-decoration: underline; }
+
+.cpanel div.icon a:hover { background-color:#FFE6BF; border: 1px solid #F90; }
+.login h1#title { color:#F90; }
+.login-form a:hover { color: #F90; }
+.login-form input:focus { background-color:#FFE6BF !important; border-color:#F90 !important; }
+.login-text p span { color: #F90; }
+li.node a:hover { color: #F90; }
+.form_error { color: #F90; }
+.sf_admin_list th { background-image: url(../images/background-thaira.jpg); }
+form.button_to input:hover,
+ul.sf_admin_actions input:hover,
+.thaira-uploads-selector .operations input:hover { background-color:#FFE6BF !important; border-color:#F90 !important; }
+.sf_admin_filters ul.sf_admin_actions input:hover {	background-color:#FFE6BF !important; border-color:#F90 !important; }
+input:focus, textarea:focus, select:focus { background-color:#FFE6BF !important; border-color:#F90 !important; }
+.sf_admin_list a:hover { color:#F90 !important; }
+#sf_admin_container fieldset.collapse h2 a.collapse-toggle { color: #F90 !important; }
+#sf_admin_container h1 { color: #F90 !important; }
+#NotificationContainer { background-image: url(../images/back-thaira-up.jpg); }
+#NotificationContainer a:hover { color: #F90; }

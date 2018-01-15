@@ -1,0 +1,3 @@
+<div id="footer">
+    <?php echo image_tag('summer_fun/logos/kidsandus2.png', array('alt' => '')); ?> · <?php echo "C/ Canonge Montanyà, 1-5 baixos · 08242 Manresa (Barcelona) · (+34) 93 875 33 45"; ?> · <?php echo mail_to('info@kidsandus.es', 'info@kidsandus.es', array('title' => 'info@kidsandus.es')); ?> · <?php echo link_to('www.kidsandus.es', 'http://www.kidsandus.es', array('title' => 'www.kidsandus.es')); ?>
+</div>

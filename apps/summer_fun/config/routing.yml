@@ -1,0 +1,250 @@
+###########
+# DEFAULT
+index_ca:
+  url:   /ca/
+  #param: { module: static, action: homepage, sf_culture: ca }
+  param: { module: inscription, action: inscriptionStep1, sf_culture: ca }
+index_es:
+  url:   /es/
+  #param: { module: static, action: homepage, sf_culture: es }
+  param: { module: inscription, action: inscriptionStep1, sf_culture: es }
+index_it:
+  url:   /it/
+  #param: { module: static, action: homepage, sf_culture: it }
+  param: { module: inscription, action: inscriptionStep1, sf_culture: it }
+index_en:
+  url:   /en/
+  #param: { module: static, action: homepage, sf_culture: it }
+  param: { module: inscription, action: inscriptionStep1, sf_culture: en }
+
+###########
+# ACTIVITATS
+party_time_ca:
+  url:   /activitats/contes-i-cancons
+  param: { module: static, action: partyTime, sf_culture: ca }
+party_time_es:
+  url:   /actividades/cuentos-y-canciones
+  param: { module: static, action: partyTime, sf_culture: es }
+party_time_it:
+  url:   /attivita/ballie-le-canzoni
+  param: { module: static, action: partyTime, sf_culture: it }
+party_time_fr:
+  url:   /activites/des-histoires-et-des-chansons
+  param: { module: static, action: partyTime, sf_culture: fr }
+
+games_ca:
+  url:   /activitats/jocs-i-manualitats
+  param: { module: static, action: games, sf_culture: ca }
+games_es:
+  url:   /actividades/juegos-y-manualidades
+  param: { module: static, action: games, sf_culture: es }
+games_it:
+  url:   /attivita/giochi-e-attivita-manuali
+  param: { module: static, action: games, sf_culture: it }
+games_fr:
+  url:   /activites/jeux-et-de-lartisanat
+  param: { module: static, action: games, sf_culture: fr }
+
+theater_ca:
+  url:   /activitats/teatre-i-excursions
+  param: { module: static, action: theater, sf_culture: ca }
+theater_es:
+  url:   /actividades/teatro-y-excursiones
+  param: { module: static, action: theater, sf_culture: es }
+theater_it:
+  url:   /attivita/teatro-e-le-gite
+  param: { module: static, action: theater, sf_culture: it }
+theater_fr:
+  url:   /activites/theatre-et-excursions
+  param: { module: static, action: theater, sf_culture: fr }
+  
+###########
+# CENTERS
+centers_ca:
+  url:   /centres
+  param: { module: centers, action: zones, sf_culture: ca }
+centers_es:
+  url:   /centros
+  param: { module: centers, action: zones, sf_culture: es }
+centers_it:
+  url:   /scuole
+  param: { module: centers, action: zones, sf_culture: it }
+centers_fr:
+  url:   /centres-fr
+  param: { module: centers, action: zones, sf_culture: fr }
+
+center_ca:
+  url:   /centre/:stripped_center/:id
+  param: { module: centers, action: zone, sf_culture: ca }
+center_es:
+  url:   /centro/:stripped_center/:id
+  param: { module: centers, action: zone, sf_culture: es }
+center_it:
+  url:   /scuole/:stripped_center/:id
+  param: { module: centers, action: zone, sf_culture: it }
+center_fr:
+  url:   /centre-fr/:stripped_center/:id
+  param: { module: centers, action: zone, sf_culture: fr }
+  
+center_password_ca:
+  url:   /centre/:stripped_center/protected/:id
+  param: { module: centers, action: password, sf_culture: ca }
+center_password_es:
+  url:   /centro/:stripped_center/protected/:id
+  param: { module: centers, action: password, sf_culture: es }
+center_password_it:
+  url:   /scuole/:stripped_center/protected/:id
+  param: { module: centers, action: password, sf_culture: it }
+center_password_fr:
+  url:   /centre-fr/:stripped_center/protected/:id
+  param: { module: centers, action: password, sf_culture: fr }
+  
+center_password_check:
+  url:   /protected-file/:stripped_center/check/:id
+  param: { module: centers, action: passwordcheck }
+
+centers_zone_news_item_ca:
+  url:   /centres/zona/noticia/:id
+  param: { module: centers, action: zoneNewsItem, sf_culture: ca }
+centers_zone_news_item_es:
+  url:   /centros/zona/noticia/:id
+  param: { module: centers, action: zoneNewsItem, sf_culture: es }
+centers_zone_news_item_it:
+  url:   /scuole/area/news/:id
+  param: { module: centers, action: zoneNewsItem, sf_culture: it }
+centers_zone_news_item_fr:
+  url:   /centres/zone/news/:id
+  param: { module: centers, action: zoneNewsItem, sf_culture: fr }
+
+
+###########
+# DEFAULT
+
+homepage:
+  url:   /
+  param: { module: static, action: redirect, sf_culture: ca }
+
+
+#INSCRIPTION
+
+inscription_step1_ca:
+  url: /inscripcions
+  param: { module: inscription, action: inscriptionStep1, sf_culture: ca }
+
+inscription_step1_es:
+  url: /inscripciones
+  param: { module: inscription, action: inscriptionStep1, sf_culture: es }
+
+inscription_step1_en:
+  url: /registrations
+  param: { module: inscription, action: inscriptionStep1, sf_culture: en }
+
+inscription_step1_it:
+  url: /iscrizioni
+  param: { module: inscription, action: inscriptionStep1, sf_culture: it }
+
+inscription_step1_fr:
+  url: /inscriptions
+  param: { module: inscription, action: inscriptionStep1, sf_culture: fr }
+
+inscription_step2_ca:
+  url: /inscripcions/confirmacio
+  param: { module: inscription, action: inscriptionStep2, sf_culture: ca }
+
+inscription_step2_es:
+  url: /inscripciones
+  param: { module: inscription, action: inscriptionStep2, sf_culture: es }
+
+inscription_step2_it:
+  url: /iscrizioni
+  param: { module: inscription, action: inscriptionStep2, sf_culture: it }
+
+inscription_step2_fr:
+  url: /inscriptions
+  param: { module: inscription, action: inscriptionStep2, sf_culture: fr }
+
+inscription_step2_en:
+  url: /registrations
+  param: { module: inscription, action: inscriptionStep2, sf_culture: en }
+
+inscription_step2_confirm:
+    url: /step2_confirm
+    param: { module: inscription, action: inscriptionStep2Confirm }
+
+inscription_number_students:
+  url: /change_number_students/:inscriptions
+  param: { module: inscription, action: changeViewStudents }
+  requeriments: { inscriptions: \d+}
+
+inscription_servei_acollida:
+  url: /inscripcions/servei_acollida
+  param: { module: inscription, action: serveiAcollidaCenter }
+
+inscription_confirm_en:
+    url: /registrations/confirmed
+    param: { module: inscription, action: inscriptionConfirm, sf_culture: en }
+
+inscription_confirm_ca:
+    url: /inscripcio/confirmada
+    param: { module: inscription, action: inscriptionConfirm, sf_culture: ca }
+
+inscription_confirm_es:
+    url: /inscripcion/confirmada
+    param: { module: inscription, action: inscriptionConfirm, sf_culture: es }
+
+inscription_confirm_it:
+    url: /iscrizioni/confermato
+    param: { module: inscription, action: inscriptionConfirm, sf_culture: it }
+
+inscription_confirm_fr:
+    url: /inscription/confirme
+    param: { module: inscription, action: inscriptionConfirm, sf_culture: fr }
+
+setmanes_inscripcions_centre:
+  url:  /inscripcions/setmanes/centre
+  param:  { module: inscription, action: setmanesCentre }
+  
+inscription_cond_generales:
+    url:  /inscripcions/condiciones
+    param:  { module: inscription, action: condicionesCentre } 
+
+inscripcions_modalitat_pagament:
+  url: /inscripcions/modalitat_pagament
+  param: { module: inscription, action: modalitatPagament }
+
+pdf_test:
+  url:/pdf/test
+  param: { module: inscription, action: test, sf_culture: ca }
+  
+inscripcions_upload_photo:
+  url: /inscripcions/uplodad-photo
+  param: { module: inscription, action: uploadPhoto }
+
+# TPV
+tpv_launch_payment:
+    url: /:sf_culture/payment/:inscriptionId
+    param: { module: tpv, action: launchPayment }
+    requirements: { inscriptionId: \d+ }
+
+tpv_payment_notification:
+    url: /:sf_culture/payment/tpv-notification/:number/:payment
+    param: { module: tpv, action: paymentNotificationTpv }
+    requirements: { payment: '1|2' }
+
+user_payment_notification:
+    url: /:sf_culture/payment/user-notification/:number/:payment/:status
+    param: { module: tpv, action: paymentNotificationUser }
+    requirements: { status: 'ok|ko', payment: '1|2' }
+
+tpv_second_payment:
+    url: /:sf_culture/second-payment/:inscriptionId
+    param: { module: tpv, action: secondPayment }
+    requirements: { inscriptionId: \d+ }
+
+tpv_second_payment_reminder:
+    url: /payment/tpv/reminder/:pass
+    param: { module: tpv, action: secondPaymentTpvMailing }
+
+tpv_adjust_second_payment:
+    url: /second-payment/adjust/:pass
+    param: { module: tpv, action: adjustSecondPayment }

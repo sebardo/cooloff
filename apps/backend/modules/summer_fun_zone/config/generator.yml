@@ -1,0 +1,29 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      SummerFunZone
+    theme:            default
+
+    list:
+      title:        'Llistar Zones'
+      display:      [ =title_ca ]
+      max_per_page: 50
+      fields:
+        summer_fun_zone_id: { credentials: [administrador] }
+        no_filters: { name: Sense filtres, credentials: [summer-fun] }
+      object_actions:        
+        _edit:    ~
+        _delete:  ~
+
+    edit:
+      title:    'Editar Zona'
+      display:  [ title_ca, title_es, title_en ]
+      fields:
+        title_ca:   { type: input_tag, params: size=80 }
+        title_es:   { type: input_tag, params: size=80 }
+        title_en:   { type: input_tag, params: size=80 }
+
+    fields:
+      title_ca:             { name: 'Títol català' }
+      title_es:             { name: 'Títol castellano' }
+      title_en:             { name: 'Títol anglès' }

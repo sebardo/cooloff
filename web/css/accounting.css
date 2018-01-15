@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+.form-row-top .content {
+	float: left;
+	padding-left: 0 !important;
+	margin-right: 10px;
+}
+
+.label-top {
+	width: auto !important;
+}
+
+.sf_admin_action_excel {
+	background: url("../thairaUploadsPlugin/images/icons/page_white_excel.png") no-repeat scroll 3px 2px rgba(0, 0, 0, 0) !important;
+}
+
+.table_totals td {
+	border-top: 0px solid !important;
+	border-right: 0 none !important;
+	border-left: 0 none !important;
+}
+.table_totals tr {
+	border-top: 0 none !important;
+	border-right: 0 none !important;
+	border-left: 0 none !important;
+}
+
+.table_totals td {
+	font-size: 13px !important;
+}
+
+.table_totals {
+    border-collapse: collapse !important;
+    border: none !important;
+}

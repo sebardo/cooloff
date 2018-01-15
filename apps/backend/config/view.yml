@@ -1,0 +1,17 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        "Kids&Us | Administració"
+    robots:       noindex, nofollow
+    description:  
+    keywords:     
+    language:     ca
+
+  stylesheets:    []
+
+  javascripts:    ['/sfAdminDashPlugin/js/tiny_mce/tiny_mce.js', '/sfAdminDashPlugin/js/tiny_admin.js']
+
+  has_layout:     on
+  layout:         layout

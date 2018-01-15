@@ -1,0 +1,132 @@
+generator:
+  class:              sfPropelAdminGenerator
+  param:
+    model_class:      SummerFunCenter
+    theme:            default
+        
+    list:
+      title:        'Llistar Centre'
+      display:      [ =_title, is_registration_open ]
+      max_per_page: 50
+      object_actions:
+        _edit:    ~
+        _delete:  { credentials: [administrador] }
+
+    edit:
+      title:            'Editar Centre'
+      display:
+
+        "General": [is_registration_open, summer_fun_zone_id, summer_fun_center_has_profile, mail]
+        "Formes de pagament": [transfer_payment, cash_payment, recibo_domiciliado_payment, tpv_payment, merchant_code, merchant_key, url_tpv, account_number, second_payment_date, second_payment_mailing_date]
+        "Descomptes": [weeks_discount, weeks_percent_discount, brothers_discount, brothers_percent_discount]
+        "Català":       [ title_ca, description_ca, _docs_ca, inscription_conditions_terms_pdf_ca, inscription_confirmation_mail_ca, second_payment_mailing_body_ca, second_payment_mailing_body_no_tpv_ca, recibo_domiciliado_txt_ca ]
+        "Castellano":   [ title_es, description_es, _docs_es, inscription_conditions_terms_pdf_es, inscription_confirmation_mail_es, second_payment_mailing_body_es, second_payment_mailing_body_no_tpv_es, recibo_domiciliado_txt_es ]
+        "English":     [ title_en, description_en, _docs_en, inscription_conditions_terms_pdf_en, inscription_confirmation_mail_en, second_payment_mailing_body_en, second_payment_mailing_body_no_tpv_en, recibo_domiciliado_txt_en ]
+      actions:
+        _delete:        { credentials: [administrador] }
+        _list:          { credentials: [administrador] }
+        _save:
+        _save_and_add:  { credentials: [administrador] }
+      fields:
+        summer_fun_center_has_profile:
+          name: 'Usuaris'
+          type: admin_double_list
+          params: through_class=SummerFunCenterHasProfile
+          credentials: [administrador]
+          help: 'Opcionalment pot assignar un usuari auxiliar per a què pugui editar informació relacionada amb aquest centre. L\'usuari ha de tenir el permís "summer-fun".'
+        summer_fun_zone_id:
+          credentials: [administrador]
+        title_ca:       { type: input_tag, params: size=80 }
+        title_es:       { type: input_tag, params: size=80 }
+        title_en:       { type: input_tag, params: size=80 }
+        recibo_domiciliado_txt_ca:       { type: input_tag, params: size=80 }
+        recibo_domiciliado_txt_es:       { type: input_tag, params: size=80 }
+        recibo_domiciliado_txt_en:       { type: input_tag, params: size=80 }
+        description_ca: { type: textarea_tag, params: size=120x6 class=rich }
+        description_es: { type: textarea_tag, params: size=120x6 class=rich }
+        description_en: { type: textarea_tag, params: size=120x6 class=rich }
+        inscription_confirmation_mail_ca: { type: textarea_tag, params: size=120x6 class=rich }
+        inscription_confirmation_mail_es: { type: textarea_tag, params: size=120x6 class=rich }
+        inscription_confirmation_mail_en: { type: textarea_tag, params: size=120x6 class=rich }
+        second_payment_mailing_body_ca: { type: textarea_tag, params: size=120x6 class=rich }
+        second_payment_mailing_body_es: { type: textarea_tag, params: size=120x6 class=rich }
+        second_payment_mailing_body_en: { type: textarea_tag, params: size=120x6 class=rich }
+        second_payment_mailing_body_no_tpv_ca: { type: textarea_tag, params: size=120x6 class=rich }
+        second_payment_mailing_body_no_tpv_es: { type: textarea_tag, params: size=120x6 class=rich }
+        second_payment_mailing_body_no_tpv_en: { type: textarea_tag, params: size=120x6 class=rich }
+        inscription_conditions_terms_pdf_ca:
+                name:           'Condicions generals (PDF)'
+                type:           admin_input_file_tag
+                upload_dir:     summer-fun/center/pdf-conditions/ca
+                params:         include_link='summer-fun/center/pdf-conditions/ca' include_text='veure pdf' include_remove=true
+
+        inscription_conditions_terms_pdf_es:
+                name:           'Condicions generals (PDF)'
+                type:           admin_input_file_tag
+                upload_dir:     summer-fun/center/pdf-conditions/es
+                params:         include_link='summer-fun/center/pdf-conditions/es' include_text='veure pdf' include_remove=true
+        inscription_conditions_terms_pdf_en:
+                name:           'Condicions generals (PDF)'
+                type:           admin_input_file_tag
+                upload_dir:     summer-fun/center/pdf-conditions/en
+                params:         include_link='summer-fun/center/pdf-conditions/en' include_text='veure pdf' include_remove=true
+        docs_ca:        { help: 'Màxim 10 documents. Format PDF o DOC. Pes màxim 2 MB.' }
+        docs_es:        { help: 'Màxim 10 documents. Format PDF o DOC. Pes màxim 2 MB.' }
+        docs_en:        { help: 'Màxim 10 documents. Format PDF o DOC. Pes màxim 2 MB.' }
+        text_shelter_ca: { type: textarea_tag, params: size=120x6 class=rich }
+        text_shelter_es: { type: textarea_tag, params: size=120x6 class=rich }
+        text_shelter_en: { type: textarea_tag, params: size=120x6 class=rich }
+        custom_question_ca: { type: input_tag, params: size=80 }
+        custom_question_es: { type: input_tag, params: size=80 }
+        custom_question_en: { type: input_tag, params: size=80 }
+        tpv_payment:    {  name: 'Pagament TPV' }
+
+    fields:
+      summer_fun_zone_id: { name: 'Zona' }
+      title_ca:         { name: 'Títol' }
+      title_es:         { name: 'Títol' }
+      title_it:         { name: 'Títol' }
+      title_fr:         { name: 'Títol' }
+      recibo_domiciliado_txt_ca:         { name: 'Descripció pagament rebut domiciliat' }
+      recibo_domiciliado_txt_es:         { name: 'Descripció pagament rebut domiciliat' }
+      recibo_domiciliado_txt_en:         { name: 'Descripció pagament rebut domiciliat' }
+      description_ca:   { name: 'Descripció' }
+      description_es:   { name: 'Descripció' }
+      description_en:   { name: 'Descripció' }
+      custom_question_ca:   { name: 'Pregunta personalitzada (Sí/No)' }
+      custom_question_es:   { name: 'Pregunta personalitzada (Sí/No)' }
+      custom_question_en:   { name: 'Pregunta personalitzada (Sí/No)' }
+      docs_ca:             { name: 'Documents' }
+      docs_es:             { name: 'Documents' }
+      docs_en:             { name: 'Documents' }
+      morning_shelter:    {  name: 'Servei d'acollida matí?' }
+      afternoon_shelter:    {  name: 'Servei d'acollida tarda?' }
+      transfer_payment:    {  name: 'Transferència bancària?' }
+      cash_payment:    {  name: 'Pagament efectiu?' }
+      recibo_domiciliado_payment:    {  name: 'Pagament amb rebut domiciliat?' }
+      is_registration_open:    {  name: 'Inscripcions obertes?' }
+      account_number:    {  name: 'Nº de compte', help: 'EX: 1234-1234-12-1234567890'}
+      text_shelter_ca:  { name: 'Text servei d\'acollida' }
+      text_shelter_es:  { name: 'Text servei d\'acollida' }
+      text_shelter_en:  { name: 'Text servei d\'acollida' }
+      mail:                 { name: 'Email' }
+      has_shelter_charged: { name: 'Suplement per servei d\'acollida?' }
+      shelter_price: { name: 'Preu acollida', help: 'Els decimals han d\'anar separats per un punt (Ex: 00.00)' }
+      inscription_confirmation_mail_ca: { name: 'Text email confirmació' }
+      inscription_confirmation_mail_es: { name: 'Text email confirmació' }
+      inscription_confirmation_mail_en: { name: 'Text email confirmació' }
+      second_payment_mailing_body_ca: { name: 'Text email recordatori per a pagaments amb TPV' }
+      second_payment_mailing_body_es: { name: 'Text email recordatori per a pagaments amb TPV' }
+      second_payment_mailing_body_en: { name: 'Text email recordatori per a pagaments amb TPV' }
+      second_payment_mailing_body_no_tpv_ca: { name: 'Text email recordatori per a pagaments sense TPV' }
+      second_payment_mailing_body_no_tpv_es: { name: 'Text email recordatori per a pagaments sense TPV' }
+      second_payment_mailing_body_no_tpv_en: { name: 'Text email recordatori per a pagaments sense TPV' }
+      weeks_discount: { name: 'Setmanes' }
+      weeks_percent_discount: { name: '% de descompte per setmanes' }
+      brothers_discount: { name: 'Germans' }
+      brothers_percent_discount: { name: '% de descompte per germans' }
+      show_excursion_widget: { name: 'Mostrar "check" autorització excursió' }
+      show_beca_widget: { name: 'Mostrar "beca" en inscripció' }
+      second_payment_mailing_date: { name: 'Data enviament recordatori 2on pagament' }
+      second_payment_date: { name: 'Data 2on pagament' }
+

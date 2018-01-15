@@ -1,0 +1,22 @@
+all:
+
+  thaira_uploads:
+    default_culture:     en
+    cultures:
+      - en
+
+    purge_time:          10800 # 3 hours (2 days = 172800 s)
+
+    thumbnails_dir:      '%sf_upload_dir%/thairaUploadsPlugin/thumbnails'
+    thumbnails_web_dir:  '/%sf_upload_dir_name%/thairaUploadsPlugin/thumbnails'
+
+    pending_dir:         '%sf_upload_dir%/thairaUploadsPlugin/pending'
+    pending_web_dir:     '/%sf_upload_dir_name%/thairaUploadsPlugin/pending'
+
+    upload_dir:          '%sf_upload_dir%'
+    upload_web_dir:      '/%sf_upload_dir_name%'
+
+    types_extensions:
+        image:    [ jpg, png, gif ]  # Don't delete this
+    types_thumbnails:
+        other:    /thairaUploadsPlugin/images/thumbnails/other.gif # Don't delete this
