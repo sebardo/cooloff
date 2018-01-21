@@ -132,6 +132,8 @@
 	$worksheet->write(0, $col, utf8_decode(__('DNI')), $header);
 	$col++;
 	$worksheet->write(0, $col, utf8_decode(__('Nom Tutor')), $header);
+        $col++;
+	$worksheet->write(0, $col, utf8_decode(__('Email Tutor')), $header);
 	$col++;
     $worksheet->write(0, $col, utf8_decode(__('Telèfons')), $header);
     $col++;
@@ -167,6 +169,8 @@
         $worksheet->write($row, $col, $inscription['father_dni'], $center);
         $col++;
         $worksheet->write($row, $col, utf8_decode($inscription['father_name']), $center);
+        $col++;
+        $worksheet->write($row, $col, utf8_decode($inscription['father_mail']), $center);
         $col++;
         $worksheet->write($row, $col, utf8_decode($inscription['phones']), $center);
         $col++;
@@ -265,6 +269,8 @@
         			$worksheet->write($row, $col, $insc['father_dni'], $child);
         			$col++;
         			$worksheet->write($row, $col, utf8_decode($insc['father_name']), $child);
+        			$col++;
+                                $worksheet->write($row, $col, utf8_decode($insc['father_mail']), $child);
         			$col++;
                     $worksheet->write($row, $col, utf8_decode($insc['phones']), $child);
         			$col++;
