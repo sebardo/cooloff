@@ -21,6 +21,7 @@ generator:
         "Català": [name_ca, description_ca]
         "Castellano": [name_es, description_es]
         "English": [name_en, description_en]
+        "italià": [name_it, description_it]
       fields:
         price: { name: Preu, help: 'Els decimals han d\'anar separats per un punt (Ex: 00.00)' }
 
@@ -31,6 +32,8 @@ generator:
         description_es: { name: 'Descripció', type: textarea_tag, params: size=120x6 class=rich }
         name_en: { name: 'Nom', type: input_tag, params: size=120 }
         description_en: { name: 'Descripció', type: textarea_tag, params: size=120x6 class=rich }
+        name_it: { name: 'Nom', type: input_tag, params: size=120 }
+        description_it: { name: 'Descripció', type: textarea_tag, params: size=120x6 class=rich }
         centro_id: { name: 'Centre' }
         centro_id_list: { name: 'Centre' }
         price: { name: Preu }

@@ -17,13 +17,15 @@ generator:
 
     edit:
       title:    'Editar Zona'
-      display:  [ title_ca, title_es, title_en ]
+      display:  [ title_ca, title_es, title_en, title_it ]
       fields:
         title_ca:   { type: input_tag, params: size=80 }
         title_es:   { type: input_tag, params: size=80 }
         title_en:   { type: input_tag, params: size=80 }
+        title_it:   { type: input_tag, params: size=80 }
 
     fields:
       title_ca:             { name: 'Títol català' }
       title_es:             { name: 'Títol castellano' }
       title_en:             { name: 'Títol anglès' }
+      title_it:             { name: 'Títol italià' }

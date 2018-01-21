@@ -19,6 +19,7 @@ generator:
           "Català": [schedule_ca]
           "Castellano": [schedule_es]
           "Anglès": [schedule_en]
+          "italià": [schedule_it]
         fields:
           price: { name: Preu, help: 'Els decimals han d\'anar separats per un punt (Ex: 00.00)' }
 
@@ -43,5 +44,6 @@ generator:
         schedule_ca:       { name: 'Horari', type: input_tag, params: size=120 }
         schedule_es:       { name: 'Horari', type: input_tag, params: size=120 }
         schedule_en:       { name: 'Horari', type: input_tag, params: size=120 }
+        schedule_it:       { name: 'Horari', type: input_tag, params: size=120 }
 
 
