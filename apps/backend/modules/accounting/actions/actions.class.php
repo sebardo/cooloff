@@ -457,7 +457,6 @@ class accountingActions extends sfActions
 	
 	public function executeExport()
 	{
-            die('asd');
 		$this->processFilters();
 		$this->filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/accounting/filters');
 		
