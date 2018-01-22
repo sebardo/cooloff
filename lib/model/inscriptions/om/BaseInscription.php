@@ -17,10 +17,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 
 	
-	protected $inscription_code = 0;
-
-
-	
 	protected $student_name;
 
 
@@ -57,10 +53,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 
 	
-	protected $is_student_disability = false;
-
-
-	
 	protected $student_disability;
 
 
@@ -94,10 +86,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 	
 	protected $father_mail;
-
-
-	
-	protected $state = 0;
 
 
 	
@@ -146,12 +134,28 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 	
 	protected $is_paid = 0;
-
-
 	
+        
+
+	protected $state = 0;
+
+        
+        
 	protected $method_payment = 0;
+        
+        
+        
+        protected $shelter ;
 
+       
+	
+	protected $inscription_code = 0;
+        
+        
+        
+	protected $is_student_disability = false;
 
+        
 	
 	protected $student_provincia;
 
@@ -226,7 +230,11 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 	
 	protected $payment_date;
-
+        
+        
+        
+        protected $payment_date_second;
+        
 
 	
 	protected $certificated;
@@ -333,13 +341,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getInscriptionCode()
-	{
-
-		return $this->inscription_code;
-	}
-
-	
 	public function getStudentName()
 	{
 
@@ -418,13 +419,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 	}
 
 	
-	public function getIsStudentDisability()
-	{
-
-		return $this->is_student_disability;
-	}
-
-	
 	public function getStudentDisability()
 	{
 
@@ -485,13 +479,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 	{
 
 		return $this->father_mail;
-	}
-
-	
-	public function getState()
-	{
-
-		return $this->state;
 	}
 
 	
@@ -578,13 +565,37 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		return $this->is_paid;
 	}
 
-	
+	public function getState()
+	{
+
+		return $this->state;
+	}
+        
 	public function getMethodPayment()
 	{
 
 		return $this->method_payment;
 	}
 
+        public function getShelter()
+	{
+
+		return $this->shelter;
+	}
+        
+
+	public function getInscriptionCode()
+	{
+
+		return $this->inscription_code;
+	}
+
+	
+	public function getIsStudentDisability()
+	{
+
+		return $this->is_student_disability;
+	}
 	
 	public function getStudentProvincia()
 	{
@@ -732,6 +743,27 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 			return date($format, $ts);
 		}
 	}
+        
+        public function getPaymentDateSecond($format = 'Y-m-d')
+	{
+
+		if ($this->payment_date_second === null || $this->payment_date_second === '') {
+			return null;
+		} elseif (!is_int($this->payment_date_second)) {
+						$ts = strtotime($this->payment_date_second);
+			if ($ts === -1 || $ts === false) { 				throw new PropelException("Unable to parse value of [payment_date] as date/time value: " . var_export($this->payment_date_second, true));
+			}
+		} else {
+			$ts = $this->payment_date_second;
+		}
+		if ($format === null) {
+			return $ts;
+		} elseif (strpos($format, '%') !== false) {
+			return strftime($format, $ts);
+		} else {
+			return date($format, $ts);
+		}
+	}
 
 	
 	public function getCertificated()
@@ -855,21 +887,7 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		}
 
 	} 
-	
-	public function setInscriptionCode($v)
-	{
-
-						if ($v !== null && !is_int($v) && is_numeric($v)) {
-			$v = (int) $v;
-		}
-
-		if ($this->inscription_code !== $v || $v === 0) {
-			$this->inscription_code = $v;
-			$this->modifiedColumns[] = InscriptionPeer::INSCRIPTION_CODE;
-		}
-
-	} 
-	
+        
 	public function setStudentName($v)
 	{
 
@@ -998,16 +1016,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 	} 
 	
-	public function setIsStudentDisability($v)
-	{
-
-		if ($this->is_student_disability !== $v || $v === false) {
-			$this->is_student_disability = $v;
-			$this->modifiedColumns[] = InscriptionPeer::IS_STUDENT_DISABILITY;
-		}
-
-	} 
-	
 	public function setStudentDisability($v)
 	{
 
@@ -1126,20 +1134,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		if ($this->father_mail !== $v) {
 			$this->father_mail = $v;
 			$this->modifiedColumns[] = InscriptionPeer::FATHER_MAIL;
-		}
-
-	} 
-	
-	public function setState($v)
-	{
-
-						if ($v !== null && !is_int($v) && is_numeric($v)) {
-			$v = (int) $v;
-		}
-
-		if ($this->state !== $v || $v === 0) {
-			$this->state = $v;
-			$this->modifiedColumns[] = InscriptionPeer::STATE;
 		}
 
 	} 
@@ -1300,6 +1294,22 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 	} 
 	
+        
+	public function setState($v)
+	{
+
+						if ($v !== null && !is_int($v) && is_numeric($v)) {
+			$v = (int) $v;
+		}
+
+		if ($this->state !== $v || $v === 0) {
+			$this->state = $v;
+			$this->modifiedColumns[] = InscriptionPeer::STATE;
+		}
+
+	} 
+	
+        
 	public function setMethodPayment($v)
 	{
 
@@ -1314,6 +1324,45 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 	} 
 	
+        public function setShelter($v)
+	{
+
+                                            if ($v !== null && !is_int($v) && is_numeric($v)) {
+			$v = (int) $v;
+		}
+
+		if ($this->shelter !== $v || $v === 0) {
+			$this->shelter = $v;
+			$this->modifiedColumns[] = InscriptionPeer::SHELTER;
+		}
+
+	}
+        
+	public function setInscriptionCode($v)
+	{
+
+						if ($v !== null && !is_int($v) && is_numeric($v)) {
+			$v = (int) $v;
+		}
+
+		if ($this->inscription_code !== $v || $v === 0) {
+			$this->inscription_code = $v;
+			$this->modifiedColumns[] = InscriptionPeer::INSCRIPTION_CODE;
+		}
+
+	} 
+        
+	public function setIsStudentDisability($v)
+	{
+
+		if ($this->is_student_disability !== $v || $v === false) {
+			$this->is_student_disability = $v;
+			$this->modifiedColumns[] = InscriptionPeer::IS_STUDENT_DISABILITY;
+		}
+
+	} 
+	
+        
 	public function setStudentProvincia($v)
 	{
 
@@ -1554,6 +1603,24 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		}
 
 	} 
+        
+        public function setPaymentDateSecond($v)
+	{
+
+		if ($v !== null && !is_int($v)) {
+			$ts = strtotime($v);
+                if ($ts === -1 || $ts === false) { 				
+                    throw new PropelException("Unable to parse date/time value for [payment_date_second] from input: " . var_export($v, true));
+                }
+		} else {
+			$ts = $v;
+		}
+		if ($this->payment_date_second !== $ts) {
+			$this->payment_date_second = $ts;
+			$this->modifiedColumns[] = InscriptionPeer::PAYMENT_DATE_SECOND;
+		}
+
+	} 
 	
 	public function setCertificated($v)
 	{
@@ -1729,143 +1796,147 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 			$this->created_at = $rs->getTimestamp($startcol + 1, null);
 
-			$this->inscription_code = $rs->getInt($startcol + 2);
+			$this->student_name = $rs->getString($startcol + 2);
 
-			$this->student_name = $rs->getString($startcol + 3);
+			$this->student_primer_apellido = $rs->getString($startcol + 3);
 
-			$this->student_primer_apellido = $rs->getString($startcol + 4);
+			$this->student_segundo_apellido = $rs->getString($startcol + 4);
 
-			$this->student_segundo_apellido = $rs->getString($startcol + 5);
+			$this->student_birth_date = $rs->getDate($startcol + 5, null);
 
-			$this->student_birth_date = $rs->getDate($startcol + 6, null);
+			$this->student_address = $rs->getString($startcol + 6);
 
-			$this->student_address = $rs->getString($startcol + 7);
+			$this->student_zip = $rs->getString($startcol + 7);
 
-			$this->student_zip = $rs->getString($startcol + 8);
+			$this->student_city = $rs->getString($startcol + 8);
 
-			$this->student_city = $rs->getString($startcol + 9);
+			$this->student_school_year = $rs->getString($startcol + 9);
 
-			$this->student_school_year = $rs->getString($startcol + 10);
+			$this->student_friends = $rs->getString($startcol + 10);
 
-			$this->student_friends = $rs->getString($startcol + 11);
+			$this->student_disability = $rs->getString($startcol + 11);
 
-			$this->is_student_disability = $rs->getBoolean($startcol + 12);
+			$this->student_allergies = $rs->getBoolean($startcol + 12);
 
-			$this->student_disability = $rs->getString($startcol + 13);
+			$this->student_allergies_description = $rs->getString($startcol + 13);
 
-			$this->student_allergies = $rs->getBoolean($startcol + 14);
+			$this->father_name = $rs->getString($startcol + 14);
 
-			$this->student_allergies_description = $rs->getString($startcol + 15);
+			$this->father_primer_apellido = $rs->getString($startcol + 15);
 
-			$this->father_name = $rs->getString($startcol + 16);
+			$this->father_segundo_apellido = $rs->getString($startcol + 16);
 
-			$this->father_primer_apellido = $rs->getString($startcol + 17);
+			$this->father_phone = $rs->getString($startcol + 17);
 
-			$this->father_segundo_apellido = $rs->getString($startcol + 18);
+			$this->father_dni = $rs->getString($startcol + 18);
 
-			$this->father_phone = $rs->getString($startcol + 19);
+			$this->father_mail = $rs->getString($startcol + 19);
 
-			$this->father_dni = $rs->getString($startcol + 20);
+			$this->is_father_mail_main = $rs->getBoolean($startcol + 20);
 
-			$this->father_mail = $rs->getString($startcol + 21);
+			$this->mother_name = $rs->getString($startcol + 21);
 
-			$this->state = $rs->getInt($startcol + 22);
+			$this->mother_primer_apellido = $rs->getString($startcol + 22);
 
-			$this->is_father_mail_main = $rs->getBoolean($startcol + 23);
+			$this->mother_segundo_apellido = $rs->getString($startcol + 23);
 
-			$this->mother_name = $rs->getString($startcol + 24);
+			$this->mother_phone = $rs->getString($startcol + 24);
 
-			$this->mother_primer_apellido = $rs->getString($startcol + 25);
+			$this->mother_dni = $rs->getString($startcol + 25);
 
-			$this->mother_segundo_apellido = $rs->getString($startcol + 26);
+			$this->mother_mail = $rs->getString($startcol + 26);
 
-			$this->mother_phone = $rs->getString($startcol + 27);
+			$this->is_mother_mail_main = $rs->getBoolean($startcol + 27);
 
-			$this->mother_dni = $rs->getString($startcol + 28);
+			$this->split_payment = $rs->getBoolean($startcol + 28);
 
-			$this->mother_mail = $rs->getString($startcol + 29);
+			$this->beca = $rs->getBoolean($startcol + 29);
 
-			$this->is_mother_mail_main = $rs->getBoolean($startcol + 30);
+			$this->student_course_inscription = $rs->getInt($startcol + 30);
 
-			$this->split_payment = $rs->getBoolean($startcol + 31);
+			$this->is_paid = $rs->getInt($startcol + 31);
 
-			$this->beca = $rs->getBoolean($startcol + 32);
+			$this->state = $rs->getInt($startcol + 32);
 
-			$this->student_course_inscription = $rs->getInt($startcol + 33);
+			$this->method_payment = $rs->getInt($startcol + 33);
+                        
+			$this->shelter = $rs->getInt($startcol + 34);
 
-			$this->is_paid = $rs->getInt($startcol + 34);
+			$this->inscription_code = $rs->getInt($startcol + 35);
 
-			$this->method_payment = $rs->getInt($startcol + 35);
+			$this->is_student_disability = $rs->getBoolean($startcol + 36);
 
-			$this->student_provincia = $rs->getInt($startcol + 36);
+			$this->student_provincia = $rs->getInt($startcol + 37);
 
-			$this->student_num_tarjeta_sanitaria = $rs->getString($startcol + 37);
+			$this->student_num_tarjeta_sanitaria = $rs->getString($startcol + 38);
 
-			$this->student_tarjeta_sanitaria_companyia = $rs->getString($startcol + 38);
+			$this->student_tarjeta_sanitaria_companyia = $rs->getString($startcol + 39);
 
-			$this->is_student_kid_and_us = $rs->getBoolean($startcol + 39);
+			$this->is_student_kid_and_us = $rs->getBoolean($startcol + 40);
 
-			$this->student_disability_level = $rs->getString($startcol + 40);
+			$this->student_disability_level = $rs->getString($startcol + 41);
 
-			$this->student_comments = $rs->getString($startcol + 41);
+			$this->student_comments = $rs->getString($startcol + 42);
 
-			$this->grupo_id = $rs->getInt($startcol + 42);
+			$this->grupo_id = $rs->getInt($startcol + 43);
 
-			$this->student_excursion = $rs->getBoolean($startcol + 43);
+			$this->student_excursion = $rs->getBoolean($startcol + 44);
 
-			$this->price = $rs->getFloat($startcol + 44);
+			$this->price = $rs->getFloat($startcol + 45);
 
-			$this->discount = $rs->getFloat($startcol + 45);
+			$this->discount = $rs->getFloat($startcol + 46);
 
-			$this->discountpercent = $rs->getFloat($startcol + 46);
+			$this->discountpercent = $rs->getFloat($startcol + 47);
 
-			$this->student_photo = $rs->getString($startcol + 47);
+			$this->student_photo = $rs->getString($startcol + 48);
 
-			$this->inscription_num = $rs->getInt($startcol + 48);
+			$this->inscription_num = $rs->getInt($startcol + 49);
 
-			$this->custom_question = $rs->getString($startcol + 49);
+			$this->custom_question = $rs->getString($startcol + 50);
 
-			$this->custom_question_answer = $rs->getBoolean($startcol + 50);
+			$this->custom_question_answer = $rs->getBoolean($startcol + 51);
 
-			$this->amount_beca = $rs->getFloat($startcol + 51);
+			$this->amount_beca = $rs->getFloat($startcol + 52);
 
-			$this->amount_first_payment = $rs->getFloat($startcol + 52);
+			$this->amount_first_payment = $rs->getFloat($startcol + 53);
 
-			$this->amount_second_payment = $rs->getFloat($startcol + 53);
+			$this->amount_second_payment = $rs->getFloat($startcol + 54);
 
-			$this->payment_date = $rs->getDate($startcol + 54, null);
+			$this->payment_date = $rs->getDate($startcol + 55, null);
 
-			$this->certificated = $rs->getBoolean($startcol + 55);
+			$this->payment_date_second = $rs->getDate($startcol + 56, null);
 
-			$this->certificatedname = $rs->getString($startcol + 56);
+			$this->certificated = $rs->getBoolean($startcol + 57);
 
-			$this->tpv_suffix = $rs->getInt($startcol + 57);
+			$this->certificatedname = $rs->getString($startcol + 58);
 
-			$this->tpv_first_payment_response = $rs->getString($startcol + 58);
+			$this->tpv_suffix = $rs->getInt($startcol + 59);
 
-			$this->tpv_second_payment_response = $rs->getString($startcol + 59);
+			$this->tpv_first_payment_response = $rs->getString($startcol + 60);
 
-			$this->culture = $rs->getString($startcol + 60);
+			$this->tpv_second_payment_response = $rs->getString($startcol + 61);
 
-			$this->is_payment_reminder_sent = $rs->getBoolean($startcol + 61);
+			$this->culture = $rs->getString($startcol + 62);
 
-			$this->kids_and_us_center_id = $rs->getInt($startcol + 62);
+			$this->is_payment_reminder_sent = $rs->getBoolean($startcol + 63);
 
-			$this->last_cooloff_year = $rs->getString($startcol + 63);
+			$this->kids_and_us_center_id = $rs->getInt($startcol + 64);
 
-			$this->email_confirmation_sent = $rs->getBoolean($startcol + 64);
+			$this->last_cooloff_year = $rs->getString($startcol + 65);
 
-			$this->student_meds = $rs->getBoolean($startcol + 65);
+			$this->email_confirmation_sent = $rs->getBoolean($startcol + 66);
 
-			$this->student_meds_description = $rs->getString($startcol + 66);
+			$this->student_meds = $rs->getBoolean($startcol + 67);
 
-			$this->is_vaccinated = $rs->getBoolean($startcol + 67);
+			$this->student_meds_description = $rs->getString($startcol + 68);
+
+			$this->is_vaccinated = $rs->getBoolean($startcol + 69);
 
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 68; 
+						return $startcol + 70; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating Inscription object", $e);
 		}
@@ -2109,201 +2180,207 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 				return $this->getCreatedAt();
 				break;
 			case 2:
-				return $this->getInscriptionCode();
-				break;
-			case 3:
 				return $this->getStudentName();
 				break;
-			case 4:
+			case 3:
 				return $this->getStudentPrimerApellido();
 				break;
-			case 5:
+			case 4:
 				return $this->getStudentSegundoApellido();
 				break;
-			case 6:
+			case 5:
 				return $this->getStudentBirthDate();
 				break;
-			case 7:
+			case 6:
 				return $this->getStudentAddress();
 				break;
-			case 8:
+			case 7:
 				return $this->getStudentZip();
 				break;
-			case 9:
+			case 8:
 				return $this->getStudentCity();
 				break;
-			case 10:
+			case 9:
 				return $this->getStudentSchoolYear();
 				break;
-			case 11:
+			case 10:
 				return $this->getStudentFriends();
 				break;
-			case 12:
-				return $this->getIsStudentDisability();
-				break;
-			case 13:
+			case 11:
 				return $this->getStudentDisability();
 				break;
-			case 14:
+			case 12:
 				return $this->getStudentAllergies();
 				break;
-			case 15:
+			case 13:
 				return $this->getStudentAllergiesDescription();
 				break;
-			case 16:
+			case 14:
 				return $this->getFatherName();
 				break;
-			case 17:
+			case 15:
 				return $this->getFatherPrimerApellido();
 				break;
-			case 18:
+			case 16:
 				return $this->getFatherSegundoApellido();
 				break;
-			case 19:
+			case 17:
 				return $this->getFatherPhone();
 				break;
-			case 20:
+			case 18:
 				return $this->getFatherDni();
 				break;
-			case 21:
+			case 19:
 				return $this->getFatherMail();
 				break;
-			case 22:
-				return $this->getState();
-				break;
-			case 23:
+			case 20:
 				return $this->getIsFatherMailMain();
 				break;
-			case 24:
+			case 21:
 				return $this->getMotherName();
 				break;
-			case 25:
+			case 22:
 				return $this->getMotherPrimerApellido();
 				break;
-			case 26:
+			case 23:
 				return $this->getMotherSegundoApellido();
 				break;
-			case 27:
+			case 24:
 				return $this->getMotherPhone();
 				break;
-			case 28:
+			case 25:
 				return $this->getMotherDni();
 				break;
-			case 29:
+			case 26:
 				return $this->getMotherMail();
 				break;
-			case 30:
+			case 27:
 				return $this->getIsMotherMailMain();
 				break;
-			case 31:
+			case 28:
 				return $this->getSplitPayment();
 				break;
-			case 32:
+			case 29:
 				return $this->getBeca();
 				break;
-			case 33:
+			case 30:
 				return $this->getStudentCourseInscription();
 				break;
-			case 34:
+			case 31:
 				return $this->getIsPaid();
 				break;
-			case 35:
+			case 32:
+				return $this->getState();
+				break;
+			case 33:
 				return $this->getMethodPayment();
 				break;
+                        case 34:
+				return $this->getShelter();
+				break;
+			case 35:
+				return $this->getInscriptionCode();
+				break;
 			case 36:
-				return $this->getStudentProvincia();
+				return $this->getIsStudentDisability();
 				break;
 			case 37:
-				return $this->getStudentNumTarjetaSanitaria();
+				return $this->getStudentProvincia();
 				break;
 			case 38:
-				return $this->getStudentTarjetaSanitariaCompanyia();
+				return $this->getStudentNumTarjetaSanitaria();
 				break;
 			case 39:
-				return $this->getIsStudentKidAndUs();
+				return $this->getStudentTarjetaSanitariaCompanyia();
 				break;
 			case 40:
-				return $this->getStudentDisabilityLevel();
+				return $this->getIsStudentKidAndUs();
 				break;
 			case 41:
-				return $this->getStudentComments();
+				return $this->getStudentDisabilityLevel();
 				break;
 			case 42:
-				return $this->getGrupoId();
+				return $this->getStudentComments();
 				break;
 			case 43:
-				return $this->getStudentExcursion();
+				return $this->getGrupoId();
 				break;
 			case 44:
-				return $this->getPrice();
+				return $this->getStudentExcursion();
 				break;
 			case 45:
-				return $this->getDiscount();
+				return $this->getPrice();
 				break;
 			case 46:
-				return $this->getDiscountpercent();
+				return $this->getDiscount();
 				break;
 			case 47:
-				return $this->getStudentPhoto();
+				return $this->getDiscountpercent();
 				break;
 			case 48:
-				return $this->getInscriptionNum();
+				return $this->getStudentPhoto();
 				break;
 			case 49:
-				return $this->getCustomQuestion();
+				return $this->getInscriptionNum();
 				break;
 			case 50:
-				return $this->getCustomQuestionAnswer();
+				return $this->getCustomQuestion();
 				break;
 			case 51:
-				return $this->getAmountBeca();
+				return $this->getCustomQuestionAnswer();
 				break;
 			case 52:
-				return $this->getAmountFirstPayment();
+				return $this->getAmountBeca();
 				break;
 			case 53:
-				return $this->getAmountSecondPayment();
+				return $this->getAmountFirstPayment();
 				break;
 			case 54:
-				return $this->getPaymentDate();
+				return $this->getAmountSecondPayment();
 				break;
 			case 55:
-				return $this->getCertificated();
+				return $this->getPaymentDate();
 				break;
-			case 56:
-				return $this->getCertificatedname();
+                        case 56:
+				return $this->getPaymentDateSecond();
 				break;
 			case 57:
-				return $this->getTpvSuffix();
+				return $this->getCertificated();
 				break;
 			case 58:
-				return $this->getTpvFirstPaymentResponse();
+				return $this->getCertificatedname();
 				break;
 			case 59:
-				return $this->getTpvSecondPaymentResponse();
+				return $this->getTpvSuffix();
 				break;
 			case 60:
-				return $this->getCulture();
+				return $this->getTpvFirstPaymentResponse();
 				break;
 			case 61:
-				return $this->getIsPaymentReminderSent();
+				return $this->getTpvSecondPaymentResponse();
 				break;
 			case 62:
-				return $this->getKidsAndUsCenterId();
+				return $this->getCulture();
 				break;
 			case 63:
-				return $this->getLastCooloffYear();
+				return $this->getIsPaymentReminderSent();
 				break;
 			case 64:
-				return $this->getEmailConfirmationSent();
+				return $this->getKidsAndUsCenterId();
 				break;
 			case 65:
-				return $this->getStudentMeds();
+				return $this->getLastCooloffYear();
 				break;
 			case 66:
-				return $this->getStudentMedsDescription();
+				return $this->getEmailConfirmationSent();
 				break;
 			case 67:
+				return $this->getStudentMeds();
+				break;
+			case 68:
+				return $this->getStudentMedsDescription();
+				break;
+			case 69:
 				return $this->getIsVaccinated();
 				break;
 			default:
@@ -2318,72 +2395,74 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		$result = array(
 			$keys[0] => $this->getId(),
 			$keys[1] => $this->getCreatedAt(),
-			$keys[2] => $this->getInscriptionCode(),
-			$keys[3] => $this->getStudentName(),
-			$keys[4] => $this->getStudentPrimerApellido(),
-			$keys[5] => $this->getStudentSegundoApellido(),
-			$keys[6] => $this->getStudentBirthDate(),
-			$keys[7] => $this->getStudentAddress(),
-			$keys[8] => $this->getStudentZip(),
-			$keys[9] => $this->getStudentCity(),
-			$keys[10] => $this->getStudentSchoolYear(),
-			$keys[11] => $this->getStudentFriends(),
-			$keys[12] => $this->getIsStudentDisability(),
-			$keys[13] => $this->getStudentDisability(),
-			$keys[14] => $this->getStudentAllergies(),
-			$keys[15] => $this->getStudentAllergiesDescription(),
-			$keys[16] => $this->getFatherName(),
-			$keys[17] => $this->getFatherPrimerApellido(),
-			$keys[18] => $this->getFatherSegundoApellido(),
-			$keys[19] => $this->getFatherPhone(),
-			$keys[20] => $this->getFatherDni(),
-			$keys[21] => $this->getFatherMail(),
-			$keys[22] => $this->getState(),
-			$keys[23] => $this->getIsFatherMailMain(),
-			$keys[24] => $this->getMotherName(),
-			$keys[25] => $this->getMotherPrimerApellido(),
-			$keys[26] => $this->getMotherSegundoApellido(),
-			$keys[27] => $this->getMotherPhone(),
-			$keys[28] => $this->getMotherDni(),
-			$keys[29] => $this->getMotherMail(),
-			$keys[30] => $this->getIsMotherMailMain(),
-			$keys[31] => $this->getSplitPayment(),
-			$keys[32] => $this->getBeca(),
-			$keys[33] => $this->getStudentCourseInscription(),
-			$keys[34] => $this->getIsPaid(),
-			$keys[35] => $this->getMethodPayment(),
-			$keys[36] => $this->getStudentProvincia(),
-			$keys[37] => $this->getStudentNumTarjetaSanitaria(),
-			$keys[38] => $this->getStudentTarjetaSanitariaCompanyia(),
-			$keys[39] => $this->getIsStudentKidAndUs(),
-			$keys[40] => $this->getStudentDisabilityLevel(),
-			$keys[41] => $this->getStudentComments(),
-			$keys[42] => $this->getGrupoId(),
-			$keys[43] => $this->getStudentExcursion(),
-			$keys[44] => $this->getPrice(),
-			$keys[45] => $this->getDiscount(),
-			$keys[46] => $this->getDiscountpercent(),
-			$keys[47] => $this->getStudentPhoto(),
-			$keys[48] => $this->getInscriptionNum(),
-			$keys[49] => $this->getCustomQuestion(),
-			$keys[50] => $this->getCustomQuestionAnswer(),
-			$keys[51] => $this->getAmountBeca(),
-			$keys[52] => $this->getAmountFirstPayment(),
-			$keys[53] => $this->getAmountSecondPayment(),
-			$keys[54] => $this->getPaymentDate(),
-			$keys[55] => $this->getCertificated(),
-			$keys[56] => $this->getCertificatedname(),
-			$keys[57] => $this->getTpvSuffix(),
-			$keys[58] => $this->getTpvFirstPaymentResponse(),
-			$keys[59] => $this->getTpvSecondPaymentResponse(),
-			$keys[60] => $this->getCulture(),
-			$keys[61] => $this->getIsPaymentReminderSent(),
-			$keys[62] => $this->getKidsAndUsCenterId(),
-			$keys[63] => $this->getLastCooloffYear(),
-			$keys[64] => $this->getEmailConfirmationSent(),
-			$keys[65] => $this->getStudentMeds(),
-			$keys[66] => $this->getStudentMedsDescription(),
-			$keys[67] => $this->getIsVaccinated(),
+			$keys[2] => $this->getStudentName(),
+			$keys[3] => $this->getStudentPrimerApellido(),
+			$keys[4] => $this->getStudentSegundoApellido(),
+			$keys[5] => $this->getStudentBirthDate(),
+			$keys[6] => $this->getStudentAddress(),
+			$keys[7] => $this->getStudentZip(),
+			$keys[8] => $this->getStudentCity(),
+			$keys[9] => $this->getStudentSchoolYear(),
+			$keys[10] => $this->getStudentFriends(),
+			$keys[11] => $this->getStudentDisability(),
+			$keys[12] => $this->getStudentAllergies(),
+			$keys[13] => $this->getStudentAllergiesDescription(),
+			$keys[14] => $this->getFatherName(),
+			$keys[15] => $this->getFatherPrimerApellido(),
+			$keys[16] => $this->getFatherSegundoApellido(),
+			$keys[17] => $this->getFatherPhone(),
+			$keys[18] => $this->getFatherDni(),
+			$keys[19] => $this->getFatherMail(),
+			$keys[20] => $this->getIsFatherMailMain(),
+			$keys[21] => $this->getMotherName(),
+			$keys[22] => $this->getMotherPrimerApellido(),
+			$keys[23] => $this->getMotherSegundoApellido(),
+			$keys[24] => $this->getMotherPhone(),
+			$keys[25] => $this->getMotherDni(),
+			$keys[26] => $this->getMotherMail(),
+			$keys[27] => $this->getIsMotherMailMain(),
+			$keys[28] => $this->getSplitPayment(),
+			$keys[29] => $this->getBeca(),
+			$keys[30] => $this->getStudentCourseInscription(),
+			$keys[31] => $this->getIsPaid(),
+			$keys[32] => $this->getState(),
+			$keys[33] => $this->getMethodPayment(),
+			$keys[34] => $this->getShelter(),
+			$keys[35] => $this->getInscriptionCode(),
+			$keys[36] => $this->getIsStudentDisability(),
+			$keys[37] => $this->getStudentProvincia(),
+			$keys[38] => $this->getStudentNumTarjetaSanitaria(),
+			$keys[39] => $this->getStudentTarjetaSanitariaCompanyia(),
+			$keys[40] => $this->getIsStudentKidAndUs(),
+			$keys[41] => $this->getStudentDisabilityLevel(),
+			$keys[42] => $this->getStudentComments(),
+			$keys[43] => $this->getGrupoId(),
+			$keys[44] => $this->getStudentExcursion(),
+			$keys[45] => $this->getPrice(),
+			$keys[46] => $this->getDiscount(),
+			$keys[47] => $this->getDiscountpercent(),
+			$keys[48] => $this->getStudentPhoto(),
+			$keys[49] => $this->getInscriptionNum(),
+			$keys[50] => $this->getCustomQuestion(),
+			$keys[51] => $this->getCustomQuestionAnswer(),
+			$keys[52] => $this->getAmountBeca(),
+			$keys[53] => $this->getAmountFirstPayment(),
+			$keys[54] => $this->getAmountSecondPayment(),
+			$keys[55] => $this->getPaymentDate(),
+			$keys[56] => $this->getPaymentDateSecond(),
+			$keys[57] => $this->getCertificated(),
+			$keys[58] => $this->getCertificatedname(),
+			$keys[59] => $this->getTpvSuffix(),
+			$keys[60] => $this->getTpvFirstPaymentResponse(),
+			$keys[61] => $this->getTpvSecondPaymentResponse(),
+			$keys[62] => $this->getCulture(),
+			$keys[63] => $this->getIsPaymentReminderSent(),
+			$keys[64] => $this->getKidsAndUsCenterId(),
+			$keys[65] => $this->getLastCooloffYear(),
+			$keys[66] => $this->getEmailConfirmationSent(),
+			$keys[67] => $this->getStudentMeds(),
+			$keys[68] => $this->getStudentMedsDescription(),
+			$keys[69] => $this->getIsVaccinated(),
 		);
 		return $result;
 	}
@@ -2406,201 +2485,207 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 				$this->setCreatedAt($value);
 				break;
 			case 2:
-				$this->setInscriptionCode($value);
-				break;
-			case 3:
 				$this->setStudentName($value);
 				break;
-			case 4:
+			case 3:
 				$this->setStudentPrimerApellido($value);
 				break;
-			case 5:
+			case 4:
 				$this->setStudentSegundoApellido($value);
 				break;
-			case 6:
+			case 5:
 				$this->setStudentBirthDate($value);
 				break;
-			case 7:
+			case 6:
 				$this->setStudentAddress($value);
 				break;
-			case 8:
+			case 7:
 				$this->setStudentZip($value);
 				break;
-			case 9:
+			case 8:
 				$this->setStudentCity($value);
 				break;
-			case 10:
+			case 9:
 				$this->setStudentSchoolYear($value);
 				break;
-			case 11:
+			case 10:
 				$this->setStudentFriends($value);
 				break;
-			case 12:
-				$this->setIsStudentDisability($value);
-				break;
-			case 13:
+			case 11:
 				$this->setStudentDisability($value);
 				break;
-			case 14:
+			case 12:
 				$this->setStudentAllergies($value);
 				break;
-			case 15:
+			case 13:
 				$this->setStudentAllergiesDescription($value);
 				break;
-			case 16:
+			case 14:
 				$this->setFatherName($value);
 				break;
-			case 17:
+			case 15:
 				$this->setFatherPrimerApellido($value);
 				break;
-			case 18:
+			case 16:
 				$this->setFatherSegundoApellido($value);
 				break;
-			case 19:
+			case 17:
 				$this->setFatherPhone($value);
 				break;
-			case 20:
+			case 18:
 				$this->setFatherDni($value);
 				break;
-			case 21:
+			case 19:
 				$this->setFatherMail($value);
 				break;
-			case 22:
-				$this->setState($value);
-				break;
-			case 23:
+			case 20:
 				$this->setIsFatherMailMain($value);
 				break;
-			case 24:
+			case 21:
 				$this->setMotherName($value);
 				break;
-			case 25:
+			case 22:
 				$this->setMotherPrimerApellido($value);
 				break;
-			case 26:
+			case 23:
 				$this->setMotherSegundoApellido($value);
 				break;
-			case 27:
+			case 24:
 				$this->setMotherPhone($value);
 				break;
-			case 28:
+			case 25:
 				$this->setMotherDni($value);
 				break;
-			case 29:
+			case 26:
 				$this->setMotherMail($value);
 				break;
-			case 30:
+			case 27:
 				$this->setIsMotherMailMain($value);
 				break;
-			case 31:
+			case 28:
 				$this->setSplitPayment($value);
 				break;
-			case 32:
+			case 29:
 				$this->setBeca($value);
 				break;
-			case 33:
+			case 30:
 				$this->setStudentCourseInscription($value);
 				break;
-			case 34:
+			case 31:
 				$this->setIsPaid($value);
 				break;
-			case 35:
+			case 32:
+				$this->setState($value);
+				break;
+			case 33:
 				$this->setMethodPayment($value);
 				break;
+                        case 34:
+				$this->setShelter($value);
+				break;
+			case 35:
+				$this->setInscriptionCode($value);
+				break;
 			case 36:
-				$this->setStudentProvincia($value);
+				$this->setIsStudentDisability($value);
 				break;
 			case 37:
-				$this->setStudentNumTarjetaSanitaria($value);
+				$this->setStudentProvincia($value);
 				break;
 			case 38:
-				$this->setStudentTarjetaSanitariaCompanyia($value);
+				$this->setStudentNumTarjetaSanitaria($value);
 				break;
 			case 39:
-				$this->setIsStudentKidAndUs($value);
+				$this->setStudentTarjetaSanitariaCompanyia($value);
 				break;
 			case 40:
-				$this->setStudentDisabilityLevel($value);
+				$this->setIsStudentKidAndUs($value);
 				break;
 			case 41:
-				$this->setStudentComments($value);
+				$this->setStudentDisabilityLevel($value);
 				break;
 			case 42:
-				$this->setGrupoId($value);
+				$this->setStudentComments($value);
 				break;
 			case 43:
-				$this->setStudentExcursion($value);
+				$this->setGrupoId($value);
 				break;
 			case 44:
-				$this->setPrice($value);
+				$this->setStudentExcursion($value);
 				break;
 			case 45:
-				$this->setDiscount($value);
+				$this->setPrice($value);
 				break;
 			case 46:
-				$this->setDiscountpercent($value);
+				$this->setDiscount($value);
 				break;
 			case 47:
-				$this->setStudentPhoto($value);
+				$this->setDiscountpercent($value);
 				break;
 			case 48:
-				$this->setInscriptionNum($value);
+				$this->setStudentPhoto($value);
 				break;
 			case 49:
-				$this->setCustomQuestion($value);
+				$this->setInscriptionNum($value);
 				break;
 			case 50:
-				$this->setCustomQuestionAnswer($value);
+				$this->setCustomQuestion($value);
 				break;
 			case 51:
-				$this->setAmountBeca($value);
+				$this->setCustomQuestionAnswer($value);
 				break;
 			case 52:
-				$this->setAmountFirstPayment($value);
+				$this->setAmountBeca($value);
 				break;
 			case 53:
-				$this->setAmountSecondPayment($value);
+				$this->setAmountFirstPayment($value);
 				break;
 			case 54:
-				$this->setPaymentDate($value);
+				$this->setAmountSecondPayment($value);
 				break;
 			case 55:
-				$this->setCertificated($value);
-				break;
+				$this->setPaymentDate($value);
+                                break;
 			case 56:
-				$this->setCertificatedname($value);
+				$this->setPaymentDateSecond($value);
 				break;
 			case 57:
-				$this->setTpvSuffix($value);
+				$this->setCertificated($value);
 				break;
 			case 58:
-				$this->setTpvFirstPaymentResponse($value);
+				$this->setCertificatedname($value);
 				break;
 			case 59:
-				$this->setTpvSecondPaymentResponse($value);
+				$this->setTpvSuffix($value);
 				break;
 			case 60:
-				$this->setCulture($value);
+				$this->setTpvFirstPaymentResponse($value);
 				break;
 			case 61:
-				$this->setIsPaymentReminderSent($value);
+				$this->setTpvSecondPaymentResponse($value);
 				break;
 			case 62:
-				$this->setKidsAndUsCenterId($value);
+				$this->setCulture($value);
 				break;
 			case 63:
-				$this->setLastCooloffYear($value);
+				$this->setIsPaymentReminderSent($value);
 				break;
 			case 64:
-				$this->setEmailConfirmationSent($value);
+				$this->setKidsAndUsCenterId($value);
 				break;
 			case 65:
-				$this->setStudentMeds($value);
+				$this->setLastCooloffYear($value);
 				break;
 			case 66:
-				$this->setStudentMedsDescription($value);
+				$this->setEmailConfirmationSent($value);
 				break;
 			case 67:
+				$this->setStudentMeds($value);
+				break;
+			case 68:
+				$this->setStudentMedsDescription($value);
+				break;
+			case 69:
 				$this->setIsVaccinated($value);
 				break;
 		} 	}
@@ -2612,72 +2697,74 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 		if (array_key_exists($keys[0], $arr)) $this->setId($arr[$keys[0]]);
 		if (array_key_exists($keys[1], $arr)) $this->setCreatedAt($arr[$keys[1]]);
-		if (array_key_exists($keys[2], $arr)) $this->setInscriptionCode($arr[$keys[2]]);
-		if (array_key_exists($keys[3], $arr)) $this->setStudentName($arr[$keys[3]]);
-		if (array_key_exists($keys[4], $arr)) $this->setStudentPrimerApellido($arr[$keys[4]]);
-		if (array_key_exists($keys[5], $arr)) $this->setStudentSegundoApellido($arr[$keys[5]]);
-		if (array_key_exists($keys[6], $arr)) $this->setStudentBirthDate($arr[$keys[6]]);
-		if (array_key_exists($keys[7], $arr)) $this->setStudentAddress($arr[$keys[7]]);
-		if (array_key_exists($keys[8], $arr)) $this->setStudentZip($arr[$keys[8]]);
-		if (array_key_exists($keys[9], $arr)) $this->setStudentCity($arr[$keys[9]]);
-		if (array_key_exists($keys[10], $arr)) $this->setStudentSchoolYear($arr[$keys[10]]);
-		if (array_key_exists($keys[11], $arr)) $this->setStudentFriends($arr[$keys[11]]);
-		if (array_key_exists($keys[12], $arr)) $this->setIsStudentDisability($arr[$keys[12]]);
-		if (array_key_exists($keys[13], $arr)) $this->setStudentDisability($arr[$keys[13]]);
-		if (array_key_exists($keys[14], $arr)) $this->setStudentAllergies($arr[$keys[14]]);
-		if (array_key_exists($keys[15], $arr)) $this->setStudentAllergiesDescription($arr[$keys[15]]);
-		if (array_key_exists($keys[16], $arr)) $this->setFatherName($arr[$keys[16]]);
-		if (array_key_exists($keys[17], $arr)) $this->setFatherPrimerApellido($arr[$keys[17]]);
-		if (array_key_exists($keys[18], $arr)) $this->setFatherSegundoApellido($arr[$keys[18]]);
-		if (array_key_exists($keys[19], $arr)) $this->setFatherPhone($arr[$keys[19]]);
-		if (array_key_exists($keys[20], $arr)) $this->setFatherDni($arr[$keys[20]]);
-		if (array_key_exists($keys[21], $arr)) $this->setFatherMail($arr[$keys[21]]);
-		if (array_key_exists($keys[22], $arr)) $this->setState($arr[$keys[22]]);
-		if (array_key_exists($keys[23], $arr)) $this->setIsFatherMailMain($arr[$keys[23]]);
-		if (array_key_exists($keys[24], $arr)) $this->setMotherName($arr[$keys[24]]);
-		if (array_key_exists($keys[25], $arr)) $this->setMotherPrimerApellido($arr[$keys[25]]);
-		if (array_key_exists($keys[26], $arr)) $this->setMotherSegundoApellido($arr[$keys[26]]);
-		if (array_key_exists($keys[27], $arr)) $this->setMotherPhone($arr[$keys[27]]);
-		if (array_key_exists($keys[28], $arr)) $this->setMotherDni($arr[$keys[28]]);
-		if (array_key_exists($keys[29], $arr)) $this->setMotherMail($arr[$keys[29]]);
-		if (array_key_exists($keys[30], $arr)) $this->setIsMotherMailMain($arr[$keys[30]]);
-		if (array_key_exists($keys[31], $arr)) $this->setSplitPayment($arr[$keys[31]]);
-		if (array_key_exists($keys[32], $arr)) $this->setBeca($arr[$keys[32]]);
-		if (array_key_exists($keys[33], $arr)) $this->setStudentCourseInscription($arr[$keys[33]]);
-		if (array_key_exists($keys[34], $arr)) $this->setIsPaid($arr[$keys[34]]);
-		if (array_key_exists($keys[35], $arr)) $this->setMethodPayment($arr[$keys[35]]);
-		if (array_key_exists($keys[36], $arr)) $this->setStudentProvincia($arr[$keys[36]]);
-		if (array_key_exists($keys[37], $arr)) $this->setStudentNumTarjetaSanitaria($arr[$keys[37]]);
-		if (array_key_exists($keys[38], $arr)) $this->setStudentTarjetaSanitariaCompanyia($arr[$keys[38]]);
-		if (array_key_exists($keys[39], $arr)) $this->setIsStudentKidAndUs($arr[$keys[39]]);
-		if (array_key_exists($keys[40], $arr)) $this->setStudentDisabilityLevel($arr[$keys[40]]);
-		if (array_key_exists($keys[41], $arr)) $this->setStudentComments($arr[$keys[41]]);
-		if (array_key_exists($keys[42], $arr)) $this->setGrupoId($arr[$keys[42]]);
-		if (array_key_exists($keys[43], $arr)) $this->setStudentExcursion($arr[$keys[43]]);
-		if (array_key_exists($keys[44], $arr)) $this->setPrice($arr[$keys[44]]);
-		if (array_key_exists($keys[45], $arr)) $this->setDiscount($arr[$keys[45]]);
-		if (array_key_exists($keys[46], $arr)) $this->setDiscountpercent($arr[$keys[46]]);
-		if (array_key_exists($keys[47], $arr)) $this->setStudentPhoto($arr[$keys[47]]);
-		if (array_key_exists($keys[48], $arr)) $this->setInscriptionNum($arr[$keys[48]]);
-		if (array_key_exists($keys[49], $arr)) $this->setCustomQuestion($arr[$keys[49]]);
-		if (array_key_exists($keys[50], $arr)) $this->setCustomQuestionAnswer($arr[$keys[50]]);
-		if (array_key_exists($keys[51], $arr)) $this->setAmountBeca($arr[$keys[51]]);
-		if (array_key_exists($keys[52], $arr)) $this->setAmountFirstPayment($arr[$keys[52]]);
-		if (array_key_exists($keys[53], $arr)) $this->setAmountSecondPayment($arr[$keys[53]]);
-		if (array_key_exists($keys[54], $arr)) $this->setPaymentDate($arr[$keys[54]]);
-		if (array_key_exists($keys[55], $arr)) $this->setCertificated($arr[$keys[55]]);
-		if (array_key_exists($keys[56], $arr)) $this->setCertificatedname($arr[$keys[56]]);
-		if (array_key_exists($keys[57], $arr)) $this->setTpvSuffix($arr[$keys[57]]);
-		if (array_key_exists($keys[58], $arr)) $this->setTpvFirstPaymentResponse($arr[$keys[58]]);
-		if (array_key_exists($keys[59], $arr)) $this->setTpvSecondPaymentResponse($arr[$keys[59]]);
-		if (array_key_exists($keys[60], $arr)) $this->setCulture($arr[$keys[60]]);
-		if (array_key_exists($keys[61], $arr)) $this->setIsPaymentReminderSent($arr[$keys[61]]);
-		if (array_key_exists($keys[62], $arr)) $this->setKidsAndUsCenterId($arr[$keys[62]]);
-		if (array_key_exists($keys[63], $arr)) $this->setLastCooloffYear($arr[$keys[63]]);
-		if (array_key_exists($keys[64], $arr)) $this->setEmailConfirmationSent($arr[$keys[64]]);
-		if (array_key_exists($keys[65], $arr)) $this->setStudentMeds($arr[$keys[65]]);
-		if (array_key_exists($keys[66], $arr)) $this->setStudentMedsDescription($arr[$keys[66]]);
-		if (array_key_exists($keys[67], $arr)) $this->setIsVaccinated($arr[$keys[67]]);
+		if (array_key_exists($keys[2], $arr)) $this->setStudentName($arr[$keys[2]]);
+		if (array_key_exists($keys[3], $arr)) $this->setStudentPrimerApellido($arr[$keys[3]]);
+		if (array_key_exists($keys[4], $arr)) $this->setStudentSegundoApellido($arr[$keys[4]]);
+		if (array_key_exists($keys[5], $arr)) $this->setStudentBirthDate($arr[$keys[5]]);
+		if (array_key_exists($keys[6], $arr)) $this->setStudentAddress($arr[$keys[6]]);
+		if (array_key_exists($keys[7], $arr)) $this->setStudentZip($arr[$keys[7]]);
+		if (array_key_exists($keys[8], $arr)) $this->setStudentCity($arr[$keys[8]]);
+		if (array_key_exists($keys[9], $arr)) $this->setStudentSchoolYear($arr[$keys[9]]);
+		if (array_key_exists($keys[10], $arr)) $this->setStudentFriends($arr[$keys[10]]);
+		if (array_key_exists($keys[11], $arr)) $this->setStudentDisability($arr[$keys[11]]);
+		if (array_key_exists($keys[12], $arr)) $this->setStudentAllergies($arr[$keys[12]]);
+		if (array_key_exists($keys[13], $arr)) $this->setStudentAllergiesDescription($arr[$keys[13]]);
+		if (array_key_exists($keys[14], $arr)) $this->setFatherName($arr[$keys[14]]);
+		if (array_key_exists($keys[15], $arr)) $this->setFatherPrimerApellido($arr[$keys[15]]);
+		if (array_key_exists($keys[16], $arr)) $this->setFatherSegundoApellido($arr[$keys[16]]);
+		if (array_key_exists($keys[17], $arr)) $this->setFatherPhone($arr[$keys[17]]);
+		if (array_key_exists($keys[18], $arr)) $this->setFatherDni($arr[$keys[18]]);
+		if (array_key_exists($keys[19], $arr)) $this->setFatherMail($arr[$keys[19]]);
+		if (array_key_exists($keys[20], $arr)) $this->setIsFatherMailMain($arr[$keys[20]]);
+		if (array_key_exists($keys[21], $arr)) $this->setMotherName($arr[$keys[21]]);
+		if (array_key_exists($keys[22], $arr)) $this->setMotherPrimerApellido($arr[$keys[22]]);
+		if (array_key_exists($keys[23], $arr)) $this->setMotherSegundoApellido($arr[$keys[23]]);
+		if (array_key_exists($keys[24], $arr)) $this->setMotherPhone($arr[$keys[24]]);
+		if (array_key_exists($keys[25], $arr)) $this->setMotherDni($arr[$keys[25]]);
+		if (array_key_exists($keys[26], $arr)) $this->setMotherMail($arr[$keys[26]]);
+		if (array_key_exists($keys[27], $arr)) $this->setIsMotherMailMain($arr[$keys[27]]);
+		if (array_key_exists($keys[28], $arr)) $this->setSplitPayment($arr[$keys[28]]);
+		if (array_key_exists($keys[29], $arr)) $this->setBeca($arr[$keys[29]]);
+		if (array_key_exists($keys[30], $arr)) $this->setStudentCourseInscription($arr[$keys[30]]);
+		if (array_key_exists($keys[31], $arr)) $this->setIsPaid($arr[$keys[31]]);
+		if (array_key_exists($keys[32], $arr)) $this->setState($arr[$keys[32]]);
+		if (array_key_exists($keys[33], $arr)) $this->setMethodPayment($arr[$keys[33]]);
+		if (array_key_exists($keys[34], $arr)) $this->setShelter($arr[$keys[34]]);
+		if (array_key_exists($keys[35], $arr)) $this->setInscriptionCode($arr[$keys[35]]);
+		if (array_key_exists($keys[36], $arr)) $this->setIsStudentDisability($arr[$keys[36]]);
+		if (array_key_exists($keys[37], $arr)) $this->setStudentProvincia($arr[$keys[37]]);
+		if (array_key_exists($keys[38], $arr)) $this->setStudentNumTarjetaSanitaria($arr[$keys[38]]);
+		if (array_key_exists($keys[39], $arr)) $this->setStudentTarjetaSanitariaCompanyia($arr[$keys[39]]);
+		if (array_key_exists($keys[40], $arr)) $this->setIsStudentKidAndUs($arr[$keys[40]]);
+		if (array_key_exists($keys[41], $arr)) $this->setStudentDisabilityLevel($arr[$keys[41]]);
+		if (array_key_exists($keys[42], $arr)) $this->setStudentComments($arr[$keys[42]]);
+		if (array_key_exists($keys[43], $arr)) $this->setGrupoId($arr[$keys[43]]);
+		if (array_key_exists($keys[44], $arr)) $this->setStudentExcursion($arr[$keys[44]]);
+		if (array_key_exists($keys[45], $arr)) $this->setPrice($arr[$keys[45]]);
+		if (array_key_exists($keys[46], $arr)) $this->setDiscount($arr[$keys[46]]);
+		if (array_key_exists($keys[47], $arr)) $this->setDiscountpercent($arr[$keys[47]]);
+		if (array_key_exists($keys[48], $arr)) $this->setStudentPhoto($arr[$keys[48]]);
+		if (array_key_exists($keys[49], $arr)) $this->setInscriptionNum($arr[$keys[49]]);
+		if (array_key_exists($keys[50], $arr)) $this->setCustomQuestion($arr[$keys[50]]);
+		if (array_key_exists($keys[51], $arr)) $this->setCustomQuestionAnswer($arr[$keys[51]]);
+		if (array_key_exists($keys[52], $arr)) $this->setAmountBeca($arr[$keys[52]]);
+		if (array_key_exists($keys[53], $arr)) $this->setAmountFirstPayment($arr[$keys[53]]);
+		if (array_key_exists($keys[54], $arr)) $this->setAmountSecondPayment($arr[$keys[54]]);
+		if (array_key_exists($keys[55], $arr)) $this->setPaymentDate($arr[$keys[55]]);
+		if (array_key_exists($keys[56], $arr)) $this->setPaymentDateSecond($arr[$keys[56]]);
+		if (array_key_exists($keys[57], $arr)) $this->setCertificated($arr[$keys[57]]);
+		if (array_key_exists($keys[58], $arr)) $this->setCertificatedname($arr[$keys[58]]);
+		if (array_key_exists($keys[59], $arr)) $this->setTpvSuffix($arr[$keys[59]]);
+		if (array_key_exists($keys[60], $arr)) $this->setTpvFirstPaymentResponse($arr[$keys[60]]);
+		if (array_key_exists($keys[61], $arr)) $this->setTpvSecondPaymentResponse($arr[$keys[61]]);
+		if (array_key_exists($keys[62], $arr)) $this->setCulture($arr[$keys[62]]);
+		if (array_key_exists($keys[63], $arr)) $this->setIsPaymentReminderSent($arr[$keys[63]]);
+		if (array_key_exists($keys[64], $arr)) $this->setKidsAndUsCenterId($arr[$keys[64]]);
+		if (array_key_exists($keys[65], $arr)) $this->setLastCooloffYear($arr[$keys[65]]);
+		if (array_key_exists($keys[66], $arr)) $this->setEmailConfirmationSent($arr[$keys[66]]);
+		if (array_key_exists($keys[67], $arr)) $this->setStudentMeds($arr[$keys[67]]);
+		if (array_key_exists($keys[68], $arr)) $this->setStudentMedsDescription($arr[$keys[68]]);
+		if (array_key_exists($keys[69], $arr)) $this->setIsVaccinated($arr[$keys[69]]);
 	}
 
 	
@@ -2687,7 +2774,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 		if ($this->isColumnModified(InscriptionPeer::ID)) $criteria->add(InscriptionPeer::ID, $this->id);
 		if ($this->isColumnModified(InscriptionPeer::CREATED_AT)) $criteria->add(InscriptionPeer::CREATED_AT, $this->created_at);
-		if ($this->isColumnModified(InscriptionPeer::INSCRIPTION_CODE)) $criteria->add(InscriptionPeer::INSCRIPTION_CODE, $this->inscription_code);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_NAME)) $criteria->add(InscriptionPeer::STUDENT_NAME, $this->student_name);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_PRIMER_APELLIDO)) $criteria->add(InscriptionPeer::STUDENT_PRIMER_APELLIDO, $this->student_primer_apellido);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_SEGUNDO_APELLIDO)) $criteria->add(InscriptionPeer::STUDENT_SEGUNDO_APELLIDO, $this->student_segundo_apellido);
@@ -2697,7 +2783,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_CITY)) $criteria->add(InscriptionPeer::STUDENT_CITY, $this->student_city);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_SCHOOL_YEAR)) $criteria->add(InscriptionPeer::STUDENT_SCHOOL_YEAR, $this->student_school_year);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_FRIENDS)) $criteria->add(InscriptionPeer::STUDENT_FRIENDS, $this->student_friends);
-		if ($this->isColumnModified(InscriptionPeer::IS_STUDENT_DISABILITY)) $criteria->add(InscriptionPeer::IS_STUDENT_DISABILITY, $this->is_student_disability);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_DISABILITY)) $criteria->add(InscriptionPeer::STUDENT_DISABILITY, $this->student_disability);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_ALLERGIES)) $criteria->add(InscriptionPeer::STUDENT_ALLERGIES, $this->student_allergies);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_ALLERGIES_DESCRIPTION)) $criteria->add(InscriptionPeer::STUDENT_ALLERGIES_DESCRIPTION, $this->student_allergies_description);
@@ -2707,7 +2792,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(InscriptionPeer::FATHER_PHONE)) $criteria->add(InscriptionPeer::FATHER_PHONE, $this->father_phone);
 		if ($this->isColumnModified(InscriptionPeer::FATHER_DNI)) $criteria->add(InscriptionPeer::FATHER_DNI, $this->father_dni);
 		if ($this->isColumnModified(InscriptionPeer::FATHER_MAIL)) $criteria->add(InscriptionPeer::FATHER_MAIL, $this->father_mail);
-		if ($this->isColumnModified(InscriptionPeer::STATE)) $criteria->add(InscriptionPeer::STATE, $this->state);
 		if ($this->isColumnModified(InscriptionPeer::IS_FATHER_MAIL_MAIN)) $criteria->add(InscriptionPeer::IS_FATHER_MAIL_MAIN, $this->is_father_mail_main);
 		if ($this->isColumnModified(InscriptionPeer::MOTHER_NAME)) $criteria->add(InscriptionPeer::MOTHER_NAME, $this->mother_name);
 		if ($this->isColumnModified(InscriptionPeer::MOTHER_PRIMER_APELLIDO)) $criteria->add(InscriptionPeer::MOTHER_PRIMER_APELLIDO, $this->mother_primer_apellido);
@@ -2720,7 +2804,11 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(InscriptionPeer::BECA)) $criteria->add(InscriptionPeer::BECA, $this->beca);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_COURSE_INSCRIPTION)) $criteria->add(InscriptionPeer::STUDENT_COURSE_INSCRIPTION, $this->student_course_inscription);
 		if ($this->isColumnModified(InscriptionPeer::IS_PAID)) $criteria->add(InscriptionPeer::IS_PAID, $this->is_paid);
+		if ($this->isColumnModified(InscriptionPeer::STATE)) $criteria->add(InscriptionPeer::STATE, $this->state);
 		if ($this->isColumnModified(InscriptionPeer::METHOD_PAYMENT)) $criteria->add(InscriptionPeer::METHOD_PAYMENT, $this->method_payment);
+		if ($this->isColumnModified(InscriptionPeer::SHELTER)) $criteria->add(InscriptionPeer::SHELTER, $this->shelter);
+		if ($this->isColumnModified(InscriptionPeer::INSCRIPTION_CODE)) $criteria->add(InscriptionPeer::INSCRIPTION_CODE, $this->inscription_code);
+		if ($this->isColumnModified(InscriptionPeer::IS_STUDENT_DISABILITY)) $criteria->add(InscriptionPeer::IS_STUDENT_DISABILITY, $this->is_student_disability);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_PROVINCIA)) $criteria->add(InscriptionPeer::STUDENT_PROVINCIA, $this->student_provincia);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_NUM_TARJETA_SANITARIA)) $criteria->add(InscriptionPeer::STUDENT_NUM_TARJETA_SANITARIA, $this->student_num_tarjeta_sanitaria);
 		if ($this->isColumnModified(InscriptionPeer::STUDENT_TARJETA_SANITARIA_COMPANYIA)) $criteria->add(InscriptionPeer::STUDENT_TARJETA_SANITARIA_COMPANYIA, $this->student_tarjeta_sanitaria_companyia);
@@ -2739,6 +2827,7 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(InscriptionPeer::AMOUNT_BECA)) $criteria->add(InscriptionPeer::AMOUNT_BECA, $this->amount_beca);
 		if ($this->isColumnModified(InscriptionPeer::AMOUNT_FIRST_PAYMENT)) $criteria->add(InscriptionPeer::AMOUNT_FIRST_PAYMENT, $this->amount_first_payment);
 		if ($this->isColumnModified(InscriptionPeer::AMOUNT_SECOND_PAYMENT)) $criteria->add(InscriptionPeer::AMOUNT_SECOND_PAYMENT, $this->amount_second_payment);
+		if ($this->isColumnModified(InscriptionPeer::PAYMENT_DATE_SECOND)) $criteria->add(InscriptionPeer::PAYMENT_DATE_SECOND, $this->payment_date_second);
 		if ($this->isColumnModified(InscriptionPeer::PAYMENT_DATE)) $criteria->add(InscriptionPeer::PAYMENT_DATE, $this->payment_date);
 		if ($this->isColumnModified(InscriptionPeer::CERTIFICATED)) $criteria->add(InscriptionPeer::CERTIFICATED, $this->certificated);
 		if ($this->isColumnModified(InscriptionPeer::CERTIFICATEDNAME)) $criteria->add(InscriptionPeer::CERTIFICATEDNAME, $this->certificatedname);
@@ -2785,8 +2874,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 		$copyObj->setCreatedAt($this->created_at);
 
-		$copyObj->setInscriptionCode($this->inscription_code);
-
 		$copyObj->setStudentName($this->student_name);
 
 		$copyObj->setStudentPrimerApellido($this->student_primer_apellido);
@@ -2805,8 +2892,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 		$copyObj->setStudentFriends($this->student_friends);
 
-		$copyObj->setIsStudentDisability($this->is_student_disability);
-
 		$copyObj->setStudentDisability($this->student_disability);
 
 		$copyObj->setStudentAllergies($this->student_allergies);
@@ -2824,8 +2909,6 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		$copyObj->setFatherDni($this->father_dni);
 
 		$copyObj->setFatherMail($this->father_mail);
-
-		$copyObj->setState($this->state);
 
 		$copyObj->setIsFatherMailMain($this->is_father_mail_main);
 
@@ -2851,8 +2934,16 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 		$copyObj->setIsPaid($this->is_paid);
 
-		$copyObj->setMethodPayment($this->method_payment);
+		$copyObj->setState($this->state);
 
+		$copyObj->setMethodPayment($this->method_payment);
+                
+                $copyObj->setShelter($this->shelter);
+
+		$copyObj->setInscriptionCode($this->inscription_code);
+                
+		$copyObj->setIsStudentDisability($this->is_student_disability);
+                
 		$copyObj->setStudentProvincia($this->student_provincia);
 
 		$copyObj->setStudentNumTarjetaSanitaria($this->student_num_tarjeta_sanitaria);
@@ -2890,6 +2981,8 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		$copyObj->setAmountSecondPayment($this->amount_second_payment);
 
 		$copyObj->setPaymentDate($this->payment_date);
+
+		$copyObj->setPaymentDateSecond($this->payment_date_second);
 
 		$copyObj->setCertificated($this->certificated);
 

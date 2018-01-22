@@ -1224,6 +1224,10 @@
             <target>Data de pagament (dd/mm/yyyy)</target>
         </trans-unit>
         <trans-unit>
+            <source>payment_date_second</source>
+            <target>Segona data de pagament (dd/mm/yyyy)</target>
+        </trans-unit>
+        <trans-unit>
             <source>date_from</source>
             <target>Des de:</target>
         </trans-unit>

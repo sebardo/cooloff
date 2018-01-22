@@ -71,3 +71,10 @@
         <?php echo input_date_tag($inscription['id'] . '-paymentdate', $inscription['payment_date'], array('rich' => true, 'calendar_button_img' => '/sf/sf_admin/images/date.png', 'culture' => $sf_user->getCulture(), 'format' => 'd/MM/yyyy', 'disabled' => 'disabled')) ?>
     <?php endif ?>
 </td>
+
+<td>
+    <?php if ($inscription['NUM_REG'] == 1): ?>
+        <?php echo input_date_tag($inscription['id'] . '-paymentdatesecond', $inscription['payment_date_second'], array('rich' => true, 'calendar_button_img' => '/sf/sf_admin/images/date.png', 'culture' => $sf_user->getCulture(), 'format' => 'd/MM/yyyy', 'disabled' => 'disabled')) ?>
+    <?php endif ?>
+</td>
+

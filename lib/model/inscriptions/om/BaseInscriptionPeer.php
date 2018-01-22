@@ -26,9 +26,6 @@ abstract class BaseInscriptionPeer {
 	const CREATED_AT = 'inscription.CREATED_AT';
 
 	
-	const INSCRIPTION_CODE = 'inscription.INSCRIPTION_CODE';
-
-	
 	const STUDENT_NAME = 'inscription.STUDENT_NAME';
 
 	
@@ -56,9 +53,6 @@ abstract class BaseInscriptionPeer {
 	const STUDENT_FRIENDS = 'inscription.STUDENT_FRIENDS';
 
 	
-	const IS_STUDENT_DISABILITY = 'inscription.IS_STUDENT_DISABILITY';
-
-	
 	const STUDENT_DISABILITY = 'inscription.STUDENT_DISABILITY';
 
 	
@@ -84,9 +78,6 @@ abstract class BaseInscriptionPeer {
 
 	
 	const FATHER_MAIL = 'inscription.FATHER_MAIL';
-
-	
-	const STATE = 'inscription.STATE';
 
 	
 	const IS_FATHER_MAIL_MAIN = 'inscription.IS_FATHER_MAIL_MAIN';
@@ -123,10 +114,22 @@ abstract class BaseInscriptionPeer {
 
 	
 	const IS_PAID = 'inscription.IS_PAID';
+        
+        
+	const STATE = 'inscription.STATE';
 
 	
 	const METHOD_PAYMENT = 'inscription.METHOD_PAYMENT';
 
+        
+	const SHELTER = 'inscription.SHELTER';
+
+        
+	const INSCRIPTION_CODE = 'inscription.INSCRIPTION_CODE';
+	
+        
+	const IS_STUDENT_DISABILITY = 'inscription.IS_STUDENT_DISABILITY';
+        
 	
 	const STUDENT_PROVINCIA = 'inscription.STUDENT_PROVINCIA';
 
@@ -183,6 +186,9 @@ abstract class BaseInscriptionPeer {
 
 	
 	const PAYMENT_DATE = 'inscription.PAYMENT_DATE';
+        
+        
+        const PAYMENT_DATE_SECOND = 'inscription.PAYMENT_DATE_SECOND';
 
 	
 	const CERTIFICATED = 'inscription.CERTIFICATED';
@@ -226,21 +232,556 @@ abstract class BaseInscriptionPeer {
 	
 	private static $phpNameMap = null;
 
-
+//      0	id	  
+//	1	created_at	    	  
+//	2	student_name	 
+//	3	student_primer_apellido	 
+//	4	student_segundo_apellido	  	  		  	  		   	     
+//	5	student_birth_date	 		  	  		   	  
+//	6	student_address	  	  		  	  		   	     
+//	7	student_zip	  	  		  	  		   	     
+//	8	student_city	  	  		  	  		   	     
+//	9	student_school_year	  		  	  		   	     
+//	10	student_friends	  	  		  	  		   	     
+//	11	student_disability	  	  		  	  		   	     
+//	12	student_allergies	 		   	  
+//	13	student_allergies_description	  	  		  	  		   	     
+//	14	father_name	  	  		  	  		   	     
+//	15	father_primer_apellido	  	  		  	  		   	     
+//	16	father_segundo_apellido	  	  		  	  		   	     
+//	17	father_phone	  	  		  	  		   	     
+//	18	father_dni	  	  		  	  		   	     
+//	19	father_mail	  	  		  	  		   	     
+//	20	is_father_mail_main	 		   	  
+//	21	mother_name	  	  		  	  		   	     
+//	22	mother_primer_apellido	  	  		  	  		   	     
+//	23	mother_segundo_apellido	  	  		  	  		   	     
+//	24	mother_phone	  	  		  	  		   	     
+//	25	mother_dni	  	  		  	  		   	     
+//	26	mother_mail	  	  		  	  		   	     
+//	27	is_mother_mail_main	 		   	  
+//	28	split_payment	 		   	  
+//	29	beca	 
+//	30	student_course_inscription	 	   	  
+//	31	is_paid	 			  	 		   	  
+//	32	state	 		  	 		   	  
+//	33	method_payment	   	 		   	  
+//	34	shelter	 		   	  
+//	35	inscription_code	 		   	  
+//	36	is_student_disability	 		   	  
+//	37	student_provincia	 		  	  		   	  
+//	38	student_num_tarjeta_sanitaria	  	  		  	  		   	     
+//	39	student_tarjeta_sanitaria_companyia	  	  		  	  		   	     
+//	40	is_student_kid_and_us	 		  	  		   	  
+//	41	student_disability_level	 	  		  	  		   	     
+//	42	student_comments	 	  		  	  		   	 
+//	43	grupo_id	 		  	  		   	  
+//	44	student_excursion	 		  	  		   	  
+//	45	price	 			  	  		   	  
+//	46	discount	 			  	  		   	  
+//	47	discountPercent	 		  	  		   	  
+//	48	student_photo	  	  		  	  		   	     
+//	49	inscription_num	 		  	  		   	  
+//	50	custom_question	  	  		  	  		   	     
+//	51	custom_question_answer	 		  	  		   	  
+//	52	amount_beca	 			  	 		   	  
+//	53	amount_first_payment	 	   	  
+//	54	amount_second_payment	 		   	  
+//	55	payment_date	 			  	  		   	  
+//	56	payment_date_second	 			  	  		   	  
+//	57	certificated	 		  	  		   	  
+//	58	certificatedName	  	  		  	  		   	     
+//	59	tpv_suffix	 		  	  		   	  
+//	60	tpv_first_payment_response	  	  		  	  		   	     
+//	61	tpv_second_payment_response	  	  		  	  		   	     
+//	62	culture	   		  	  		   	     
+//	63	is_payment_reminder_sent	 		   		   	  
+//	64	kids_and_us_center_id 	   	  
+//	65	last_cooloff_year	 	  		  	  		   	     
+//	66	email_confirmation_sent			   	  
+//	67	student_meds	int(11)			  	  		   	  
+//	68	student_meds_description	  	  		  	  		   	     
+//	69	is_vaccinated
 	
-	private static $fieldNames = array (
-		BasePeer::TYPE_PHPNAME => array ('Id', 'CreatedAt', 'InscriptionCode', 'StudentName', 'StudentPrimerApellido', 'StudentSegundoApellido', 'StudentBirthDate', 'StudentAddress', 'StudentZip', 'StudentCity', 'StudentSchoolYear', 'StudentFriends', 'IsStudentDisability', 'StudentDisability', 'StudentAllergies', 'StudentAllergiesDescription', 'FatherName', 'FatherPrimerApellido', 'FatherSegundoApellido', 'FatherPhone', 'FatherDni', 'FatherMail', 'State', 'IsFatherMailMain', 'MotherName', 'MotherPrimerApellido', 'MotherSegundoApellido', 'MotherPhone', 'MotherDni', 'MotherMail', 'IsMotherMailMain', 'SplitPayment', 'Beca', 'StudentCourseInscription', 'IsPaid', 'MethodPayment', 'StudentProvincia', 'StudentNumTarjetaSanitaria', 'StudentTarjetaSanitariaCompanyia', 'IsStudentKidAndUs', 'StudentDisabilityLevel', 'StudentComments', 'GrupoId', 'StudentExcursion', 'Price', 'Discount', 'Discountpercent', 'StudentPhoto', 'InscriptionNum', 'CustomQuestion', 'CustomQuestionAnswer', 'AmountBeca', 'AmountFirstPayment', 'AmountSecondPayment', 'PaymentDate', 'Certificated', 'Certificatedname', 'TpvSuffix', 'TpvFirstPaymentResponse', 'TpvSecondPaymentResponse', 'Culture', 'IsPaymentReminderSent', 'KidsAndUsCenterId', 'LastCooloffYear', 'EmailConfirmationSent', 'StudentMeds', 'StudentMedsDescription', 'IsVaccinated', ),
-		BasePeer::TYPE_COLNAME => array (InscriptionPeer::ID, InscriptionPeer::CREATED_AT, InscriptionPeer::INSCRIPTION_CODE, InscriptionPeer::STUDENT_NAME, InscriptionPeer::STUDENT_PRIMER_APELLIDO, InscriptionPeer::STUDENT_SEGUNDO_APELLIDO, InscriptionPeer::STUDENT_BIRTH_DATE, InscriptionPeer::STUDENT_ADDRESS, InscriptionPeer::STUDENT_ZIP, InscriptionPeer::STUDENT_CITY, InscriptionPeer::STUDENT_SCHOOL_YEAR, InscriptionPeer::STUDENT_FRIENDS, InscriptionPeer::IS_STUDENT_DISABILITY, InscriptionPeer::STUDENT_DISABILITY, InscriptionPeer::STUDENT_ALLERGIES, InscriptionPeer::STUDENT_ALLERGIES_DESCRIPTION, InscriptionPeer::FATHER_NAME, InscriptionPeer::FATHER_PRIMER_APELLIDO, InscriptionPeer::FATHER_SEGUNDO_APELLIDO, InscriptionPeer::FATHER_PHONE, InscriptionPeer::FATHER_DNI, InscriptionPeer::FATHER_MAIL, InscriptionPeer::STATE, InscriptionPeer::IS_FATHER_MAIL_MAIN, InscriptionPeer::MOTHER_NAME, InscriptionPeer::MOTHER_PRIMER_APELLIDO, InscriptionPeer::MOTHER_SEGUNDO_APELLIDO, InscriptionPeer::MOTHER_PHONE, InscriptionPeer::MOTHER_DNI, InscriptionPeer::MOTHER_MAIL, InscriptionPeer::IS_MOTHER_MAIL_MAIN, InscriptionPeer::SPLIT_PAYMENT, InscriptionPeer::BECA, InscriptionPeer::STUDENT_COURSE_INSCRIPTION, InscriptionPeer::IS_PAID, InscriptionPeer::METHOD_PAYMENT, InscriptionPeer::STUDENT_PROVINCIA, InscriptionPeer::STUDENT_NUM_TARJETA_SANITARIA, InscriptionPeer::STUDENT_TARJETA_SANITARIA_COMPANYIA, InscriptionPeer::IS_STUDENT_KID_AND_US, InscriptionPeer::STUDENT_DISABILITY_LEVEL, InscriptionPeer::STUDENT_COMMENTS, InscriptionPeer::GRUPO_ID, InscriptionPeer::STUDENT_EXCURSION, InscriptionPeer::PRICE, InscriptionPeer::DISCOUNT, InscriptionPeer::DISCOUNTPERCENT, InscriptionPeer::STUDENT_PHOTO, InscriptionPeer::INSCRIPTION_NUM, InscriptionPeer::CUSTOM_QUESTION, InscriptionPeer::CUSTOM_QUESTION_ANSWER, InscriptionPeer::AMOUNT_BECA, InscriptionPeer::AMOUNT_FIRST_PAYMENT, InscriptionPeer::AMOUNT_SECOND_PAYMENT, InscriptionPeer::PAYMENT_DATE, InscriptionPeer::CERTIFICATED, InscriptionPeer::CERTIFICATEDNAME, InscriptionPeer::TPV_SUFFIX, InscriptionPeer::TPV_FIRST_PAYMENT_RESPONSE, InscriptionPeer::TPV_SECOND_PAYMENT_RESPONSE, InscriptionPeer::CULTURE, InscriptionPeer::IS_PAYMENT_REMINDER_SENT, InscriptionPeer::KIDS_AND_US_CENTER_ID, InscriptionPeer::LAST_COOLOFF_YEAR, InscriptionPeer::EMAIL_CONFIRMATION_SENT, InscriptionPeer::STUDENT_MEDS, InscriptionPeer::STUDENT_MEDS_DESCRIPTION, InscriptionPeer::IS_VACCINATED, ),
-		BasePeer::TYPE_FIELDNAME => array ('id', 'created_at', 'inscription_code', 'student_name', 'student_primer_apellido', 'student_segundo_apellido', 'student_birth_date', 'student_address', 'student_zip', 'student_city', 'student_school_year', 'student_friends', 'is_student_disability', 'student_disability', 'student_allergies', 'student_allergies_description', 'father_name', 'father_primer_apellido', 'father_segundo_apellido', 'father_phone', 'father_dni', 'father_mail', 'state', 'is_father_mail_main', 'mother_name', 'mother_primer_apellido', 'mother_segundo_apellido', 'mother_phone', 'mother_dni', 'mother_mail', 'is_mother_mail_main', 'split_payment', 'beca', 'student_course_inscription', 'is_paid', 'method_payment', 'student_provincia', 'student_num_tarjeta_sanitaria', 'student_tarjeta_sanitaria_companyia', 'is_student_kid_and_us', 'student_disability_level', 'student_comments', 'grupo_id', 'student_excursion', 'price', 'discount', 'discountPercent', 'student_photo', 'inscription_num', 'custom_question', 'custom_question_answer', 'amount_beca', 'amount_first_payment', 'amount_second_payment', 'payment_date', 'certificated', 'certificatedName', 'tpv_suffix', 'tpv_first_payment_response', 'tpv_second_payment_response', 'culture', 'is_payment_reminder_sent', 'kids_and_us_center_id', 'last_cooloff_year', 'email_confirmation_sent', 'student_meds', 'student_meds_description', 'is_vaccinated', ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, )
+        
+                    
+  	private static $fieldNames = array (
+		BasePeer::TYPE_PHPNAME => array (
+                    'Id', 
+                    'CreatedAt', 
+                    'StudentName', 
+                    'StudentPrimerApellido', 
+                    'StudentSegundoApellido', 
+                    'StudentBirthDate', 
+                    'StudentAddress', 
+                    'StudentZip', 
+                    'StudentCity', 
+                    'StudentSchoolYear', 
+                    'StudentFriends', 
+                    
+                    'StudentDisability', 
+                    'StudentAllergies', 
+                    'StudentAllergiesDescription', 
+                    'FatherName', 
+                    'FatherPrimerApellido', 
+                    'FatherSegundoApellido', 
+                    'FatherPhone', 
+                    'FatherDni',
+                    'FatherMail', 
+                    'IsFatherMailMain',
+                    
+                    'MotherName', 
+                    'MotherPrimerApellido', 
+                    'MotherSegundoApellido', 
+                    'MotherPhone', 
+                    'MotherDni', 
+                    'MotherMail', 
+                    'IsMotherMailMain', 
+                    'SplitPayment', 
+                    'Beca', 
+                    'StudentCourseInscription', 
+                    
+                    'IsPaid', 
+                    'State',  
+                    'MethodPayment', 
+                    'Shelter',
+                    'InscriptionCode', 
+                    'IsStudentDisability',
+                    'StudentProvincia', 
+                    'StudentNumTarjetaSanitaria', 
+                    'StudentTarjetaSanitariaCompanyia',
+                    'IsStudentKidAndUs', 
+                    
+                    'StudentDisabilityLevel', 
+                    'StudentComments', 
+                    'GrupoId', 
+                    'StudentExcursion', 
+                    'Price', 
+                    'Discount', 
+                    'Discountpercent', 
+                    'StudentPhoto',
+                    'InscriptionNum', 
+                    'CustomQuestion', 
+                    
+                    'CustomQuestionAnswer', 
+                    'AmountBeca', 
+                    'AmountFirstPayment', 
+                    'AmountSecondPayment', 
+                    'PaymentDate', 
+                    'PaymentDateSecond', 
+                    'Certificated', 
+                    'Certificatedname', 
+                    'TpvSuffix', 
+                    'TpvFirstPaymentResponse', 
+                    'TpvSecondPaymentResponse', 
+                    
+                    'Culture', 
+                    'IsPaymentReminderSent',
+                    'KidsAndUsCenterId', 
+                    'LastCooloffYear', 
+                    'EmailConfirmationSent', 
+                    'StudentMeds', 
+                    'StudentMedsDescription', 
+                    'IsVaccinated', ),
+		BasePeer::TYPE_COLNAME => array (
+
+                    
+                    InscriptionPeer::ID, 
+                    InscriptionPeer::CREATED_AT, 
+                    InscriptionPeer::STUDENT_NAME, 
+                    InscriptionPeer::STUDENT_PRIMER_APELLIDO, 
+                    InscriptionPeer::STUDENT_SEGUNDO_APELLIDO,
+                    InscriptionPeer::STUDENT_BIRTH_DATE,
+                    InscriptionPeer::STUDENT_ADDRESS, 
+                    InscriptionPeer::STUDENT_ZIP, 
+                    InscriptionPeer::STUDENT_CITY, 
+                    InscriptionPeer::STUDENT_SCHOOL_YEAR, 
+                    InscriptionPeer::STUDENT_FRIENDS, 
+                    
+                    InscriptionPeer::STUDENT_DISABILITY, 
+                    InscriptionPeer::STUDENT_ALLERGIES, 
+                    InscriptionPeer::STUDENT_ALLERGIES_DESCRIPTION, 
+                    InscriptionPeer::FATHER_NAME, 
+                    InscriptionPeer::FATHER_PRIMER_APELLIDO, 
+                    InscriptionPeer::FATHER_SEGUNDO_APELLIDO, 
+                    InscriptionPeer::FATHER_PHONE, 
+                    InscriptionPeer::FATHER_DNI, 
+                    InscriptionPeer::FATHER_MAIL, 
+                    InscriptionPeer::IS_FATHER_MAIL_MAIN, 
+
+                    InscriptionPeer::MOTHER_NAME, 
+                    InscriptionPeer::MOTHER_PRIMER_APELLIDO, 
+                    InscriptionPeer::MOTHER_SEGUNDO_APELLIDO, 
+                    InscriptionPeer::MOTHER_PHONE, 
+                    InscriptionPeer::MOTHER_DNI, 
+                    InscriptionPeer::MOTHER_MAIL, 
+                    InscriptionPeer::IS_MOTHER_MAIL_MAIN, 
+                    InscriptionPeer::SPLIT_PAYMENT, 
+                    InscriptionPeer::BECA, 
+                    InscriptionPeer::STUDENT_COURSE_INSCRIPTION, 
+       
+                    InscriptionPeer::IS_PAID, 
+                    InscriptionPeer::STATE, 
+                    InscriptionPeer::METHOD_PAYMENT, 
+                    InscriptionPeer::SHELTER,
+                    InscriptionPeer::INSCRIPTION_CODE,
+                    InscriptionPeer::IS_STUDENT_DISABILITY,
+                    InscriptionPeer::STUDENT_PROVINCIA, 
+                    InscriptionPeer::STUDENT_NUM_TARJETA_SANITARIA, 
+                    InscriptionPeer::STUDENT_TARJETA_SANITARIA_COMPANYIA, 
+                    InscriptionPeer::IS_STUDENT_KID_AND_US, 
+                    
+                    InscriptionPeer::STUDENT_DISABILITY_LEVEL, 
+                    InscriptionPeer::STUDENT_COMMENTS, 
+                    InscriptionPeer::GRUPO_ID, 
+                    InscriptionPeer::STUDENT_EXCURSION, 
+                    InscriptionPeer::PRICE, 
+                    InscriptionPeer::DISCOUNT, 
+                    InscriptionPeer::DISCOUNTPERCENT, 
+                    InscriptionPeer::STUDENT_PHOTO, 
+                    InscriptionPeer::INSCRIPTION_NUM, 
+                    InscriptionPeer::CUSTOM_QUESTION, 
+       
+                    InscriptionPeer::CUSTOM_QUESTION_ANSWER, 
+                    InscriptionPeer::AMOUNT_BECA, 
+                    InscriptionPeer::AMOUNT_FIRST_PAYMENT, 
+                    InscriptionPeer::AMOUNT_SECOND_PAYMENT, 
+                    InscriptionPeer::PAYMENT_DATE, 
+                    InscriptionPeer::PAYMENT_DATE_SECOND, 
+                    InscriptionPeer::CERTIFICATED, 
+                    InscriptionPeer::CERTIFICATEDNAME, 
+                    InscriptionPeer::TPV_SUFFIX, 
+                    InscriptionPeer::TPV_FIRST_PAYMENT_RESPONSE, 
+                    InscriptionPeer::TPV_SECOND_PAYMENT_RESPONSE, 
+                    
+                    InscriptionPeer::CULTURE, 
+                    InscriptionPeer::IS_PAYMENT_REMINDER_SENT, 
+                    InscriptionPeer::KIDS_AND_US_CENTER_ID, 
+                    InscriptionPeer::LAST_COOLOFF_YEAR, 
+                    InscriptionPeer::EMAIL_CONFIRMATION_SENT, 
+                    InscriptionPeer::STUDENT_MEDS, 
+                    InscriptionPeer::STUDENT_MEDS_DESCRIPTION, 
+                    InscriptionPeer::IS_VACCINATED, ),
+            
+            
+		BasePeer::TYPE_FIELDNAME => array (
+                    'id', 
+                    'created_at', 
+                    'student_name', 
+                    'student_primer_apellido', 
+                    'student_segundo_apellido', 
+                    'student_birth_date', 
+                    'student_address', 
+                    'student_zip', 
+                    'student_city', 
+                    'student_school_year', 
+                    'student_friends',
+        
+                    'student_disability', 
+                    'student_allergies', 
+                    'student_allergies_description', 
+                    'father_name', 
+                    'father_primer_apellido', 
+                    'father_segundo_apellido', 
+                    'father_phone', 
+                    'father_dni',
+                    'father_mail', 
+                    'is_father_mail_main', 
+                    
+                    'mother_name', 
+                    'mother_primer_apellido', 
+                    'mother_segundo_apellido', 
+                    'mother_phone', 
+                    'mother_dni', 
+                    'mother_mail', 
+                    'is_mother_mail_main', 
+                    'split_payment', 
+                    'beca', 
+                    'student_course_inscription', 
+                    
+                    'is_paid', 
+                    'state', 
+                    'method_payment',  
+                    'shelter',  
+                    'inscription_code', 
+                    'is_student_disability', 
+                    'student_provincia', 
+                    'student_num_tarjeta_sanitaria', 
+                    'student_tarjeta_sanitaria_companyia', 
+                    'is_student_kid_and_us',
+                    
+                    'student_disability_level',
+                    'student_comments', 
+                    'grupo_id',
+                    'student_excursion', 
+                    'price', 
+                    'discount', 
+                    'discountPercent',
+                    'student_photo', 
+                    'inscription_num', 
+                    'custom_question', 
+                    
+                    'custom_question_answer',
+                    'amount_beca', 
+                    'amount_first_payment', 
+                    'amount_second_payment', 
+                    'payment_date', 
+                    'payment_date_second', 
+                    'certificated', 
+                    'certificatedName', 
+                    'tpv_suffix', 
+                    'tpv_first_payment_response', 
+                    'tpv_second_payment_response', 
+                    
+                    'culture', 
+                    'is_payment_reminder_sent',
+                    'kids_and_us_center_id', 
+                    'last_cooloff_year',
+                    'email_confirmation_sent', 
+                    'student_meds', 
+                    'student_meds_description', 
+                    'is_vaccinated', ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, )
 	);
 
 	
 	private static $fieldKeys = array (
-		BasePeer::TYPE_PHPNAME => array ('Id' => 0, 'CreatedAt' => 1, 'InscriptionCode' => 2, 'StudentName' => 3, 'StudentPrimerApellido' => 4, 'StudentSegundoApellido' => 5, 'StudentBirthDate' => 6, 'StudentAddress' => 7, 'StudentZip' => 8, 'StudentCity' => 9, 'StudentSchoolYear' => 10, 'StudentFriends' => 11, 'IsStudentDisability' => 12, 'StudentDisability' => 13, 'StudentAllergies' => 14, 'StudentAllergiesDescription' => 15, 'FatherName' => 16, 'FatherPrimerApellido' => 17, 'FatherSegundoApellido' => 18, 'FatherPhone' => 19, 'FatherDni' => 20, 'FatherMail' => 21, 'State' => 22, 'IsFatherMailMain' => 23, 'MotherName' => 24, 'MotherPrimerApellido' => 25, 'MotherSegundoApellido' => 26, 'MotherPhone' => 27, 'MotherDni' => 28, 'MotherMail' => 29, 'IsMotherMailMain' => 30, 'SplitPayment' => 31, 'Beca' => 32, 'StudentCourseInscription' => 33, 'IsPaid' => 34, 'MethodPayment' => 35, 'StudentProvincia' => 36, 'StudentNumTarjetaSanitaria' => 37, 'StudentTarjetaSanitariaCompanyia' => 38, 'IsStudentKidAndUs' => 39, 'StudentDisabilityLevel' => 40, 'StudentComments' => 41, 'GrupoId' => 42, 'StudentExcursion' => 43, 'Price' => 44, 'Discount' => 45, 'Discountpercent' => 46, 'StudentPhoto' => 47, 'InscriptionNum' => 48, 'CustomQuestion' => 49, 'CustomQuestionAnswer' => 50, 'AmountBeca' => 51, 'AmountFirstPayment' => 52, 'AmountSecondPayment' => 53, 'PaymentDate' => 54, 'Certificated' => 55, 'Certificatedname' => 56, 'TpvSuffix' => 57, 'TpvFirstPaymentResponse' => 58, 'TpvSecondPaymentResponse' => 59, 'Culture' => 60, 'IsPaymentReminderSent' => 61, 'KidsAndUsCenterId' => 62, 'LastCooloffYear' => 63, 'EmailConfirmationSent' => 64, 'StudentMeds' => 65, 'StudentMedsDescription' => 66, 'IsVaccinated' => 67, ),
-		BasePeer::TYPE_COLNAME => array (InscriptionPeer::ID => 0, InscriptionPeer::CREATED_AT => 1, InscriptionPeer::INSCRIPTION_CODE => 2, InscriptionPeer::STUDENT_NAME => 3, InscriptionPeer::STUDENT_PRIMER_APELLIDO => 4, InscriptionPeer::STUDENT_SEGUNDO_APELLIDO => 5, InscriptionPeer::STUDENT_BIRTH_DATE => 6, InscriptionPeer::STUDENT_ADDRESS => 7, InscriptionPeer::STUDENT_ZIP => 8, InscriptionPeer::STUDENT_CITY => 9, InscriptionPeer::STUDENT_SCHOOL_YEAR => 10, InscriptionPeer::STUDENT_FRIENDS => 11, InscriptionPeer::IS_STUDENT_DISABILITY => 12, InscriptionPeer::STUDENT_DISABILITY => 13, InscriptionPeer::STUDENT_ALLERGIES => 14, InscriptionPeer::STUDENT_ALLERGIES_DESCRIPTION => 15, InscriptionPeer::FATHER_NAME => 16, InscriptionPeer::FATHER_PRIMER_APELLIDO => 17, InscriptionPeer::FATHER_SEGUNDO_APELLIDO => 18, InscriptionPeer::FATHER_PHONE => 19, InscriptionPeer::FATHER_DNI => 20, InscriptionPeer::FATHER_MAIL => 21, InscriptionPeer::STATE => 22, InscriptionPeer::IS_FATHER_MAIL_MAIN => 23, InscriptionPeer::MOTHER_NAME => 24, InscriptionPeer::MOTHER_PRIMER_APELLIDO => 25, InscriptionPeer::MOTHER_SEGUNDO_APELLIDO => 26, InscriptionPeer::MOTHER_PHONE => 27, InscriptionPeer::MOTHER_DNI => 28, InscriptionPeer::MOTHER_MAIL => 29, InscriptionPeer::IS_MOTHER_MAIL_MAIN => 30, InscriptionPeer::SPLIT_PAYMENT => 31, InscriptionPeer::BECA => 32, InscriptionPeer::STUDENT_COURSE_INSCRIPTION => 33, InscriptionPeer::IS_PAID => 34, InscriptionPeer::METHOD_PAYMENT => 35, InscriptionPeer::STUDENT_PROVINCIA => 36, InscriptionPeer::STUDENT_NUM_TARJETA_SANITARIA => 37, InscriptionPeer::STUDENT_TARJETA_SANITARIA_COMPANYIA => 38, InscriptionPeer::IS_STUDENT_KID_AND_US => 39, InscriptionPeer::STUDENT_DISABILITY_LEVEL => 40, InscriptionPeer::STUDENT_COMMENTS => 41, InscriptionPeer::GRUPO_ID => 42, InscriptionPeer::STUDENT_EXCURSION => 43, InscriptionPeer::PRICE => 44, InscriptionPeer::DISCOUNT => 45, InscriptionPeer::DISCOUNTPERCENT => 46, InscriptionPeer::STUDENT_PHOTO => 47, InscriptionPeer::INSCRIPTION_NUM => 48, InscriptionPeer::CUSTOM_QUESTION => 49, InscriptionPeer::CUSTOM_QUESTION_ANSWER => 50, InscriptionPeer::AMOUNT_BECA => 51, InscriptionPeer::AMOUNT_FIRST_PAYMENT => 52, InscriptionPeer::AMOUNT_SECOND_PAYMENT => 53, InscriptionPeer::PAYMENT_DATE => 54, InscriptionPeer::CERTIFICATED => 55, InscriptionPeer::CERTIFICATEDNAME => 56, InscriptionPeer::TPV_SUFFIX => 57, InscriptionPeer::TPV_FIRST_PAYMENT_RESPONSE => 58, InscriptionPeer::TPV_SECOND_PAYMENT_RESPONSE => 59, InscriptionPeer::CULTURE => 60, InscriptionPeer::IS_PAYMENT_REMINDER_SENT => 61, InscriptionPeer::KIDS_AND_US_CENTER_ID => 62, InscriptionPeer::LAST_COOLOFF_YEAR => 63, InscriptionPeer::EMAIL_CONFIRMATION_SENT => 64, InscriptionPeer::STUDENT_MEDS => 65, InscriptionPeer::STUDENT_MEDS_DESCRIPTION => 66, InscriptionPeer::IS_VACCINATED => 67, ),
-		BasePeer::TYPE_FIELDNAME => array ('id' => 0, 'created_at' => 1, 'inscription_code' => 2, 'student_name' => 3, 'student_primer_apellido' => 4, 'student_segundo_apellido' => 5, 'student_birth_date' => 6, 'student_address' => 7, 'student_zip' => 8, 'student_city' => 9, 'student_school_year' => 10, 'student_friends' => 11, 'is_student_disability' => 12, 'student_disability' => 13, 'student_allergies' => 14, 'student_allergies_description' => 15, 'father_name' => 16, 'father_primer_apellido' => 17, 'father_segundo_apellido' => 18, 'father_phone' => 19, 'father_dni' => 20, 'father_mail' => 21, 'state' => 22, 'is_father_mail_main' => 23, 'mother_name' => 24, 'mother_primer_apellido' => 25, 'mother_segundo_apellido' => 26, 'mother_phone' => 27, 'mother_dni' => 28, 'mother_mail' => 29, 'is_mother_mail_main' => 30, 'split_payment' => 31, 'beca' => 32, 'student_course_inscription' => 33, 'is_paid' => 34, 'method_payment' => 35, 'student_provincia' => 36, 'student_num_tarjeta_sanitaria' => 37, 'student_tarjeta_sanitaria_companyia' => 38, 'is_student_kid_and_us' => 39, 'student_disability_level' => 40, 'student_comments' => 41, 'grupo_id' => 42, 'student_excursion' => 43, 'price' => 44, 'discount' => 45, 'discountPercent' => 46, 'student_photo' => 47, 'inscription_num' => 48, 'custom_question' => 49, 'custom_question_answer' => 50, 'amount_beca' => 51, 'amount_first_payment' => 52, 'amount_second_payment' => 53, 'payment_date' => 54, 'certificated' => 55, 'certificatedName' => 56, 'tpv_suffix' => 57, 'tpv_first_payment_response' => 58, 'tpv_second_payment_response' => 59, 'culture' => 60, 'is_payment_reminder_sent' => 61, 'kids_and_us_center_id' => 62, 'last_cooloff_year' => 63, 'email_confirmation_sent' => 64, 'student_meds' => 65, 'student_meds_description' => 66, 'is_vaccinated' => 67, ),
-		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, )
+		BasePeer::TYPE_PHPNAME => array (
+                    'Id', 
+                    'CreatedAt', 
+                    'StudentName', 
+                    'StudentPrimerApellido', 
+                    'StudentSegundoApellido', 
+                    'StudentBirthDate', 
+                    'StudentAddress', 
+                    'StudentZip', 
+                    'StudentCity', 
+                    'StudentSchoolYear', 
+                    'StudentFriends', 
+                    
+                    'StudentDisability', 
+                    'StudentAllergies', 
+                    'StudentAllergiesDescription', 
+                    'FatherName', 
+                    'FatherPrimerApellido', 
+                    'FatherSegundoApellido', 
+                    'FatherPhone', 
+                    'FatherDni',
+                    'FatherMail', 
+                    'IsFatherMailMain',
+                    
+                    'MotherName', 
+                    'MotherPrimerApellido', 
+                    'MotherSegundoApellido', 
+                    'MotherPhone', 
+                    'MotherDni', 
+                    'MotherMail', 
+                    'IsMotherMailMain', 
+                    'SplitPayment', 
+                    'Beca', 
+                    'StudentCourseInscription', 
+                    
+                    'IsPaid', 
+                    'State',  
+                    'MethodPayment', 
+                    'Shelter',
+                    'InscriptionCode', 
+                    'IsStudentDisability',
+                    'StudentProvincia', 
+                    'StudentNumTarjetaSanitaria', 
+                    'StudentTarjetaSanitariaCompanyia',
+                    'IsStudentKidAndUs', 
+                    
+                    'StudentDisabilityLevel', 
+                    'StudentComments', 
+                    'GrupoId', 
+                    'StudentExcursion', 
+                    'Price', 
+                    'Discount', 
+                    'Discountpercent', 
+                    'StudentPhoto',
+                    'InscriptionNum', 
+                    'CustomQuestion', 
+                    
+                    'CustomQuestionAnswer', 
+                    'AmountBeca', 
+                    'AmountFirstPayment', 
+                    'AmountSecondPayment', 
+                    'PaymentDate', 
+                    'PaymentDateSecond', 
+                    'Certificated', 
+                    'Certificatedname', 
+                    'TpvSuffix', 
+                    'TpvFirstPaymentResponse', 
+                    'TpvSecondPaymentResponse', 
+                    
+                    'Culture', 
+                    'IsPaymentReminderSent',
+                    'KidsAndUsCenterId', 
+                    'LastCooloffYear', 
+                    'EmailConfirmationSent', 
+                    'StudentMeds', 
+                    'StudentMedsDescription', 
+                    'IsVaccinated', ),
+		BasePeer::TYPE_COLNAME => array (
+
+                    
+                    InscriptionPeer::ID, 
+                    InscriptionPeer::CREATED_AT, 
+                    InscriptionPeer::STUDENT_NAME, 
+                    InscriptionPeer::STUDENT_PRIMER_APELLIDO, 
+                    InscriptionPeer::STUDENT_SEGUNDO_APELLIDO,
+                    InscriptionPeer::STUDENT_BIRTH_DATE,
+                    InscriptionPeer::STUDENT_ADDRESS, 
+                    InscriptionPeer::STUDENT_ZIP, 
+                    InscriptionPeer::STUDENT_CITY, 
+                    InscriptionPeer::STUDENT_SCHOOL_YEAR, 
+                    InscriptionPeer::STUDENT_FRIENDS, 
+                    
+                    InscriptionPeer::STUDENT_DISABILITY, 
+                    InscriptionPeer::STUDENT_ALLERGIES, 
+                    InscriptionPeer::STUDENT_ALLERGIES_DESCRIPTION, 
+                    InscriptionPeer::FATHER_NAME, 
+                    InscriptionPeer::FATHER_PRIMER_APELLIDO, 
+                    InscriptionPeer::FATHER_SEGUNDO_APELLIDO, 
+                    InscriptionPeer::FATHER_PHONE, 
+                    InscriptionPeer::FATHER_DNI, 
+                    InscriptionPeer::FATHER_MAIL, 
+                    InscriptionPeer::IS_FATHER_MAIL_MAIN, 
+
+                    InscriptionPeer::MOTHER_NAME, 
+                    InscriptionPeer::MOTHER_PRIMER_APELLIDO, 
+                    InscriptionPeer::MOTHER_SEGUNDO_APELLIDO, 
+                    InscriptionPeer::MOTHER_PHONE, 
+                    InscriptionPeer::MOTHER_DNI, 
+                    InscriptionPeer::MOTHER_MAIL, 
+                    InscriptionPeer::IS_MOTHER_MAIL_MAIN, 
+                    InscriptionPeer::SPLIT_PAYMENT, 
+                    InscriptionPeer::BECA, 
+                    InscriptionPeer::STUDENT_COURSE_INSCRIPTION, 
+       
+                    InscriptionPeer::IS_PAID, 
+                    InscriptionPeer::STATE, 
+                    InscriptionPeer::METHOD_PAYMENT, 
+                    InscriptionPeer::SHELTER,
+                    InscriptionPeer::INSCRIPTION_CODE,
+                    InscriptionPeer::IS_STUDENT_DISABILITY,
+                    InscriptionPeer::STUDENT_PROVINCIA, 
+                    InscriptionPeer::STUDENT_NUM_TARJETA_SANITARIA, 
+                    InscriptionPeer::STUDENT_TARJETA_SANITARIA_COMPANYIA, 
+                    InscriptionPeer::IS_STUDENT_KID_AND_US, 
+                    
+                    InscriptionPeer::STUDENT_DISABILITY_LEVEL, 
+                    InscriptionPeer::STUDENT_COMMENTS, 
+                    InscriptionPeer::GRUPO_ID, 
+                    InscriptionPeer::STUDENT_EXCURSION, 
+                    InscriptionPeer::PRICE, 
+                    InscriptionPeer::DISCOUNT, 
+                    InscriptionPeer::DISCOUNTPERCENT, 
+                    InscriptionPeer::STUDENT_PHOTO, 
+                    InscriptionPeer::INSCRIPTION_NUM, 
+                    InscriptionPeer::CUSTOM_QUESTION, 
+       
+                    InscriptionPeer::CUSTOM_QUESTION_ANSWER, 
+                    InscriptionPeer::AMOUNT_BECA, 
+                    InscriptionPeer::AMOUNT_FIRST_PAYMENT, 
+                    InscriptionPeer::AMOUNT_SECOND_PAYMENT, 
+                    InscriptionPeer::PAYMENT_DATE, 
+                    InscriptionPeer::PAYMENT_DATE_SECOND, 
+                    InscriptionPeer::CERTIFICATED, 
+                    InscriptionPeer::CERTIFICATEDNAME, 
+                    InscriptionPeer::TPV_SUFFIX, 
+                    InscriptionPeer::TPV_FIRST_PAYMENT_RESPONSE, 
+                    InscriptionPeer::TPV_SECOND_PAYMENT_RESPONSE, 
+                    
+                    InscriptionPeer::CULTURE, 
+                    InscriptionPeer::IS_PAYMENT_REMINDER_SENT, 
+                    InscriptionPeer::KIDS_AND_US_CENTER_ID, 
+                    InscriptionPeer::LAST_COOLOFF_YEAR, 
+                    InscriptionPeer::EMAIL_CONFIRMATION_SENT, 
+                    InscriptionPeer::STUDENT_MEDS, 
+                    InscriptionPeer::STUDENT_MEDS_DESCRIPTION, 
+                    InscriptionPeer::IS_VACCINATED, ),
+            
+            
+		BasePeer::TYPE_FIELDNAME => array (
+                    'id', 
+                    'created_at', 
+                    'student_name', 
+                    'student_primer_apellido', 
+                    'student_segundo_apellido', 
+                    'student_birth_date', 
+                    'student_address', 
+                    'student_zip', 
+                    'student_city', 
+                    'student_school_year', 
+                    'student_friends',
+        
+                    'student_disability', 
+                    'student_allergies', 
+                    'student_allergies_description', 
+                    'father_name', 
+                    'father_primer_apellido', 
+                    'father_segundo_apellido', 
+                    'father_phone', 
+                    'father_dni',
+                    'father_mail', 
+                    'is_father_mail_main', 
+                    
+                    'mother_name', 
+                    'mother_primer_apellido', 
+                    'mother_segundo_apellido', 
+                    'mother_phone', 
+                    'mother_dni', 
+                    'mother_mail', 
+                    'is_mother_mail_main', 
+                    'split_payment', 
+                    'beca', 
+                    'student_course_inscription', 
+                    
+                    'is_paid', 
+                    'state', 
+                    'method_payment',  
+                    'shelter',  
+                    'inscription_code', 
+                    'is_student_disability', 
+                    'student_provincia', 
+                    'student_num_tarjeta_sanitaria', 
+                    'student_tarjeta_sanitaria_companyia', 
+                    'is_student_kid_and_us',
+                    
+                    'student_disability_level',
+                    'student_comments', 
+                    'grupo_id',
+                    'student_excursion', 
+                    'price', 
+                    'discount', 
+                    'discountPercent',
+                    'student_photo', 
+                    'inscription_num', 
+                    'custom_question', 
+                    
+                    'custom_question_answer',
+                    'amount_beca', 
+                    'amount_first_payment', 
+                    'amount_second_payment', 
+                    'payment_date', 
+                    'payment_date_second', 
+                    'certificated', 
+                    'certificatedName', 
+                    'tpv_suffix', 
+                    'tpv_first_payment_response', 
+                    'tpv_second_payment_response', 
+                    
+                    'culture', 
+                    'is_payment_reminder_sent',
+                    'kids_and_us_center_id', 
+                    'last_cooloff_year',
+                    'email_confirmation_sent', 
+                    'student_meds', 
+                    'student_meds_description', 
+                    'is_vaccinated', ),
+		BasePeer::TYPE_NUM => array (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, )
 	);
 
 	
@@ -298,8 +839,6 @@ abstract class BaseInscriptionPeer {
 
 		$criteria->addSelectColumn(InscriptionPeer::CREATED_AT);
 
-		$criteria->addSelectColumn(InscriptionPeer::INSCRIPTION_CODE);
-
 		$criteria->addSelectColumn(InscriptionPeer::STUDENT_NAME);
 
 		$criteria->addSelectColumn(InscriptionPeer::STUDENT_PRIMER_APELLIDO);
@@ -318,8 +857,6 @@ abstract class BaseInscriptionPeer {
 
 		$criteria->addSelectColumn(InscriptionPeer::STUDENT_FRIENDS);
 
-		$criteria->addSelectColumn(InscriptionPeer::IS_STUDENT_DISABILITY);
-
 		$criteria->addSelectColumn(InscriptionPeer::STUDENT_DISABILITY);
 
 		$criteria->addSelectColumn(InscriptionPeer::STUDENT_ALLERGIES);
@@ -337,8 +874,6 @@ abstract class BaseInscriptionPeer {
 		$criteria->addSelectColumn(InscriptionPeer::FATHER_DNI);
 
 		$criteria->addSelectColumn(InscriptionPeer::FATHER_MAIL);
-
-		$criteria->addSelectColumn(InscriptionPeer::STATE);
 
 		$criteria->addSelectColumn(InscriptionPeer::IS_FATHER_MAIL_MAIN);
 
@@ -364,7 +899,15 @@ abstract class BaseInscriptionPeer {
 
 		$criteria->addSelectColumn(InscriptionPeer::IS_PAID);
 
+		$criteria->addSelectColumn(InscriptionPeer::STATE);
+
 		$criteria->addSelectColumn(InscriptionPeer::METHOD_PAYMENT);
+                
+                $criteria->addSelectColumn(InscriptionPeer::SHELTER);
+                
+		$criteria->addSelectColumn(InscriptionPeer::INSCRIPTION_CODE);
+                
+		$criteria->addSelectColumn(InscriptionPeer::IS_STUDENT_DISABILITY);
 
 		$criteria->addSelectColumn(InscriptionPeer::STUDENT_PROVINCIA);
 
@@ -403,6 +946,8 @@ abstract class BaseInscriptionPeer {
 		$criteria->addSelectColumn(InscriptionPeer::AMOUNT_SECOND_PAYMENT);
 
 		$criteria->addSelectColumn(InscriptionPeer::PAYMENT_DATE);
+                
+                $criteria->addSelectColumn(InscriptionPeer::PAYMENT_DATE_SECOND);
 
 		$criteria->addSelectColumn(InscriptionPeer::CERTIFICATED);
 

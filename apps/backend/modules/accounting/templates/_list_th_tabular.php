@@ -8,12 +8,13 @@
 	$columns['week'] = __('Setmana');
 	$columns['method_payment'] = __('Mod. pagament');
 	$columns['IMPORTE_DESCUENTO'] = __('Import descompte');
-    $columns['IMPORTE_DESCUENTO_PORCENTAJE'] = __('Descompte (%)');
+        $columns['IMPORTE_DESCUENTO_PORCENTAJE'] = __('Descompte (%)');
 	$columns['IMPORTE_PRIMER_PAGO'] = __('Import 1er pag.');
 	$columns['IMPORTE_SEGUNDO_PAGO'] = __('Import 2on pag.');
 	$columns['IMPORTE_TOTAL_A_PAGAR'] = __('Import total');
 	$columns['IMPORTE_TOTAL_PENDIENTE'] = __('Import pendent');
 	$columns['payment_date'] = __('payment_date');
+        $columns['payment_date_second'] = __('payment_date_second');
 
 ?>
 <th></th>

@@ -72,6 +72,7 @@ function updateRecord(id, markPaid)
 	data += '&secondp=' + jQuery('input[name=' + id + '-secondp]').val();
 	data += '&payment=' + jQuery('select[name=' + id + '-payment]').val();
 	data += '&paymentdate=' + jQuery('input[name=' + id + '-paymentdate]').val();
+        data += '&paymentdatesecond=' + jQuery('input[name=' + id + '-paymentdatesecond]').val();
 
     if (markPaid) {
         data += '&markPaid=1';
@@ -102,6 +103,7 @@ function updateRecord(id, markPaid)
                         jQuery('#' + rowData.id + '-amount').text(rowData.amount);
                         jQuery('#' + rowData.id + '-pamount').text(rowData.pamount);
                         jQuery('input[name=' + rowData.id + '-paymentdate]').val(rowData.paymentdate);
+                        jQuery('input[name=' + rowData.id + '-paymentdatesecond]').val(rowData.paymentdatesecond);
 
                         if (rowData.pamount > 0) {
                             jQuery('#' + rowData.id + '-pamount').css('color', 'red');

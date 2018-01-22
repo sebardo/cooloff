@@ -30,167 +30,178 @@ class accountingActions extends sfActions
 	
 	public function executeUpdate()
 	{
-		try
-		{
-			$request = $this->getRequest();
-			if (!$request->isXmlHttpRequest()) {
-				throw $this->createNotFoundException('Invalid request');
-			}
-			
-			//error_log(print_r($_GET, 1));
-			
-			$response['status'] = 'OK';
-
-            $inscription = InscriptionPeer::retrieveByPK($request->getParameter('id'));
-            if ($inscription)
+            try
             {
-                if (!$request->getParameter('markPaid', null))
-                {
+                $request = $this->getRequest();
+                if (!$request->isXmlHttpRequest()) {
+                        throw $this->createNotFoundException('Invalid request');
+                }
 
-                    if ($request->getParameter('discount-percent') != $inscription->getDiscountPercent())
+                //error_log(print_r($_GET, 1));
+
+                $response['status'] = 'OK';
+
+                $inscription = InscriptionPeer::retrieveByPK($request->getParameter('id'));
+                if ($inscription)
+                {
+                    if (!$request->getParameter('markPaid', null))
                     {
-                        $course = CoursePeer::retrieveByPK($inscription->getStudentCourseInscription());
-                        $totalPrice = $course->getPrice();
-                        $totalDiscount = 0;
+
+                        if ($request->getParameter('discount-percent') != $inscription->getDiscountPercent())
+                        {
+                            $course = CoursePeer::retrieveByPK($inscription->getStudentCourseInscription());
+                            $totalPrice = $course->getPrice();
+                            $totalDiscount = 0;
+
+                            $inscription->setDiscountPercent($request->getParameter('discount-percent'));
+                            $services = array();
+                            foreach ($inscription->getInscriptionServiceSchedules() as $inscriptionServiceSchedule)
+                            {
+                                $serviceSchedule = $inscriptionServiceSchedule->getServiceSchedule();
+                                $serviceSchedule->setCulture($inscription->getCulture());
+                                $service = $serviceSchedule->getService();
+                                $service->setCulture($inscription->getCulture());
+
+                                if (!in_array($service->getId(), $services)) {
+                                    $totalPrice += $service->getPrice();
+                                    array_push($services, $service->getId());
+                                }
+                            }
+
+                            $totalDiscount = 0;
+                            if ($inscription->getDiscountPercent() > 0) {
+                                $totalDiscount = $totalPrice * ($inscription->getDiscountPercent() / 100);
+                                $totalPrice = $totalPrice - $totalDiscount;
+                            }
+
+                            $inscription->setPrice($totalPrice);
+                            $inscription->setDiscount($totalDiscount);
+                        }
 
                         $inscription->setDiscountPercent($request->getParameter('discount-percent'));
-                        $services = array();
-                        foreach ($inscription->getInscriptionServiceSchedules() as $inscriptionServiceSchedule)
-                        {
-                            $serviceSchedule = $inscriptionServiceSchedule->getServiceSchedule();
-                            $serviceSchedule->setCulture($inscription->getCulture());
-                            $service = $serviceSchedule->getService();
-                            $service->setCulture($inscription->getCulture());
+                        $inscription->setAmountBeca($request->getParameter('beca'));
+                        $inscription->setAmountFirstPayment($request->getParameter('firstp'));
+                        $inscription->setAmountSecondPayment($request->getParameter('secondp'));
+                        $inscription->setMethodPayment($request->getParameter('payment'));
 
-                            if (!in_array($service->getId(), $services)) {
-                                $totalPrice += $service->getPrice();
-                                array_push($services, $service->getId());
+                        $paymentDate = $request->getParameter('paymentdate');
+                        if ($paymentDate)
+                        {
+                            $paymentDate = DateTime::createFromFormat('d/m/Y', $paymentDate);
+                            if ($paymentDate) {
+                                $inscription->setPaymentDate($paymentDate->format('Y-m-d'));
                             }
                         }
 
-                        $totalDiscount = 0;
-                        if ($inscription->getDiscountPercent() > 0) {
-                            $totalDiscount = $totalPrice * ($inscription->getDiscountPercent() / 100);
-                            $totalPrice = $totalPrice - $totalDiscount;
+                        $paymentDateSecond = $request->getParameter('paymentdatesecond');
+                        if ($paymentDateSecond)
+                        {
+                            $paymentDateSecond = DateTime::createFromFormat('d/m/Y', $paymentDateSecond);
+                            if ($paymentDateSecond) {
+                                $inscription->setPaymentDateSecond($paymentDateSecond->format('Y-m-d'));
+                            }
                         }
 
-                        $inscription->setPrice($totalPrice);
-                        $inscription->setDiscount($totalDiscount);
-                    }
-
-                    $inscription->setDiscountPercent($request->getParameter('discount-percent'));
-                    $inscription->setAmountBeca($request->getParameter('beca'));
-                    $inscription->setAmountFirstPayment($request->getParameter('firstp'));
-                    $inscription->setAmountSecondPayment($request->getParameter('secondp'));
-                    $inscription->setMethodPayment($request->getParameter('payment'));
-
-                    $paymentDate = $request->getParameter('paymentdate');
-                    if ($paymentDate)
-                    {
-                        $paymentDate = DateTime::createFromFormat('d/m/Y', $paymentDate);
-                        if ($paymentDate) {
-                            $inscription->setPaymentDate($paymentDate->format('Y-m-d'));
+                        if ($inscription->getPendingAmount() == 0)
+                        {
+                                $inscription->setIsPaid(2);
                         }
+
+                        $inscription->save();
                     }
-
-					if ($inscription->getPendingAmount() == 0)
-					{
-						$inscription->setIsPaid(2);
-					}
-
-                    $inscription->save();
-                }
-                else {
+                    else {
                     // Recupermos todas las inscripciones que comparten inscription_num
                     $inscriptions = InscriptionPeer::retrieveByInscriptionNum($inscription->getInscriptionNum());
                     foreach ($inscriptions as $inscription)
                     {
-                        if ($inscription->getState() === 0)
-                        {
-                            $pendingAmount = $inscription->getPendingAmount();
-                            if ($pendingAmount > 0)
+                            if ($inscription->getState() === 0)
                             {
-                                $inscription->setAmountSecondPayment($inscription->getAmountSecondPayment() + $pendingAmount);
-                                $inscription->setPaymentDate(date('Y-m-d'));
+                                $pendingAmount = $inscription->getPendingAmount();
+                                if ($pendingAmount > 0)
+                                {
+                                    $inscription->setAmountSecondPayment($inscription->getAmountSecondPayment() + $pendingAmount);
+                                    $inscription->setPaymentDate(date('Y-m-d'));
+                                }
+                                $inscription->setIsPaid(2);
+                                $inscription->save();
                             }
-                            $inscription->setIsPaid(2);
-                            $inscription->save();
                         }
                     }
                 }
-            }
 			
-			$con = sfContext::getInstance()->getDatabaseConnection('propel');
-			$query = $this->getMainSql() . " AND i.inscription_num = " . $inscription->getInscriptionNum() . " GROUP BY i.inscription_num " . $this->getOrderSql();
-			$rsGrouped = $con->prepareStatement($query)->executeQuery(ResultSet::FETCHMODE_ASSOC);		
-			$array = array();
-			
-			if ($rsGrouped->getRecordCount() > 0) 
-			{
-				foreach ($rsGrouped as $resultGrouped)
-				{
-					$array['group']['discount'] = $resultGrouped['IMPORTE_DESCUENTO'];
-					$array['group']['discountPercent'] = $resultGrouped['IMPORTE_DESCUENTO_PORCENTAJE'];
-					$array['group']['beca'] = $resultGrouped['IMPORTE_BECA'];
-					$array['group']['firstp'] = $resultGrouped['IMPORTE_PRIMER_PAGO'];
-					$array['group']['secondp'] = $resultGrouped['IMPORTE_SEGUNDO_PAGO'];
-					$array['group']['pamount'] = $resultGrouped['IMPORTE_TOTAL_PENDIENTE'];
-					$array['group']['amount'] = $resultGrouped['IMPORTE_TOTAL_A_PAGAR'];
-					$array['group']['num'] = $resultGrouped['inscription_num'];
-					$array['group']['payment'] = $resultGrouped['method_payment'];
-					$array['group']['paymentdate'] = $resultGrouped['payment_date_formatted'];
+                $con = sfContext::getInstance()->getDatabaseConnection('propel');
+                $query = $this->getMainSql() . " AND i.inscription_num = " . $inscription->getInscriptionNum() . " GROUP BY i.inscription_num " . $this->getOrderSql();
+                $rsGrouped = $con->prepareStatement($query)->executeQuery(ResultSet::FETCHMODE_ASSOC);		
+                $array = array();
 
-					if ($resultGrouped['NUM_REG'] > 1)
-					{
-                        if (!isset($inscriptions)) {
-                            $inscriptions[] = $inscription;
-                        }
-
-                        foreach ($inscriptions as $inscription)
+                if ($rsGrouped->getRecordCount() > 0) 
+                {
+                        foreach ($rsGrouped as $resultGrouped)
                         {
-                            $query = $this->getMainSql() . " AND i.id = " . $inscription->getId() . " GROUP BY i.id " . $this->getOrderSql();
-                            $rsRow = $con->prepareStatement($query)->executeQuery(ResultSet::FETCHMODE_ASSOC);
+                                $array['group']['discount'] = $resultGrouped['IMPORTE_DESCUENTO'];
+                                $array['group']['discountPercent'] = $resultGrouped['IMPORTE_DESCUENTO_PORCENTAJE'];
+                                $array['group']['beca'] = $resultGrouped['IMPORTE_BECA'];
+                                $array['group']['firstp'] = $resultGrouped['IMPORTE_PRIMER_PAGO'];
+                                $array['group']['secondp'] = $resultGrouped['IMPORTE_SEGUNDO_PAGO'];
+                                $array['group']['pamount'] = $resultGrouped['IMPORTE_TOTAL_PENDIENTE'];
+                                $array['group']['amount'] = $resultGrouped['IMPORTE_TOTAL_A_PAGAR'];
+                                $array['group']['num'] = $resultGrouped['inscription_num'];
+                                $array['group']['payment'] = $resultGrouped['method_payment'];
+                                $array['group']['paymentdate'] = $resultGrouped['payment_date_formatted'];
+                                $array['group']['paymentdatesecond'] = $resultGrouped['payment_date_second_formatted'];
 
-                            if ($rsRow->getRecordCount() > 0)
-                            {
-                                foreach ($rsRow as $resultRow) {
-                                    $data['id'] = $resultRow['id'];
-                                    $data['discount'] = $resultRow['IMPORTE_DESCUENTO'];
-                                    $data['discountPercent'] = $resultRow['IMPORTE_DESCUENTO_PORCENTAJE'];
-                                    $data['beca'] = $resultRow['IMPORTE_BECA'];
-                                    $data['firstp'] = $resultRow['IMPORTE_PRIMER_PAGO'];
-                                    $data['secondp'] = $resultRow['IMPORTE_SEGUNDO_PAGO'];
-                                    $data['pamount'] = $resultRow['IMPORTE_TOTAL_PENDIENTE'];
-                                    $data['amount'] = $resultRow['IMPORTE_TOTAL_A_PAGAR'];
-                                    $data['payment'] = $resultRow['method_payment'];
-                                    $data['paymentdate'] = $resultRow['payment_date_formatted'];
+                                if ($resultGrouped['NUM_REG'] > 1)
+                                {
+                if (!isset($inscriptions)) {
+                    $inscriptions[] = $inscription;
+                }
 
-                                    $array['rows'][] = $data;
-                                    break;
-                                }
-                            }
-                            else {
-                                $response['status'] = 'KO';
-                            }
+                foreach ($inscriptions as $inscription)
+                {
+                    $query = $this->getMainSql() . " AND i.id = " . $inscription->getId() . " GROUP BY i.id " . $this->getOrderSql();
+                    $rsRow = $con->prepareStatement($query)->executeQuery(ResultSet::FETCHMODE_ASSOC);
+
+                    if ($rsRow->getRecordCount() > 0)
+                    {
+                        foreach ($rsRow as $resultRow) {
+                            $data['id'] = $resultRow['id'];
+                            $data['discount'] = $resultRow['IMPORTE_DESCUENTO'];
+                            $data['discountPercent'] = $resultRow['IMPORTE_DESCUENTO_PORCENTAJE'];
+                            $data['beca'] = $resultRow['IMPORTE_BECA'];
+                            $data['firstp'] = $resultRow['IMPORTE_PRIMER_PAGO'];
+                            $data['secondp'] = $resultRow['IMPORTE_SEGUNDO_PAGO'];
+                            $data['pamount'] = $resultRow['IMPORTE_TOTAL_PENDIENTE'];
+                            $data['amount'] = $resultRow['IMPORTE_TOTAL_A_PAGAR'];
+                            $data['payment'] = $resultRow['method_payment'];
+                            $data['paymentdate'] = $resultRow['payment_date_formatted'];
+                            $data['paymentdatesecond'] = $resultRow['payment_date_second_formatted'];
+
+                            $array['rows'][] = $data;
+                            break;
                         }
-					}
-					
-					break;
-				}
-			}
-			else {
-				$response['status'] = 'KO';
-			}
-			
-			$response['message'] = $array;
+                    }
+                    else {
+                        $response['status'] = 'KO';
+                    }
+                }
+                                }
 
-			return $this->renderText(json_encode($response));
-		}
-		catch (Exception $e) {
-			$response['status'] = 'KO';
-			$response['message'] = '';
-			return $this->renderText(json_encode($response));
-		}
+                                break;
+                        }
+                }
+                else {
+                        $response['status'] = 'KO';
+                }
+
+                $response['message'] = $array;
+
+                return $this->renderText(json_encode($response));
+            }
+            catch (Exception $e) {
+                $response['status'] = 'KO';
+                $response['message'] = $e->getMessage();
+                return $this->renderText(json_encode($response));
+            }
 	}
 	
 	public function executeList()
@@ -301,7 +312,9 @@ class accountingActions extends sfActions
 						 COUNT(i.id) AS NUM_REG,
 						 i.student_photo,
                          IF(i.payment_date IS NOT NULL, DATE_FORMAT(i.payment_date, '%d/%m/%Y'), NULL) AS payment_date_formatted,
-                         i.payment_date
+                         IF(i.payment_date_second IS NOT NULL, DATE_FORMAT(i.payment_date_second, '%d/%m/%Y'), NULL) AS payment_date_second_formatted,
+                         i.payment_date,
+                         i.payment_date_second
 				  FROM inscription AS i
 				  INNER JOIN course AS c ON c.id = i.student_course_inscription
 				  INNER JOIN course_i18n AS ct ON (c.id = ct.id AND ct.culture = '{$user->getCulture()}')

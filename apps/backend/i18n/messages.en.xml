@@ -1497,6 +1497,10 @@
                 <target>Payment date</target>
             </trans-unit>
             <trans-unit>
+                <source>payment_date_second</source>
+                <target>Second payment date</target>
+            </trans-unit>
+            <trans-unit>
                 <source>date_from</source>
                 <target>From:</target>
             </trans-unit>

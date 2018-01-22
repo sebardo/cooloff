@@ -31,12 +31,10 @@ class InscriptionMapBuilder {
 		$tMap->setPhpName('Inscription');
 
 		$tMap->setUseIdGenerator(true);
-
+                        
 		$tMap->addPrimaryKey('ID', 'Id', 'int', CreoleTypes::INTEGER, true, null);
 
 		$tMap->addColumn('CREATED_AT', 'CreatedAt', 'int', CreoleTypes::TIMESTAMP, false, null);
-
-		$tMap->addColumn('INSCRIPTION_CODE', 'InscriptionCode', 'int', CreoleTypes::INTEGER, false, null);
 
 		$tMap->addColumn('STUDENT_NAME', 'StudentName', 'string', CreoleTypes::VARCHAR, false, 255);
 
@@ -56,8 +54,6 @@ class InscriptionMapBuilder {
 
 		$tMap->addColumn('STUDENT_FRIENDS', 'StudentFriends', 'string', CreoleTypes::VARCHAR, false, 255);
 
-		$tMap->addColumn('IS_STUDENT_DISABILITY', 'IsStudentDisability', 'boolean', CreoleTypes::BOOLEAN, true, null);
-
 		$tMap->addColumn('STUDENT_DISABILITY', 'StudentDisability', 'string', CreoleTypes::VARCHAR, false, 255);
 
 		$tMap->addColumn('STUDENT_ALLERGIES', 'StudentAllergies', 'boolean', CreoleTypes::BOOLEAN, true, null);
@@ -75,8 +71,6 @@ class InscriptionMapBuilder {
 		$tMap->addColumn('FATHER_DNI', 'FatherDni', 'string', CreoleTypes::VARCHAR, false, 255);
 
 		$tMap->addColumn('FATHER_MAIL', 'FatherMail', 'string', CreoleTypes::VARCHAR, false, 255);
-
-		$tMap->addColumn('STATE', 'State', 'int', CreoleTypes::INTEGER, false, null);
 
 		$tMap->addColumn('IS_FATHER_MAIL_MAIN', 'IsFatherMailMain', 'boolean', CreoleTypes::BOOLEAN, true, null);
 
@@ -102,7 +96,15 @@ class InscriptionMapBuilder {
 
 		$tMap->addColumn('IS_PAID', 'IsPaid', 'int', CreoleTypes::INTEGER, false, null);
 
+		$tMap->addColumn('STATE', 'State', 'int', CreoleTypes::INTEGER, false, null);
+                
 		$tMap->addColumn('METHOD_PAYMENT', 'MethodPayment', 'int', CreoleTypes::INTEGER, false, null);
+                
+                $tMap->addColumn('SHELTER', 'Shelter', 'int', CreoleTypes::INTEGER, false, null);
+                
+		$tMap->addColumn('INSCRIPTION_CODE', 'InscriptionCode', 'int', CreoleTypes::INTEGER, false, null);
+                
+		$tMap->addColumn('IS_STUDENT_DISABILITY', 'IsStudentDisability', 'boolean', CreoleTypes::BOOLEAN, true, null);
 
 		$tMap->addForeignKey('STUDENT_PROVINCIA', 'StudentProvincia', 'int', CreoleTypes::INTEGER, 'provincia', 'ID', false, null);
 
@@ -141,6 +143,8 @@ class InscriptionMapBuilder {
 		$tMap->addColumn('AMOUNT_SECOND_PAYMENT', 'AmountSecondPayment', 'double', CreoleTypes::DECIMAL, false, 14);
 
 		$tMap->addColumn('PAYMENT_DATE', 'PaymentDate', 'int', CreoleTypes::DATE, false, null);
+                
+                $tMap->addColumn('PAYMENT_DATE_SECOND', 'PaymentDateSecond', 'int', CreoleTypes::DATE, false, null);
 
 		$tMap->addColumn('CERTIFICATED', 'Certificated', 'boolean', CreoleTypes::BOOLEAN, false, null);
 
