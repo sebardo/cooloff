@@ -691,9 +691,7 @@ class util extends sfActions
             if ($insc->getSplitPayment()) {
                 if ($studentInscrCenter->getSecondPaymentDate()) {
 
-                    $pdf->setXY(235, 210);
-                    $pdf->Cell(24, 0, sfContext::getInstance()->getI18N()->__('TOTAL'), array('T'=>array('dash'=>0,'width'=>0)), 0, 'L', 0, '', 0, false, 'T', 'T');
-                    $pdf->SetFont('arial', 'B', sfTCPDF::FONT_SIZE);
+                    
                     $pdf->Cell(30, 0, number_format(($total/2), 2) . ' €',array('T'=>array('dash'=>0,'width'=>0)), 0, 'R', 0, '', 0, false, 'T', 'T');
                     $pdf->SetFont(sfTCPDF::FONT, 'B', sfTCPDF::FONT_SIZE);
 
