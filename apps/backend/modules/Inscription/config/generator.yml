@@ -6,10 +6,10 @@ generator:
 
     list:
       title:        "Llistat d\'inscripcions"
-      display:      [=inscription_code, =created_at, student_name, student_primer_apellido, student_segundo_apellido, student_school_year, _kids_and_us_center, _method_payment, _is_paid, _state]
+      display:      [=created_at, student_name, student_primer_apellido, student_segundo_apellido, student_school_year, _kids_and_us_center, _method_payment, _is_paid, _state]
       peer_method:   doSelectJoinCourse
-      filters: [student_course_inscription, state, inscription_code, method_payment, state, is_paid, student_name, student_primer_apellido, student_segundo_apellido, grupo_id, profesor_id, is_student_disability, student_allergies, student_birth_date, kids_and_us_center_id, beca, is_vaccinated]
-      sort:   [inscription_code, desc]
+      filters: [student_course_inscription, state, method_payment, state, is_paid, student_name, student_primer_apellido, student_segundo_apellido, grupo_id, profesor_id, is_student_disability, student_allergies, student_birth_date, kids_and_us_center_id, beca, is_vaccinated]
+      sort:   [id, desc]
       object_actions:
         generatePdf:      { name: 'Generar full inscripció', action: generatePdf, icon: /sfAdminDashPlugin/images/icon_pdf.gif, params: target=_blank }
         generateFicha:      { name: "Generar fitxa de l\\'alumne", action: pdfFichaComplete, icon: /sfAdminDashPlugin/images/icon_pdf.gif, params: target=_blank }
