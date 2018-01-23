@@ -18,6 +18,7 @@ class InscriptionActions extends autoInscriptionActions
 {
 	public function executeList()
 	{
+            die('asd');
 		$this->setVar('columns', $this->getArrayExportColumns());
 		parent::executeList();
 	}
