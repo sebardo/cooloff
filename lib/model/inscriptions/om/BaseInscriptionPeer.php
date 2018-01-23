@@ -13,7 +13,7 @@ abstract class BaseInscriptionPeer {
 	const CLASS_DEFAULT = 'lib.model.inscriptions.Inscription';
 
 	
-	const NUM_COLUMNS = 68;
+	const NUM_COLUMNS = 69;
 
 	
 	const NUM_LAZY_LOAD_COLUMNS = 0;
@@ -1180,7 +1180,7 @@ abstract class BaseInscriptionPeer {
 	{
 		$c = clone $c;
 
-				if ($c->getDbName() == Propel::getDefaultDB()) {
+                if ($c->getDbName() == Propel::getDefaultDB()) {
 			$c->setDbName(self::DATABASE_NAME);
 		}
 
@@ -1208,9 +1208,11 @@ abstract class BaseInscriptionPeer {
 
 			$newObject = true;
 			foreach($results as $temp_obj1) {
-				$temp_obj2 = $temp_obj1->getCourse(); 				if ($temp_obj2->getPrimaryKey() === $obj2->getPrimaryKey()) {
+				$temp_obj2 = $temp_obj1->getCourse(); 				
+                                if ($temp_obj2->getPrimaryKey() === $obj2->getPrimaryKey()) {
 					$newObject = false;
-										$temp_obj2->addInscription($obj1); 					break;
+                                        $temp_obj2->addInscription($obj1); 					
+                                        break;
 				}
 			}
 			if ($newObject) {
