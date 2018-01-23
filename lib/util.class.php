@@ -692,7 +692,7 @@ class util extends sfActions
                 if ($studentInscrCenter->getSecondPaymentDate()) {
 
                     
-                    $pdf->Cell(30, 0, number_format(($total/2), 2) . ' €',array('T'=>array('dash'=>0,'width'=>0)), 0, 'R', 0, '', 0, false, 'T', 'T');
+                    $pdf->Cell(0, 0, number_format(($total/2), 2) . ' €',array('T'=>array('dash'=>0,'width'=>0)), 0, 'R', 0, '', 0, false, 'T', 'T');
                     $pdf->SetFont(sfTCPDF::FONT, 'B', sfTCPDF::FONT_SIZE);
 
 
