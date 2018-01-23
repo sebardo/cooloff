@@ -16,11 +16,72 @@ require_once "plugins/fpdi151/fpdi.php";
 
 class InscriptionActions extends autoInscriptionActions
 {
-	public function executeList()
-	{
-		$this->setVar('columns', $this->getArrayExportColumns());
-		parent::executeList();
-	}
+    public function executeList()
+    {
+            $this->setVar('columns', $this->getArrayExportColumns());
+            $this->executeListParent();
+    }
+
+    
+    public function executeListParent()
+    {
+      $this->processSort();
+      $this->processFilters();
+
+      $this->filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/inscription/filters');
+
+      // pager
+      $this->pager = new sfPropelPager('Inscription', 20);
+      $c = new Criteria();
+      $this->addSortCriteria($c);
+      $this->addFiltersCriteria($c);
+      $this->pager->setCriteria($c);
+      $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
+      $this->pager->setPeerMethod('doSelectJoinCourse');
+      $this->pager->init();
+
+      // save page
+      if ($this->getRequestParameter('page')) {
+          $this->getUser()->setAttribute('page', $this->getRequestParameter('page'), 'sf_admin/inscription');
+      }
+    }
+
+    protected function processFilters()
+    {
+      if ($this->getRequest()->hasParameter('filter'))
+      {
+        $filters = $this->getRequestParameter('filters');
+        if (isset($filters['student_birth_date']['from']) && $filters['student_birth_date']['from'] !== '')
+        {
+          $filters['student_birth_date']['from'] = sfI18N::getTimestampForCulture($filters['student_birth_date']['from'], $this->getUser()->getCulture());
+        }
+        if (isset($filters['student_birth_date']['to']) && $filters['student_birth_date']['to'] !== '')
+        {
+          $filters['student_birth_date']['to'] = sfI18N::getTimestampForCulture($filters['student_birth_date']['to'], $this->getUser()->getCulture());
+        }
+
+        $this->getUser()->getAttributeHolder()->removeNamespace('sf_admin/inscription');
+        $this->getUser()->getAttributeHolder()->removeNamespace('sf_admin/inscription/filters');
+        $this->getUser()->getAttributeHolder()->add($filters, 'sf_admin/inscription/filters');
+      }
+    }
+
+    protected function processSort()
+    {
+      if ($this->getRequestParameter('sort'))
+      {
+        $this->getUser()->setAttribute('sort', $this->getRequestParameter('sort'), 'sf_admin/inscription/sort');
+        $this->getUser()->setAttribute('type', $this->getRequestParameter('type', 'asc'), 'sf_admin/inscription/sort');
+      }
+
+      if (!$this->getUser()->getAttribute('sort', null, 'sf_admin/inscription/sort'))
+      {
+        $this->getUser()->setAttribute('sort', 'inscription_code', 'sf_admin/inscription/sort');
+        $this->getUser()->setAttribute('type', 'desc', 'sf_admin/inscription/sort');
+      }
+    }
+
+
 
     /**
      * @var myBackendSummerFun
