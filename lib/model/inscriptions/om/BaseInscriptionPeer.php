@@ -808,7 +808,10 @@ abstract class BaseInscriptionPeer {
 	static public function translateFieldName($name, $fromType, $toType)
 	{
 		$toNames = self::getFieldNames($toType);
-		$key = isset(self::$fieldKeys[$fromType][$name]) ? self::$fieldKeys[$fromType][$name] : null;
+                print_r($toNames);die;
+                if(in_array($name, self::$fieldKeys[$fromType])){
+                }
+		$key = in_array($name, self::$fieldKeys[$fromType]) ? self::$fieldKeys[$fromType][$name] : null;
 		if ($key === null) {
                     var_dump($name);
                     var_dump($fromType);
