@@ -693,7 +693,7 @@ class util extends sfActions
 
                     $date = DateTime::createFromFormat('Y-m-d', $studentInscrCenter->getSecondPaymentDate());
 
-                    $pdf->Cell(0, 0, sfContext::getInstance()->getI18N()->__('registration.trans230', array('%importe%' => number_format(($total/2), 2).' €' , '%date%' => $date->format('d/m/Y'))), 0, 0, 'L', 0, '', 0, false, 'M', 'C');
+                    $pdf->Cell(0, 0, sfContext::getInstance()->getI18N()->__('registration.trans230', array('%importe%' => number_format(($total/2), 2) , '%date%' => $date->format('d/m/Y'))), 0, 0, 'L', 0, '', 0, false, 'M', 'C');
                 }
             }
             else {
