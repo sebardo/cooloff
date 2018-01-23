@@ -2262,7 +2262,19 @@
       </trans-unit>
       <trans-unit>
         <source>registration.trans230</source>
-        <target><![CDATA[Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.]]></target>
+        <target><![CDATA[Desitjo pagar %importe% ara i el següent pagament de %importe% abans del %date%.]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans230-a</source>
+        <target>€€€€€€€</target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans230-b</source>
+        <target><![CDATA[ara i el següent pagament de %importe%]]></target>
+      </trans-unit>
+      <trans-unit>
+        <source>registration.trans230-c</source>
+        <target><![CDATA[abans del %date%.]]></target>
       </trans-unit>
       <trans-unit>
         <source>registration.trans231</source>
