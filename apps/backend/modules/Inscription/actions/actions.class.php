@@ -36,8 +36,8 @@ class InscriptionActions extends autoInscriptionActions
       $this->addSortCriteria($c);
       $this->addFiltersCriteria($c);
       $this->pager->setCriteria($c);
-//      $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
-//      $this->pager->setPeerMethod('doSelectJoinCourse');
+      $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
+      $this->pager->setPeerMethod('doSelectJoinCourse');
       $this->pager->init();
 
       // save page
