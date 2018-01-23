@@ -16,12 +16,38 @@ require_once "plugins/fpdi151/fpdi.php";
 
 class InscriptionActions extends autoInscriptionActions
 {
-	public function executeList()
-	{
-            die('asd');
-		$this->setVar('columns', $this->getArrayExportColumns());
-		parent::executeList();
-	}
+    public function executeList()
+    {
+            $this->setVar('columns', $this->getArrayExportColumns());
+            $this->executeListParent();
+    }
+
+    
+    public function executeListParent()
+    {
+      $this->processSort();
+
+      die('sort');
+      $this->processFilters();
+
+      $this->filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/inscription/filters');
+
+      // pager
+      $this->pager = new sfPropelPager('Inscription', 20);
+      $c = new Criteria();
+      $this->addSortCriteria($c);
+      $this->addFiltersCriteria($c);
+      $this->pager->setCriteria($c);
+      $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
+      $this->pager->setPeerMethod('doSelectJoinCourse');
+      $this->pager->init();
+      // save page
+      if ($this->getRequestParameter('page')) {
+          $this->getUser()->setAttribute('page', $this->getRequestParameter('page'), 'sf_admin/inscription');
+      }
+    }
+
+
 
     /**
      * @var myBackendSummerFun
