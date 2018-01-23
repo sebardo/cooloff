@@ -13,7 +13,7 @@ abstract class BaseInscriptionPeer {
 	const CLASS_DEFAULT = 'lib.model.inscriptions.Inscription';
 
 	
-	const NUM_COLUMNS = 69;
+	const NUM_COLUMNS = 70;
 
 	
 	const NUM_LAZY_LOAD_COLUMNS = 0;
