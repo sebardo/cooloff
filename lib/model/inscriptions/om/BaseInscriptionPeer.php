@@ -811,7 +811,7 @@ abstract class BaseInscriptionPeer {
 		$key = isset(self::$fieldKeys[$fromType][$name]) ? self::$fieldKeys[$fromType][$name] : null;
 		if ($key === null) {
                     var_dump($name);
-                    var_dump(self::$fieldKeys[$fromType]);
+                    var_dump(self::$fieldKeys[$fromType][$name]);
                     die;
 			throw new PropelException("'$name' could not be found in the field names of type '$fromType'. These are: " . print_r(self::$fieldKeys[$fromType], true));
 		}
