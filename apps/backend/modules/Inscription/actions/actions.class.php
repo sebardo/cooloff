@@ -76,7 +76,7 @@ class InscriptionActions extends autoInscriptionActions
 
       if (!$this->getUser()->getAttribute('sort', null, 'sf_admin/inscription/sort'))
       {
-        $this->getUser()->setAttribute('sort', 'inscription_code', 'sf_admin/inscription/sort');
+        //$this->getUser()->setAttribute('sort', 'inscription_code', 'sf_admin/inscription/sort');
         $this->getUser()->setAttribute('type', 'desc', 'sf_admin/inscription/sort');
       }
     }
