@@ -697,7 +697,8 @@ class util extends sfActions
                     $b = sfContext::getInstance()->getI18N()->__('registration.trans230-b', array('%importe%' => $importe));
                     $c = sfContext::getInstance()->getI18N()->__('registration.trans230-c', array('%date%' => $date->format('d/m/Y')));
                     $txt = $a .' €' .  $b .' €' .  $c;
-                    $pdf->Cell(0, 0, $txt, 0, 0, 'L', 0, '', 0, false, 'M', 'C');
+                    //$pdf->Cell(0, 0, $txt, 0, 0, 'L', 0, '', 0, false, 'M', 'C');
+                    $pdf->Cell(0, 0, $total . ' €',array('T'=>array('dash'=>0,'width'=>0)), 0, 'L', 0, '', 0, false, 'T', 'T');
                 }
             }
             else {
