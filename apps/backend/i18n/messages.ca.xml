@@ -2266,7 +2266,7 @@
       </trans-unit>
       <trans-unit>
         <source>registration.trans230-a</source>
-        <target><![CDATA[Desitjo pagar %importe%]]></target>
+        <target>€€€€€€€</target>
       </trans-unit>
       <trans-unit>
         <source>registration.trans230-b</source>
