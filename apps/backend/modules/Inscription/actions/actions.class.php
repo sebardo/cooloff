@@ -35,7 +35,7 @@ class InscriptionActions extends autoInscriptionActions
       $c = new Criteria();
       $this->addSortCriteria($c);
       $this->addFiltersCriteria($c);
-//      $this->pager->setCriteria($c);
+      $this->pager->setCriteria($c);
 //      $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
 //      $this->pager->setPeerMethod('doSelectJoinCourse');
       $this->pager->init();
@@ -76,7 +76,7 @@ class InscriptionActions extends autoInscriptionActions
 
       if (!$this->getUser()->getAttribute('sort', null, 'sf_admin/inscription/sort'))
       {
-        //$this->getUser()->setAttribute('sort', 'inscription_code', 'sf_admin/inscription/sort');
+        $this->getUser()->setAttribute('sort', 'inscription_code', 'sf_admin/inscription/sort');
         $this->getUser()->setAttribute('type', 'desc', 'sf_admin/inscription/sort');
       }
     }
