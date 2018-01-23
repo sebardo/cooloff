@@ -32,16 +32,14 @@ class InscriptionActions extends autoInscriptionActions
 
       // pager
       $this->pager = new sfPropelPager('Inscription', 20);
-//      $c = new Criteria();
-//      $this->addSortCriteria($c);
-//      $this->addFiltersCriteria($c);
-//      $this->pager->setCriteria($c);
-//      $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
-//      $this->pager->setPeerMethod('doSelectJoinCourse');
+      $c = new Criteria();
+      $this->addSortCriteria($c);
+      $this->addFiltersCriteria($c);
+      $this->pager->setCriteria($c);
+      $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
+      $this->pager->setPeerMethod('doSelectJoinCourse');
       $this->pager->init();
-      
 
-      die('query');
       // save page
       if ($this->getRequestParameter('page')) {
           $this->getUser()->setAttribute('page', $this->getRequestParameter('page'), 'sf_admin/inscription');
