@@ -26,12 +26,12 @@ class InscriptionActions extends autoInscriptionActions
     public function executeListParent()
     {
       $this->processSort();
-
-      die('sort');
       $this->processFilters();
 
       $this->filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/inscription/filters');
 
+
+      die('filters');
       // pager
       $this->pager = new sfPropelPager('Inscription', 20);
       $c = new Criteria();
