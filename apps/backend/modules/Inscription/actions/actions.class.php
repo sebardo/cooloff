@@ -30,8 +30,6 @@ class InscriptionActions extends autoInscriptionActions
 
       $this->filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/inscription/filters');
 
-
-      die('filters');
       // pager
       $this->pager = new sfPropelPager('Inscription', 20);
       $c = new Criteria();
@@ -41,6 +39,9 @@ class InscriptionActions extends autoInscriptionActions
       $this->pager->setPage($this->getRequestParameter('page', $this->getUser()->getAttribute('page', 1, 'sf_admin/inscription')));
       $this->pager->setPeerMethod('doSelectJoinCourse');
       $this->pager->init();
+      
+
+      die('query');
       // save page
       if ($this->getRequestParameter('page')) {
           $this->getUser()->setAttribute('page', $this->getRequestParameter('page'), 'sf_admin/inscription');
