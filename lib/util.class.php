@@ -692,7 +692,7 @@ class util extends sfActions
                 if ($studentInscrCenter->getSecondPaymentDate()) {
 
                     $date = DateTime::createFromFormat('Y-m-d', $studentInscrCenter->getSecondPaymentDate());
-                    $importe = number_format(($total/2), 2).'  euros';
+                    $importe = number_format(($total/2), 2).' euros';
                     $pdf->Cell(0, 0, sfContext::getInstance()->getI18N()->__('registration.trans230', array('%importe%' => $importe , '%date%' => $date->format('d/m/Y'))), 0, 0, 'L', 0, '', 0, false, 'M', 'C');
                 }
             }
@@ -779,6 +779,50 @@ class util extends sfActions
     	return $pdf->GetStringWidth($text, sfTCPDF::FONT, sfTCPDF::FONT_STYLE, sfTCPDF::FONT_SIZE) + sfTCPDF::SANGRADO;
     }
 
+     public static function enviarAviso($insc, $llistaCorreus, $type)
+    {
+        require_once('lib/phpMailer/phpmailer.class.php');
+        $centre = $insc->getSummerFunCenter();
+        sfLoader::loadHelpers('Partial');
+        
+        if($type == 'all'){
+            $missatge = get_partial('Inscription/all_payment_mail', array('centre' => $centre, 'inscription' => $insc));
+        }else{
+            $missatge = get_partial('Inscription/half_payment_mail', array('centre' => $centre, 'inscription' => $insc));
+        }
+        
+        
+        $mail = new PHPMailer();
+        $mail->IsSMTP();
+        $mail->SMTPAuth = true;
+        $mail->SMTPSecure = "ssl";
+        $mail->Host = "smtp.gmail.com";
+        $mail->Port = 465;
+        $mail->Username = sfConfig::get('app_email_user');
+        $mail->Password = sfConfig::get('app_email_password');
+        $mail->FromName = 'Kids&Us';
+        $mail->From = 'admin.cooloff@kidsandus.es';
+        $mail->AddReplyTo($mail->From, 'Kids&Us');
+        $mail->CharSet = 'UTF-8';
+        $mail->IsHTML(true);
+        $mail->Helo = "www.kidsandus.es.mx";
+        $mail->Subject = sfContext::getInstance()->getI18N()->__('Pagament Cooloff');
+        $mail->Body = $missatge;
+        $mail->AltBody = $missatge;
+        $mail->CharSet = 'UTF-8';
+        $mail->WordWrap = 50;
+        $mail->IsHTML(true);
+        for ($i = 1; $i <= count($llistaCorreus); $i++) {
+            for ($j = 1; $j <= 2; $j++) {
+                if (isset($llistaCorreus[$i][$j])) {
+                    $mail->AddAddress($llistaCorreus[$i][$j]);
+                }
+            }
+        }
+
+        $mail->Send();
+    }
+    
     public static function enviarPdf($pdf, $llistaCorreus, $idCentre)
     {
         require_once('lib/phpMailer/phpmailer.class.php');
