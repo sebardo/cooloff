@@ -91,6 +91,8 @@ class accountingActions extends sfActions
                             if ($paymentDate) {
                                 $inscription->setPaymentDate($paymentDate->format('Y-m-d'));
                             }
+                        }else{
+                            $inscription->setPaymentDate(null);
                         }
 
                         $paymentDateSecond = $request->getParameter('paymentdatesecond');
