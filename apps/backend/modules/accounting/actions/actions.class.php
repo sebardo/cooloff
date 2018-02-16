@@ -109,9 +109,13 @@ class accountingActions extends sfActions
 
                         $inscription->save();
                         
-                        //send email 100%
+                        //send email 50%
                         $mailsEnviar[1][1] = $inscription->getFatherMail();
-                        util::enviarAviso($inscription, $mailsEnviar, 'all');
+                        util::enviarAviso($inscription, $mailsEnviar, 'half');
+
+                        //send email 100%
+                        //$mailsEnviar[1][1] = $inscription->getFatherMail();
+                        //util::enviarAviso($inscription, $mailsEnviar, 'all');
                     }
                     else {
                     // Recupermos todas las inscripciones que comparten inscription_num
@@ -129,9 +133,7 @@ class accountingActions extends sfActions
                                 $inscription->setIsPaid(2);
                                 $inscription->save();
                                 
-                                //send email 50%
-                                $mailsEnviar[1][1] = $inscription->getFatherMail();
-                                util::enviarAviso($inscription, $mailsEnviar, 'half');
+                                
                             }
                         }
                     }

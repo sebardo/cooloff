@@ -779,10 +779,10 @@ class util extends sfActions
     	return $pdf->GetStringWidth($text, sfTCPDF::FONT, sfTCPDF::FONT_STYLE, sfTCPDF::FONT_SIZE) + sfTCPDF::SANGRADO;
     }
 
-     public static function enviarAviso(Inscription $insc, $llistaCorreus, $type)
+     public static function enviarAviso($insc, $llistaCorreus, $type)
     {
         require_once('lib/phpMailer/phpmailer.class.php');
-        $centre = $insc->getStudentCourseInscription()->getSummerFunCenterId();
+        $centre = SummerFunCenterPeer::retrieveByPK($insc->getStudentCourseInscription());
         sfLoader::loadHelpers('Partial');
         
         if($type == 'all'){
