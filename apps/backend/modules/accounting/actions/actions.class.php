@@ -102,6 +102,8 @@ class accountingActions extends sfActions
                             if ($paymentDateSecond) {
                                 $inscription->setPaymentDateSecond($paymentDateSecond->format('Y-m-d'));
                             }
+                        }else{
+                            $inscription->setPaymentDateSecond(null);
                         }
 
                         if ($inscription->getPendingAmount() == 0)
