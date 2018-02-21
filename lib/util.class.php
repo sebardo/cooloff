@@ -628,14 +628,24 @@ class util extends sfActions
         	$pdf->SetFont(sfTCPDF::FONT, 'B', sfTCPDF::FONT_SIZE);
         	
         	$pdf->setXY(135, 105);
-        	$pdf->Cell(24, 0, sfContext::getInstance()->getI18N()->__('TOTAL'), '', 0, 'L', 0, '', 0, false, 'T', 'T');
+			if (sfContext::getInstance()->getUser()->getCulture() != 'it')
+            {
+        		$pdf->Cell(24, 0, sfContext::getInstance()->getI18N()->__('TOTAL'), '', 0, 'L', 0, '', 0, false, 'T', 'T');
+			}else {
+				$pdf->Cell(24, 0, sfContext::getInstance()->getI18N()->__('TOTALE'), '', 0, 'L', 0, '', 0, false, 'T', 'T');
+			}
         	$pdf->SetFont('arial', 'B', sfTCPDF::FONT_SIZE);
         	$pdf->Cell(30, 0, number_format($total - $discountAmount, 2) . ' €', '', 0, 'R', 0, '', 0, false, 'T', 'T');
         	$pdf->SetFont(sfTCPDF::FONT, 'B', sfTCPDF::FONT_SIZE);
         }
         else {
         	$pdf->setXY(135, 110);
-        	$pdf->Cell(24, 0, sfContext::getInstance()->getI18N()->__('TOTAL'), array('T'=>array('dash'=>0,'width'=>0)), 0, 'L', 0, '', 0, false, 'T', 'T');
+        	if (sfContext::getInstance()->getUser()->getCulture() != 'it')
+            {
+				$pdf->Cell(24, 0, sfContext::getInstance()->getI18N()->__('TOTAL'), array('T'=>array('dash'=>0,'width'=>0)), 0, 'L', 0, '', 0, false, 'T', 'T');
+			}else{
+				$pdf->Cell(24, 0, sfContext::getInstance()->getI18N()->__('TOTALE'), array('T'=>array('dash'=>0,'width'=>0)), 0, 'L', 0, '', 0, false, 'T', 'T');
+			}
         	$pdf->SetFont('arial', 'B', sfTCPDF::FONT_SIZE);
         	$pdf->Cell(30, 0, $total . ' €',array('T'=>array('dash'=>0,'width'=>0)), 0, 'R', 0, '', 0, false, 'T', 'T');
         	$pdf->SetFont(sfTCPDF::FONT, 'B', sfTCPDF::FONT_SIZE);
@@ -670,7 +680,7 @@ class util extends sfActions
             elseif ($insc->getMethodPayment() == InscriptionPeer::METHOD_PAYMENT_CASH) {
                 $pdf->Cell(0, 0, sfContext::getInstance()->getI18N()->__('registration.trans2'), 0, 0, 'L', 0, '', 0, false, 'M', 'C');
                 $pdf->Ln($lineBreakHeight);
-                $pdf->Cell(0, 0, 'Kids&Us Poblenou - C/Llacuna 104, Barcelona', 0, 0, 'L', 0, '', 0, false, 'M', 'C');
+                //$pdf->Cell(0, 0, 'Kids&Us Poblenou - C/Llacuna 104, Barcelona', 0, 0, 'L', 0, '', 0, false, 'M', 'C');
             }
             elseif ($insc->getMethodPayment() == InscriptionPeer::METHOD_PAYMENT_RECIBO) {
                 $text = sfContext::getInstance()->getI18N()->__('registration.trans198');
@@ -778,11 +788,12 @@ class util extends sfActions
     {
     	return $pdf->GetStringWidth($text, sfTCPDF::FONT, sfTCPDF::FONT_STYLE, sfTCPDF::FONT_SIZE) + sfTCPDF::SANGRADO;
     }
-
-     public static function enviarAviso($insc, $llistaCorreus, $type)
+	
+	public static function enviarAviso($insc, $llistaCorreus, $type)
     {
-        require_once('lib/phpMailer/phpmailer.class.php');
-        $centre = SummerFunCenterPeer::retrieveByPK($insc->getStudentCourseInscription());
+		require_once('lib/phpMailer/phpmailer.class.php');
+        $course = CoursePeer::retrieveByPK($insc->getStudentCourseInscription());
+		$centre = SummerFunCenterPeer::retrieveByPK($course->getSummerFunCenterId());
         sfLoader::loadHelpers('Partial');
         
         if($type == 'all'){
@@ -801,7 +812,7 @@ class util extends sfActions
         $mail->Username = sfConfig::get('app_email_user');
         $mail->Password = sfConfig::get('app_email_password');
         $mail->FromName = 'Kids&Us';
-        $mail->From = 'admin.cooloff@kidsandus.es';
+        $mail->From = strlen($centre->getMail()) != 0 ? $centre->getMail() : 'info@kidsandus.es';
         $mail->AddReplyTo($mail->From, 'Kids&Us');
         $mail->CharSet = 'UTF-8';
         $mail->IsHTML(true);
@@ -822,7 +833,7 @@ class util extends sfActions
 
         $mail->Send();
     }
-    
+
     public static function enviarPdf($pdf, $llistaCorreus, $idCentre)
     {
         require_once('lib/phpMailer/phpmailer.class.php');
@@ -894,6 +905,20 @@ class util extends sfActions
 
             }
             $fitxerCondicionsNom = "condizioni-generali-cooloff.pdf";
+
+
+        } else if (sfContext::getInstance()->getUser()->getCulture() == 'en') {
+
+            $nomFitxer = "condiciones-generales-cooloff.pdf";
+            $fitxerCondicions = "pdf/condiciones-generales-cooloff.pdf";
+
+
+            if ($centre->getInscriptionConditionsTermsPdfEn() != null) {
+
+                $fitxerCondicions = "uploads/summer-fun/center/pdf-conditions/en/" . $centre->getInscriptionConditionsTermsPdfEn();
+
+            }
+            $fitxerCondicionsNom = "condiciones-generales-cooloff.pdf";
 
 
         } else if (sfContext::getInstance()->getUser()->getCulture() == 'fr') {
