@@ -111,7 +111,7 @@ class accountingActions extends sfActions
                                 $inscription->setIsPaid(2);
                         } else {
 							
-							if ($inscription->getAmountFirstPayment() != $inscription->getPrice()) {
+							if ($inscription->getAmountFirstPayment() != $inscription->getPrice() && $inscription->getAmountFirstPayment() > 0) {
 								//send email 50%
 								$mailsEnviar[1][1] = $inscription->getFatherMail();
 								util::enviarAviso($inscription, $mailsEnviar, 'half');
