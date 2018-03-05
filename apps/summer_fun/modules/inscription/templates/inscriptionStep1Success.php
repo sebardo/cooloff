@@ -447,9 +447,36 @@
 
 <script type="text/javascript">
 	var txtSelCentro = "<?php echo __('registration.trans203') ?>";
+	jQuery.fn.extend({
+    setmana: function () {
+        return this.each(function () {
+            var $this = $(this),
+                classOri=$this.attr('class'),
+                classSelect='select';
+
+            var markMe=function(){
+                $this.toggleClass(classSelect,!$this.hasClass(classSelect));
+            }
+
+            var changeCheck=function(){
+               var element=$(this);
+                if (element.is(':checked')) {
+                    markMe();
+                   $this.parent('div[class*=setmanes_preu]').find('.'+classOri+':not(.'+classSelect+') input[type="checkbox"]').prop('checked', false);
+                    var name=element.attr('name');
+                    if(~name.indexOf("service"))
+                        $this.find('input[type="checkbox"]:not(.ocultar)').prop('checked', true);
+                    markMe();
+                }
+            }
+            $this.find('input[type="checkbox"]:not(.ocultar)').on('change',changeCheck);
+        });
+    }
+	});
+
     jQuery(function($) {
 
-        $('.mail').bind('copy paste', function(e) {
+		$('.mail').bind('copy paste', function(e) {
             e.preventDefault();
         });
 
@@ -481,16 +508,22 @@
 
         $('#center').change(function()
         {
-            var url = '<?php echo url_for('@setmanes_inscripcions_centre'); ?>';
+			
+			
+			
+			var url = '<?php echo url_for('@setmanes_inscripcions_centre'); ?>';
             var idCentre = $('#center').val();
             var url3 = '<?php echo url_for('@inscripcions_modalitat_pagament'); ?>';
+            var setmanaFunc=function(){
+            	$('div.setmana').setmana();
+            }
 
-            $('.setmanes_preu1').load(url, { idCentre: idCentre, id: 1 });
-            $('.setmanes_preu2').load(url, { idCentre: idCentre, id: 2 });
-            $('.setmanes_preu3').load(url, { idCentre: idCentre, id: 3 });
-            $('.setmanes_preu4').load(url, { idCentre: idCentre, id: 4 });
-            $('.setmanes_preu5').load(url, { idCentre: idCentre, id: 5 });
-            $('.setmanes_preu6').load(url, { idCentre: idCentre, id: 6 });
+            $('.setmanes_preu1').load(url, { idCentre: idCentre, id: 1 },setmanaFunc);
+            $('.setmanes_preu2').load(url, { idCentre: idCentre, id: 2 },setmanaFunc);
+            $('.setmanes_preu3').load(url, { idCentre: idCentre, id: 3 },setmanaFunc);
+            $('.setmanes_preu4').load(url, { idCentre: idCentre, id: 4 },setmanaFunc);
+            $('.setmanes_preu5').load(url, { idCentre: idCentre, id: 5 },setmanaFunc);
+            $('.setmanes_preu6').load(url, { idCentre: idCentre, id: 6 },setmanaFunc);
 
             $('#modalitat_pagament').load(url3, {idCentre: idCentre});
 
@@ -506,6 +539,7 @@
     	  		    console.log(data);
     		  	}
             });
+			
         });
 
         $('#a-cond-generales').click(function(e) {
@@ -579,6 +613,8 @@
 
 
             });
+			
+			$('div.setmana').setmana();
 
         });
 
