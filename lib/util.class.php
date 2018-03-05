@@ -795,14 +795,13 @@ class util extends sfActions
         $course = CoursePeer::retrieveByPK($insc->getStudentCourseInscription());
 		$centre = SummerFunCenterPeer::retrieveByPK($course->getSummerFunCenterId());
         sfLoader::loadHelpers('Partial');
-        
+		
         if($type == 'all'){
             $missatge = get_partial('Inscription/all_payment_mail', array('centre' => $centre, 'inscription' => $insc));
         }else{
-            $missatge = get_partial('Inscription/half_payment_mail', array('centre' => $centre, 'inscription' => $insc));
+            $missatge = get_partial('Inscription/half_payment_mail_'.sfContext::getInstance()->getUser()->getCulture(), array('centre' => $centre, 'inscription' => $insc));
         }
-        
-        
+
         $mail = new PHPMailer();
         $mail->IsSMTP();
         $mail->SMTPAuth = true;
